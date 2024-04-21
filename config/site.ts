@@ -30,6 +30,10 @@ export const siteConfig = {
       label: "Games",
       href: "/games",
     },
+    {
+      label: "Clicks",
+      href: "/clicks",
+    },
   ],
   links: {
     github: "https://github.com/ft-abhishekgupta",

@@ -9,25 +9,20 @@ interface TileProps {
 
 const Tile: React.FC<TileProps> = ({ name, imageUrl }) => {
   return (
-    <div className="max-w-xs rounded shadow-lg m-4 flex justify-center">
-      <div className="relative w-40">
+    <div
+      className="shadow-lg m-2 flex p-1 text-center"
+      style={{ maxWidth: "160px" }}
+    >
+      <div className="">
         <Image
           src={imageUrl}
-          className="rounded-t text-center"
+          className="rounded-t"
           alt={name}
-          layout="responsive"
           width={160}
           height={160}
           style={{ maxWidth: "160px" }}
         />
-        <div
-          className="inset-0 flex items-center justify-center"
-          style={{ maxWidth: "160px" }}
-        >
-          <div className=" p-2 text-center max-w-xs overflow-hidden">
-            <div className="font-bold text-xl">{name}</div>
-          </div>
-        </div>
+        <div className="font-bold text-m">{name}</div>
       </div>
     </div>
   );

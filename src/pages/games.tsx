@@ -1,10 +1,10 @@
 import Tile from "@/components/Tile";
-import "./../globals.css";
 import data from "../scripts/games.json";
+import "./../globals.css";
 
 export default function Games() {
   return (
-    <div className="container mx-auto">
+    <div className="mx-auto">
       <h1 className="text-3xl font-bold text-center my-8">
         Games I Have Played ({data.length} and counting...!)
       </h1>

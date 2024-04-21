@@ -2,8 +2,6 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
-pageUrl = 'https://www.backloggd.com/u/ftAbhishek/games/title/type:played?page=1'
-
 addedGames = set()
 gameInfoList = []
 for i in range(1,100):
@@ -14,22 +12,21 @@ for i in range(1,100):
     gameDivs = gameListDiv.find_all('div', class_='card')
     flag = False
     for div in gameDivs:
-        game_name = div.find('div', class_='game-text-centered').text.strip()
-        game_image_url = div.find('img')['src']
-        if game_image_url in addedGames:
+        gameName = div.find('div', class_='game-text-centered').text.strip()
+        gameImageUrl = div.find('img')['src']
+        if gameImageUrl in addedGames:
             flag = True
             break
         game_info = {
-            'name': game_name,
-            'image_url': game_image_url
+            'name': gameName,
+            'imageUrl': gameImageUrl
         }
         gameInfoList.append(game_info)
-        addedGames.add(game_image_url)
-    print(i)
-    print(len(gameInfoList))
+        addedGames.add(gameImageUrl)
     if(flag):
+        print("Total Games: "+str(len(gameInfoList)))
         break
 
-with open('games.json', 'w') as json_file:
-    json.dump(gameInfoList, json_file, indent=4)
-    print("File Written")
+with open('games.json', 'w') as jsonFile:
+    json.dump(gameInfoList, jsonFile, indent=4)
+    print("JSON File Written")

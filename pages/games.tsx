@@ -1,17 +1,26 @@
 import Tile from "@/components/Tile";
 import data from "../scripts/games.json";
+import { Chip } from "@nextui-org/react";
+import DefaultLayout from "@/layouts/default";
 
 export default function Games() {
   return (
-    <div className="mx-auto">
-      <h1 className="text-3xl font-bold text-center my-8">
-        Games I Have Played ({data.length} and counting...!)
-      </h1>
-      <div className="flex flex-wrap justify-center">
-        {data.map((item, index) => (
-          <Tile key={index} name={item.name} imageUrl={item.image_url} />
-        ))}
+    <DefaultLayout>
+      <div className="mx-auto">
+        <div className="flex items-center justify-center flex-row">
+          <Chip color="primary" size="lg" variant="bordered">
+            {data.length}
+          </Chip>
+          <h1 className="text-3xl font-bold text-center my-8 p-4">
+            Games Played
+          </h1>
+        </div>
+        <div className="flex flex-wrap justify-center">
+          {data.map((item, index) => (
+            <Tile key={index} name={item.name} imageUrl={item.imageUrl} />
+          ))}
+        </div>
       </div>
-    </div>
+    </DefaultLayout>
   );
 }

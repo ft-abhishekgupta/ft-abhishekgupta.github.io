@@ -2,7 +2,12 @@
 import Image from "next/image";
 import React from "react";
 
-const Tile = ({ name, imageUrl }) => {
+interface TileProps {
+  name: string;
+  imageUrl: string;
+}
+
+const Tile: React.FC<TileProps> = ({ name, imageUrl }) => {
   return (
     <div className="max-w-xs rounded shadow-lg m-4 flex justify-center">
       <div className="relative w-40">

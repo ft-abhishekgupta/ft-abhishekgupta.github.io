@@ -1,5 +1,6 @@
 // components/Tile.js
-import Image from "next/image";
+
+import { Image } from "@nextui-org/image";
 import React from "react";
 
 interface TileProps {

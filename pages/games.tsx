@@ -1,6 +1,5 @@
 import Tile from "@/components/Tile";
 import data from "../scripts/games.json";
-import "./../globals.css";
 
 export default function Games() {
   return (

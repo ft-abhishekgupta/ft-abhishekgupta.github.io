@@ -25,3 +25,11 @@ jobs:
       - name: Run Python script
         working-directory: src/scripts
         run: python getGames.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "Abhishek Gupta"
+          git config --global user.email "ft.abhishekgupta@gmail.com"
+          git add .
+          git commit -m "Commit Python Script Changes"
+          git push

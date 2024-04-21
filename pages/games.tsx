@@ -1,4 +1,4 @@
-import Tile from "@/components/Tile";
+import Tile from "@/components/Tilse";
 import data from "../scripts/games.json";
 
 export default function Games() {

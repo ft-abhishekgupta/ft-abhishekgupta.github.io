@@ -1,0 +1,26 @@
+name: Run Python script
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs at 00:00 UTC every day. Adjust as needed.
+
+jobs:
+  run_script:
+    name: Run Python script
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x" # Specify the version of Python you want to use
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Python script
+        working-directory: src/scripts
+        run: python getGames.py

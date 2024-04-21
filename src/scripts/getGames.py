@@ -30,5 +30,11 @@ for i in range(1,100):
     if(flag):
         break
 
+yr = "games.json"
+ff = open(yr, 'r')
+lines = ff.readlines()
+print(lines[0])
+
 with open('games.json', 'w') as json_file:
     json.dump(gameInfoList, json_file, indent=4)
+    print("File Written")

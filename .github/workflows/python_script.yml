@@ -3,6 +3,7 @@ name: Run Python script
 on:
   schedule:
     - cron: "0 0 * * *" # Runs at 00:00 UTC every day. Adjust as needed.
+  workflow_dispatch: # Manual trigger
 
 jobs:
   run_script:

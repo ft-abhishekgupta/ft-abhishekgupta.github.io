@@ -24,9 +24,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Python script
+      - name: Run Python scripts
         working-directory: scripts
-        run: python getGames.py
+        run: /
+          python getGames.py
+          python getClicks.py
 
       - name: Commit changes
         run: |

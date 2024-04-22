@@ -10,6 +10,11 @@ module.exports = {
         hostname: "images.igdb.com",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "instagram.fdel27-3.fna.fbcdn.net/v/",
+        port: "",
+      },
     ],
   },
 };

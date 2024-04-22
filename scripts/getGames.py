@@ -27,6 +27,6 @@ for i in range(1,100):
         print("Total Games: "+str(len(gameInfoList)))
         break
 
-with open('games.json', 'w') as jsonFile:
+with open('/data/games.json', 'w') as jsonFile:
     json.dump(gameInfoList, jsonFile, indent=4)
     print("JSON File Written")

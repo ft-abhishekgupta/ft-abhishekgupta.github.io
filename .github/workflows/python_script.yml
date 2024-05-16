@@ -28,7 +28,6 @@ jobs:
         working-directory: scripts
         run: /
           python getGames.py
-          python getClicks.py
 
       - name: Commit changes
         run: |

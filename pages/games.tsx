@@ -1,4 +1,4 @@
-import Tile from "@/components/Tile";
+import Tile from "@/components/tile";
 import data from "../scripts/data/games.json";
 import { Chip } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";

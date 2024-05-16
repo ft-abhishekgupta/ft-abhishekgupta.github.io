@@ -1,5 +1,5 @@
 import DefaultLayout from "@/layouts/default";
-import ClicksTile from "@/components/ClicksTile";
+import ClicksTile from "@/components/clicksTile";
 import data from "../scripts/data/clicks.json";
 import { Chip } from "@nextui-org/react";
 

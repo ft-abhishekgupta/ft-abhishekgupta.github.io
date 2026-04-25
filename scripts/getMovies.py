@@ -119,6 +119,36 @@ if len(all_items) == 0:
     print("\nScraping returned 0 movies. Keeping existing data unchanged.")
     exit(0)
 
+# Fetch poster images from individual film pages (lazy-loaded on list page)
+existing_posters = {m["slug"]: m["imageUrl"] for m in existing_data if m.get("imageUrl")}
+missing_posters = [item for item in all_items if not item["imageUrl"]]
+print(f"\nFetching poster images for {len(missing_posters)} films...")
+
+for i, item in enumerate(missing_posters):
+    slug = item["slug"]
+    # Use cached poster if available
+    if slug in existing_posters:
+        item["imageUrl"] = existing_posters[slug]
+        continue
+
+    film_url = f"https://letterboxd.com/film/{slug}/"
+    try:
+        resp = fetch_page(session, film_url, retries=1)
+        if resp:
+            # Try film-poster URL first (best quality)
+            poster_m = re.search(r'https://a\.ltrbxd\.com/resized/film-poster/[^\s"\']+', resp.text)
+            if poster_m:
+                item["imageUrl"] = poster_m.group(0)
+            else:
+                # Fallback to og:image
+                og_m = re.search(r'og:image.*?content="([^"]+)"', resp.text)
+                if og_m:
+                    item["imageUrl"] = og_m.group(1)
+        print(f"  [{i+1}/{len(missing_posters)}] {item['name']}: {'OK' if item['imageUrl'] else 'no poster'}")
+    except Exception as e:
+        print(f"  [{i+1}/{len(missing_posters)}] {item['name']}: ERROR {e}")
+    time.sleep(0.3)
+
 print(f"\nTotal: {len(all_items)} films")
 watched = [i for i in all_items if i["source"] == "watched"]
 watchlist = [i for i in all_items if i["source"] == "watchlist"]

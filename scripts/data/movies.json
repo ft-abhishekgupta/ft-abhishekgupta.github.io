@@ -3,7 +3,7 @@
     "name": "Project Hail Mary",
     "slug": "project-hail-mary",
     "year": 2026,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-230-0-345-crop.jpg?v=ac31b6ec03",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/project-hail-mary/",
     "source": "watched"
@@ -12,16 +12,34 @@
     "name": "The Housemaid",
     "slug": "the-housemaid-2025",
     "year": 2025,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/1/9/1255319-the-housemaid-2025-0-230-0-345-crop.jpg?v=b054fee6ec",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-housemaid-2025/",
+    "source": "watched"
+  },
+  {
+    "name": "Superman",
+    "slug": "superman-2025",
+    "year": 2025,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/5/7/0/5/0/957050-superman-2025-0-230-0-345-crop.jpg?v=54e41a55ff",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/superman-2025/",
+    "source": "watched"
+  },
+  {
+    "name": "The Substance",
+    "slug": "the-substance",
+    "year": 2024,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/8/3/8/1/4/0/838140-the-substance-0-230-0-345-crop.jpg?v=ab9e1072f8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-substance/",
     "source": "watched"
   },
   {
     "name": "The Fall Guy",
     "slug": "the-fall-guy-2024",
     "year": 2024,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/6/7/5/5/0/667550-the-fall-guy-0-230-0-345-crop.jpg?v=5f491a1281",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-fall-guy-2024/",
     "source": "watched"
@@ -30,16 +48,25 @@
     "name": "Dune: Part Two",
     "slug": "dune-part-two",
     "year": 2024,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/1/7/4/4/3/617443-dune-part-two-0-230-0-345-crop.jpg?v=cc533700f8",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/dune-part-two/",
+    "source": "watched"
+  },
+  {
+    "name": "Oppenheimer",
+    "slug": "oppenheimer-2023",
+    "year": 2023,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/7/8/4/3/2/8/784328-oppenheimer-0-230-0-345-crop.jpg?v=e3c6e7a32c",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/oppenheimer-2023/",
     "source": "watched"
   },
   {
     "name": "Spider-Man: Across the Spider-Verse",
     "slug": "spider-man-across-the-spider-verse",
     "year": 2023,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/9/7/6/3/1/497631-spider-man-across-the-spider-verse-0-230-0-345-crop.jpg?v=f2acbf1b8a",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/spider-man-across-the-spider-verse/",
     "source": "watched"
@@ -48,7 +75,7 @@
     "name": "Evil Dead Rise",
     "slug": "evil-dead-rise",
     "year": 2023,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/3/6/7/6/1/636761-evil-dead-rise-0-230-0-345-crop.jpg?v=51a7fe0b29",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/evil-dead-rise/",
     "source": "watched"
@@ -57,7 +84,7 @@
     "name": "Minions: The Rise of Gru",
     "slug": "minions-the-rise-of-gru",
     "year": 2022,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/7/1/0/0/5/371005-minions-the-rise-of-gru-0-230-0-345-crop.jpg?v=ca97b9c24a",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/minions-the-rise-of-gru/",
     "source": "watched"
@@ -66,16 +93,52 @@
     "name": "The Batman",
     "slug": "the-batman",
     "year": 2022,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/4/8/9/1/4/348914-the-batman-0-230-0-345-crop.jpg?v=ec12a8b7ce",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-batman/",
+    "source": "watched"
+  },
+  {
+    "name": "Spider-Man: No Way Home",
+    "slug": "spider-man-no-way-home",
+    "year": 2021,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/6/0/7/8/7/560787-spider-man-no-way-home-0-230-0-345-crop.jpg?v=a336d4f40c",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/spider-man-no-way-home/",
+    "source": "watched"
+  },
+  {
+    "name": "Dune",
+    "slug": "dune-2021",
+    "year": 2021,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/a6/8b/5j/zk/dune-2021a-1200-1200-675-675-crop-000000.jpg?v=7422445327",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/dune-2021/",
+    "source": "watched"
+  },
+  {
+    "name": "Soul",
+    "slug": "soul-2020",
+    "year": 2020,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/3/8/5/1/1/438511-soul-0-230-0-345-crop.jpg?v=8d0b74f9a8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/soul-2020/",
+    "source": "watched"
+  },
+  {
+    "name": "Knives Out",
+    "slug": "knives-out-2019",
+    "year": 2019,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/7/5/3/7/0/475370-knives-out-0-230-0-345-crop.jpg?v=7da76d742c",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/knives-out-2019/",
     "source": "watched"
   },
   {
     "name": "Parasite",
     "slug": "parasite-2019",
     "year": 2019,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/2/6/4/0/6/426406-parasite-0-230-0-345-crop.jpg?v=8f5653f710",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/parasite-2019/",
     "source": "watched"
@@ -84,34 +147,97 @@
     "name": "Chernobyl",
     "slug": "chernobyl",
     "year": 2019,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/3/2/0/8/2/532082-chernobyl-0-230-0-345-crop.jpg?v=ff1851eaee",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/chernobyl/",
+    "source": "watched"
+  },
+  {
+    "name": "Avengers: Endgame",
+    "slug": "avengers-endgame",
+    "year": 2019,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/2/6/6/6/0/226660-avengers-endgame-0-230-0-345-crop.jpg?v=d4006bfd5e",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/avengers-endgame/",
     "source": "watched"
   },
   {
     "name": "Spider-Man: Into the Spider-Verse",
     "slug": "spider-man-into-the-spider-verse",
     "year": 2018,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/5/1/9/4/3/251943-spider-man-into-the-spider-verse-0-230-0-345-crop.jpg?v=538fe0ada6",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/spider-man-into-the-spider-verse/",
+    "source": "watched"
+  },
+  {
+    "name": "Avengers: Infinity War",
+    "slug": "avengers-infinity-war",
+    "year": 2018,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/2/6/6/6/1/226661-avengers-infinity-war-0-230-0-345-crop.jpg?v=8b35f60c0c",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/avengers-infinity-war/",
+    "source": "watched"
+  },
+  {
+    "name": "Hereditary",
+    "slug": "hereditary",
+    "year": 2018,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/2/4/3/4/8/424348-hereditary-0-230-0-345-crop.jpg?v=470e48b681",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/hereditary/",
     "source": "watched"
   },
   {
     "name": "Maze Runner: The Death Cure",
     "slug": "maze-runner-the-death-cure",
     "year": 2018,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/6/6/1/3/2/266132-maze-runner-the-death-cure-0-230-0-345-crop.jpg?v=ea8eaf5ae5",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/maze-runner-the-death-cure/",
+    "source": "watched"
+  },
+  {
+    "name": "It",
+    "slug": "it-2017",
+    "year": 2017,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/c0/c3/jy/rn/it-2017-1200-1200-675-675-crop-000000.jpg?v=df8da545a8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/it-2017/",
+    "source": "watched"
+  },
+  {
+    "name": "Baby Driver",
+    "slug": "baby-driver",
+    "year": 2017,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/6/8/9/5/0/268950-baby-driver-0-230-0-345-crop.jpg?v=61304ddfc8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/baby-driver/",
+    "source": "watched"
+  },
+  {
+    "name": "Get Out",
+    "slug": "get-out-2017",
+    "year": 2017,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/5/3/1/1/7/353117-get-out-0-230-0-345-crop.jpg?v=136acec030",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/get-out-2017/",
+    "source": "watched"
+  },
+  {
+    "name": "Hacksaw Ridge",
+    "slug": "hacksaw-ridge",
+    "year": 2016,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/5/1/8/7/2/251872-hacksaw-ridge-0-230-0-345-crop.jpg?v=031e346657",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/hacksaw-ridge/",
     "source": "watched"
   },
   {
     "name": "Arrival",
     "slug": "arrival-2016",
     "year": 2016,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/oa/m7/ho/3a/arrival-2016-1200-1200-675-675-crop-000000.jpg?v=a5173b53c7",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/arrival-2016/",
     "source": "watched"
@@ -120,7 +246,7 @@
     "name": "Sausage Party",
     "slug": "sausage-party",
     "year": 2016,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/vh/rf/ce/ez/sausage-party-1200-1200-675-675-crop-000000.jpg?v=c5a1c416b7",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/sausage-party/",
     "source": "watched"
@@ -129,43 +255,124 @@
     "name": "Kung Fu Panda 3",
     "slug": "kung-fu-panda-3",
     "year": 2016,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/2f/24/zk/76/kung-fu-panda-3-1200-1200-675-675-crop-000000.jpg?v=dd4af7666e",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/kung-fu-panda-3/",
+    "source": "watched"
+  },
+  {
+    "name": "Mad Max: Fury Road",
+    "slug": "mad-max-fury-road",
+    "year": 2015,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/2/7/8/0/62780-mad-max-fury-road-0-230-0-345-crop.jpg?v=37c5424b1f",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/mad-max-fury-road/",
     "source": "watched"
   },
   {
     "name": "Interstellar",
     "slug": "interstellar",
     "year": 2014,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/1/7/6/2/1/117621-interstellar-0-230-0-345-crop.jpg?v=7ad89e6666",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/interstellar/",
+    "source": "watched"
+  },
+  {
+    "name": "Gone Girl",
+    "slug": "gone-girl",
+    "year": 2014,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/4/9/8/5/7/149857-gone-girl-0-230-0-345-crop.jpg?v=dfe3c8018b",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/gone-girl/",
+    "source": "watched"
+  },
+  {
+    "name": "The Maze Runner",
+    "slug": "the-maze-runner",
+    "year": 2014,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/4/2/5/4/9/142549-the-maze-runner-0-230-0-345-crop.jpg?v=2423795b6f",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-maze-runner/",
     "source": "watched"
   },
   {
     "name": "Whiplash",
     "slug": "whiplash-2014",
     "year": 2014,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/sk/f3/f1/b2/whiplash-1200-1200-675-675-crop-000000.jpg?v=771f1a019d",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/whiplash-2014/",
+    "source": "watched"
+  },
+  {
+    "name": "The Wolf of Wall Street",
+    "slug": "the-wolf-of-wall-street",
+    "year": 2013,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/8/6/1/1/4/86114-the-wolf-of-wall-street-0-230-0-345-crop.jpg?v=a2b958b6f1",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-wolf-of-wall-street/",
+    "source": "watched"
+  },
+  {
+    "name": "Prisoners",
+    "slug": "prisoners",
+    "year": 2013,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/j1/lk/so/8x/xJXjSQbQxyYkX2YA1wlllYYpoaP-1200-1200-675-675-crop-000000.jpg?v=4940a86b89",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/prisoners/",
     "source": "watched"
   },
   {
     "name": "Django Unchained",
     "slug": "django-unchained",
     "year": 2012,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/2/5/1/6/52516-django-unchained-0-230-0-345-crop.jpg?v=f02aed63a3",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/django-unchained/",
+    "source": "watched"
+  },
+  {
+    "name": "The Amazing Spider-Man",
+    "slug": "the-amazing-spider-man",
+    "year": 2012,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/0/6/7/7/50677-the-amazing-spider-man-0-230-0-345-crop.jpg?v=2e109aabed",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-amazing-spider-man/",
+    "source": "watched"
+  },
+  {
+    "name": "The Hunger Games",
+    "slug": "the-hunger-games",
+    "year": 2012,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/z0/te/xv/y3/the-hunger-games-1200-1200-675-675-crop-000000.jpg?v=32b6960277",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-hunger-games/",
+    "source": "watched"
+  },
+  {
+    "name": "Tangled",
+    "slug": "tangled-2010",
+    "year": 2010,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/5/8/5/9/25859-tangled-2010-0-230-0-345-crop.jpg?v=1c22f51536",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/tangled-2010/",
+    "source": "watched"
+  },
+  {
+    "name": "The Social Network",
+    "slug": "the-social-network",
+    "year": 2010,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/dr/ty/49/rl/the-social-network-2010-1200-1200-675-675-crop-000000.jpg?v=cbacd98bfa",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-social-network/",
     "source": "watched"
   },
   {
     "name": "Scott Pilgrim vs. the World",
     "slug": "scott-pilgrim-vs-the-world",
     "year": 2010,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/tj/1l/fv/xj/scott-pilgrim-170-1200-1200-675-675-crop-000000.jpg?v=a57694ded8",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/scott-pilgrim-vs-the-world/",
     "source": "watched"
@@ -174,7 +381,7 @@
     "name": "Inception",
     "slug": "inception",
     "year": 2010,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/vi/ms/z2/gw/inception-1200-1200-675-675-crop-000000.jpg?v=7e41f271da",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/inception/",
     "source": "watched"
@@ -183,25 +390,43 @@
     "name": "The Karate Kid",
     "slug": "the-karate-kid-2010",
     "year": 2010,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/6/0/2/5/26025-the-karate-kid-0-230-0-345-crop.jpg?v=e1397c637d",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-karate-kid-2010/",
+    "source": "watched"
+  },
+  {
+    "name": "How to Train Your Dragon",
+    "slug": "how-to-train-your-dragon",
+    "year": 2010,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/xm/yg/qr/pw/how-to-train-10-1200-1200-675-675-crop-000000.jpg?v=302fab52e6",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/how-to-train-your-dragon/",
     "source": "watched"
   },
   {
     "name": "Shutter Island",
     "slug": "shutter-island",
     "year": 2010,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/5/4/0/9/45409-shutter-island-0-230-0-345-crop.jpg?v=85dd4c38e3",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/shutter-island/",
+    "source": "watched"
+  },
+  {
+    "name": "Avatar",
+    "slug": "avatar",
+    "year": 2009,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/7s/di/by/2k/avatar-1200-1200-675-675-crop-000000.jpg?v=95bd991ae8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/avatar/",
     "source": "watched"
   },
   {
     "name": "Ice Age: Dawn of the Dinosaurs",
     "slug": "ice-age-dawn-of-the-dinosaurs",
     "year": 2009,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/7/7/8/1/47781-ice-age-dawn-of-the-dinosaurs-0-230-0-345-crop.jpg?v=0b0a533895",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/ice-age-dawn-of-the-dinosaurs/",
     "source": "watched"
@@ -210,16 +435,61 @@
     "name": "The Dark Knight",
     "slug": "the-dark-knight",
     "year": 2008,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/zu/51/m1/43/the-dark-knight-20-1200-1200-675-675-crop-000000.jpg?v=899697afec",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-dark-knight/",
+    "source": "watched"
+  },
+  {
+    "name": "WALL·E",
+    "slug": "walle",
+    "year": 2008,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/5/9/9/4/45994-walle-0-230-0-345-crop.jpg?v=ad27f0ceac",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/walle/",
+    "source": "watched"
+  },
+  {
+    "name": "Ratatouille",
+    "slug": "ratatouille",
+    "year": 2007,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/do/wf/l1/ff/ratatouille-120-1200-1200-675-675-crop-000000.jpg?v=af61653b74",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/ratatouille/",
+    "source": "watched"
+  },
+  {
+    "name": "The Departed",
+    "slug": "the-departed",
+    "year": 2006,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/33/lu/26/83/the-departed-1200-1200-675-675-crop-000000.jpg?v=525d3990b0",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-departed/",
+    "source": "watched"
+  },
+  {
+    "name": "Cars",
+    "slug": "cars",
+    "year": 2006,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/it/25/j1/wu/cars-120-1200-1200-675-675-crop-000000.jpg?v=99af96b3d6",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/cars/",
+    "source": "watched"
+  },
+  {
+    "name": "Spider-Man 2",
+    "slug": "spider-man-2",
+    "year": 2004,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/w2/of/wm/ou/jz6NCADCgj4dWU8RM81Xvrokey4-1200-1200-675-675-crop-000000.jpg?v=c9c668bc42",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/spider-man-2/",
     "source": "watched"
   },
   {
     "name": "Eternal Sunshine of the Spotless Mind",
     "slug": "eternal-sunshine-of-the-spotless-mind",
     "year": 2004,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/2w/va/23/lr/esotsm-1200-1200-675-675-crop-000000.jpg?v=11483523ca",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
     "source": "watched"
@@ -228,7 +498,7 @@
     "name": "The Lord of the Rings: The Return of the King",
     "slug": "the-lord-of-the-rings-the-return-of-the-king",
     "year": 2003,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/a7/4r/al/mc/lotr-return-of-the-king-1200-1200-675-675-crop-000000.jpg?v=2a233b4d9f",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-lord-of-the-rings-the-return-of-the-king/",
     "source": "watched"
@@ -237,34 +507,61 @@
     "name": "Kill Bill: Vol. 1",
     "slug": "kill-bill-vol-1",
     "year": 2003,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/alternative-backdrop/2/6/9/4/tmdb/lVy5Zqcty2NfemqKYbVJfdg44rK-1200-1200-675-675-crop-000000.jpg?v=4a454016fa",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/kill-bill-vol-1/",
+    "source": "watched"
+  },
+  {
+    "name": "The Lord of the Rings: The Two Towers",
+    "slug": "the-lord-of-the-rings-the-two-towers",
+    "year": 2002,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/9/2/9/51929-the-lord-of-the-rings-the-two-towers-0-230-0-345-crop.jpg?v=9ef6c09783",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-lord-of-the-rings-the-two-towers/",
     "source": "watched"
   },
   {
     "name": "The Lord of the Rings: The Fellowship of the Ring",
     "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring",
     "year": 2001,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/3x/7b/zs/bg/lotr-fellowship-100-1200-1200-675-675-crop-000000.jpg?v=b5411cc8ac",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-lord-of-the-rings-the-fellowship-of-the-ring/",
+    "source": "watched"
+  },
+  {
+    "name": "Gladiator",
+    "slug": "gladiator-2000",
+    "year": 2000,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/9/5/2/51952-gladiator-2000-0-230-0-345-crop.jpg?v=0071a74571",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/gladiator-2000/",
     "source": "watched"
   },
   {
     "name": "Fight Club",
     "slug": "fight-club",
     "year": 1999,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-230-0-345-crop.jpg?v=768b32dfa4",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/fight-club/",
+    "source": "watched"
+  },
+  {
+    "name": "The Matrix",
+    "slug": "the-matrix",
+    "year": 1999,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/5/1/8/51518-the-matrix-0-230-0-345-crop.jpg?v=fc7c366afe",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-matrix/",
     "source": "watched"
   },
   {
     "name": "Rush Hour",
     "slug": "rush-hour",
     "year": 1998,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/0/5/1/7/50517-rush-hour-0-230-0-345-crop.jpg?v=43dae7f97d",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/rush-hour/",
     "source": "watched"
@@ -273,7 +570,7 @@
     "name": "The Truman Show",
     "slug": "the-truman-show",
     "year": 1998,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/z0/rf/dt/5l/truman-show-115-1200-1200-675-675-crop-000000.jpg?v=1047828fc6",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-truman-show/",
     "source": "watched"
@@ -282,7 +579,7 @@
     "name": "The Shawshank Redemption",
     "slug": "the-shawshank-redemption",
     "year": 1994,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/1y/23/4e/ir/shawshank-redemption-1200-1200-675-675-crop-000000.jpg?v=a59d283bca",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-shawshank-redemption/",
     "source": "watched"
@@ -291,16 +588,25 @@
     "name": "Forrest Gump",
     "slug": "forrest-gump",
     "year": 1994,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/7/0/4/2704-forrest-gump-0-230-0-345-crop.jpg?v=173bc04cf0",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/forrest-gump/",
+    "source": "watched"
+  },
+  {
+    "name": "Ferris Bueller&#039;s Day Off",
+    "slug": "ferris-buellers-day-off",
+    "year": 1986,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/7/2/1/9/47219-ferris-bueller-s-day-off-0-230-0-345-crop.jpg?v=5c27745153",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/ferris-buellers-day-off/",
     "source": "watched"
   },
   {
     "name": "Back to the Future",
     "slug": "back-to-the-future",
     "year": 1985,
-    "imageUrl": "",
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/9/4/5/51945-back-to-the-future-0-230-0-345-crop.jpg?v=b818c8ce28",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/back-to-the-future/",
     "source": "watched"

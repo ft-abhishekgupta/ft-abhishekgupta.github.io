@@ -1,4 +1,4 @@
-import Tile from "@/components/tile";
+import Tile from "@/components/Tile";
 import data from "../scripts/data/movies.json";
 import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";

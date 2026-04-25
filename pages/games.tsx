@@ -112,11 +112,9 @@ export default function Games() {
             size="sm"
             selectedKeys={[decadeFilter]}
             onChange={(e) => setDecadeFilter(e.target.value || "all")}
+            items={[{ key: "all", label: "All Decades" }, ...decades.map((d) => ({ key: String(d), label: `${d}s` }))]}
           >
-            <SelectItem key="all">All Decades</SelectItem>
-            {decades.map((d) => (
-              <SelectItem key={String(d)}>{d}s</SelectItem>
-            ))}
+            {(item) => <SelectItem key={item.key}>{item.label}</SelectItem>}
           </Select>
           {ratedCount > 0 && (
             <div className="flex items-center gap-2">

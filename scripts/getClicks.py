@@ -8,6 +8,10 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CLICKS_JSON = os.path.join(SCRIPT_DIR, 'data', 'clicks.json')
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, '..', 'public', 'clicks')
 
+# Instagram Graph API token (set via env var or GitHub Actions secret)
+IG_ACCESS_TOKEN = os.environ.get('IG_ACCESS_TOKEN', '')
+IG_USER_ID = os.environ.get('IG_USER_ID', '')
+
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(os.path.join(SCRIPT_DIR, 'data'), exist_ok=True)
 
@@ -16,41 +20,119 @@ if os.path.exists(CLICKS_JSON):
     with open(CLICKS_JSON, "r") as json_file:
         previous_data = json.load(json_file)
 
-# Try to fetch new posts using instaloader (works in CI with login session)
-try:
-    import instaloader
-    loader = instaloader.Instaloader()
-    previous_data_set = {obj["permalink"] for obj in previous_data if "permalink" in obj}
+existing_shortcodes = {obj["permalink"] for obj in previous_data if "permalink" in obj}
 
-    profile = instaloader.Profile.from_username(loader.context, username)
-    new_posts = []
-    for post in profile.get_posts():
-        if post.shortcode in previous_data_set:
+
+def fetch_via_graph_api():
+    """Fetch all posts via Instagram Graph API (requires IG_ACCESS_TOKEN and IG_USER_ID)."""
+    if not IG_ACCESS_TOKEN or not IG_USER_ID:
+        print("No IG_ACCESS_TOKEN or IG_USER_ID set, skipping Graph API")
+        return None
+
+    print("Fetching posts via Instagram Graph API...")
+    all_posts = []
+    url = (
+        f"https://graph.facebook.com/v19.0/{IG_USER_ID}/media"
+        f"?fields=id,media_type,media_url,permalink,timestamp,children{{media_url,media_type}}"
+        f"&limit=100&access_token={IG_ACCESS_TOKEN}"
+    )
+
+    page = 1
+    while url:
+        print(f"  Page {page}...")
+        try:
+            req = urllib.request.Request(url)
+            resp = urllib.request.urlopen(req, timeout=30)
+            result = json.loads(resp.read().decode())
+        except Exception as e:
+            print(f"  Graph API error: {e}")
             break
-        if post.typename == 'GraphSidecar':
-            for image in post.get_sidecar_nodes():
+
+        for item in result.get("data", []):
+            media_type = item.get("media_type", "")
+            permalink = item.get("permalink", "")
+            timestamp = item.get("timestamp", "")
+            # Extract shortcode from permalink: https://www.instagram.com/p/SHORTCODE/
+            shortcode = permalink.rstrip("/").split("/")[-1] if permalink else ""
+
+            if media_type == "CAROUSEL_ALBUM":
+                # Carousel: get each child image
+                children = item.get("children", {}).get("data", [])
+                for child in children:
+                    if child.get("media_type") == "IMAGE":
+                        all_posts.append({
+                            "url": child.get("media_url", ""),
+                            "timestamp": timestamp,
+                            "permalink": shortcode
+                        })
+            elif media_type == "IMAGE":
+                all_posts.append({
+                    "url": item.get("media_url", ""),
+                    "timestamp": timestamp,
+                    "permalink": shortcode
+                })
+            # Skip VIDEO type
+
+        url = result.get("paging", {}).get("next")
+        page += 1
+
+    print(f"  Fetched {len(all_posts)} images via Graph API")
+    return all_posts
+
+
+def fetch_via_instaloader():
+    """Fallback: fetch posts via instaloader (requires auth for full access)."""
+    try:
+        import instaloader
+        loader = instaloader.Instaloader()
+        profile = instaloader.Profile.from_username(loader.context, username)
+        new_posts = []
+        for post in profile.get_posts():
+            if post.shortcode in existing_shortcodes:
+                break
+            if post.typename == 'GraphSidecar':
+                for image in post.get_sidecar_nodes():
+                    new_posts.append({
+                        "url": f"https://www.instagram.com/p/{post.shortcode}/media/?size=l",
+                        "timestamp": post.date.strftime("%Y-%m-%d %H:%M:%S"),
+                        "permalink": post.shortcode
+                    })
+            elif post.typename == 'GraphImage':
                 new_posts.append({
                     "url": f"https://www.instagram.com/p/{post.shortcode}/media/?size=l",
                     "timestamp": post.date.strftime("%Y-%m-%d %H:%M:%S"),
                     "permalink": post.shortcode
                 })
-        elif post.typename == 'GraphImage':
-            new_posts.append({
-                "url": f"https://www.instagram.com/p/{post.shortcode}/media/?size=l",
-                "timestamp": post.date.strftime("%Y-%m-%d %H:%M:%S"),
-                "permalink": post.shortcode
-            })
+        return new_posts
+    except Exception as e:
+        print(f"Instaloader unavailable ({e})")
+        return None
 
-    data = new_posts + previous_data
-    print(f"Updated with {len(new_posts)} new + {len(previous_data)} existing = {len(data)} images")
 
-except Exception as e:
-    print(f"Instaloader unavailable ({e}), keeping existing {len(previous_data)} images")
-    data = previous_data
-    for item in data:
-        shortcode = item.get("permalink", "")
-        if shortcode and "instagram.com/p/" not in item.get("url", ""):
-            item["url"] = f"https://www.instagram.com/p/{shortcode}/media/?size=l"
+# Try Graph API first, then instaloader, then fall back to existing data
+graph_posts = fetch_via_graph_api()
+if graph_posts is not None:
+    # Deduplicate by shortcode, keeping first occurrence
+    seen = set()
+    data = []
+    for p in graph_posts:
+        key = p["permalink"]
+        if key not in seen:
+            seen.add(key)
+            data.append(p)
+    print(f"Graph API: {len(data)} unique posts")
+else:
+    insta_posts = fetch_via_instaloader()
+    if insta_posts is not None:
+        data = insta_posts + previous_data
+        print(f"Instaloader: {len(insta_posts)} new + {len(previous_data)} existing = {len(data)} images")
+    else:
+        print(f"Keeping existing {len(previous_data)} images")
+        data = previous_data
+        for item in data:
+            shortcode = item.get("permalink", "")
+            if shortcode and "instagram.com/p/" not in item.get("url", ""):
+                item["url"] = f"https://www.instagram.com/p/{shortcode}/media/?size=l"
 
 # Download images locally
 print(f"\nDownloading {len(data)} images to public/clicks/...")

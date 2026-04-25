@@ -4,15 +4,25 @@ import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { useMemo, useState } from "react";
 
-type SortOption = "default" | "name-asc" | "name-desc" | "rated";
+type SortOption = "default" | "name-asc" | "name-desc" | "rated" | "year-new" | "year-old";
 
 export default function Games() {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<SortOption>("default");
   const [ratedOnly, setRatedOnly] = useState(false);
+  const [decadeFilter, setDecadeFilter] = useState<string>("all");
+
+  // Compute available decades
+  const decades = useMemo(() => {
+    const ds = new Set<number>();
+    data.forEach((g: any) => {
+      if (g.year) ds.add(Math.floor(g.year / 10) * 10);
+    });
+    return Array.from(ds).sort((a, b) => b - a);
+  }, []);
 
   const filteredGames = useMemo(() => {
-    let games = [...data];
+    let games = [...data] as any[];
 
     // Search filter
     if (search.trim()) {
@@ -23,6 +33,12 @@ export default function Games() {
     // Rated filter
     if (ratedOnly) {
       games = games.filter((g) => g.userRating !== null);
+    }
+
+    // Decade filter
+    if (decadeFilter !== "all") {
+      const decade = parseInt(decadeFilter);
+      games = games.filter((g) => g.year && g.year >= decade && g.year < decade + 10);
     }
 
     // Sort
@@ -36,12 +52,18 @@ export default function Games() {
       case "rated":
         games.sort((a, b) => (b.userRating ?? 0) - (a.userRating ?? 0));
         break;
+      case "year-new":
+        games.sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+        break;
+      case "year-old":
+        games.sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999));
+        break;
       default:
         break;
     }
 
     return games;
-  }, [search, sortBy, ratedOnly]);
+  }, [search, sortBy, ratedOnly, decadeFilter]);
 
   const ratedCount = data.filter((g) => g.userRating !== null).length;
 
@@ -80,7 +102,21 @@ export default function Games() {
             <SelectItem key="default">Recently Added</SelectItem>
             <SelectItem key="name-asc">Name (A → Z)</SelectItem>
             <SelectItem key="name-desc">Name (Z → A)</SelectItem>
+            <SelectItem key="year-new">Newest First</SelectItem>
+            <SelectItem key="year-old">Oldest First</SelectItem>
             <SelectItem key="rated">Highest Rated</SelectItem>
+          </Select>
+          <Select
+            className="max-w-[140px]"
+            placeholder="Decade"
+            size="sm"
+            selectedKeys={[decadeFilter]}
+            onChange={(e) => setDecadeFilter(e.target.value || "all")}
+          >
+            <SelectItem key="all">All Decades</SelectItem>
+            {decades.map((d) => (
+              <SelectItem key={String(d)}>{d}s</SelectItem>
+            ))}
           </Select>
           {ratedCount > 0 && (
             <div className="flex items-center gap-2">
@@ -97,7 +133,7 @@ export default function Games() {
         </div>
 
         {/* Results count */}
-        {(search || ratedOnly) && (
+        {(search || ratedOnly || decadeFilter !== "all") && (
           <p className="text-center text-sm text-default-400 mb-4">
             Showing {filteredGames.length} of {data.length} games
           </p>
@@ -113,6 +149,7 @@ export default function Games() {
               slug={item.slug}
               userRating={item.userRating}
               backloggdUrl={item.backloggdUrl}
+              year={item.year}
             />
           ))}
         </div>

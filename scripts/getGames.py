@@ -3,6 +3,7 @@ import json
 import re
 import html
 import os
+import time
 
 scraper = cloudscraper.create_scraper()
 games = {}
@@ -43,7 +44,8 @@ for page in range(1, 20):
             "slug": slug,
             "gameId": game_id,
             "userRating": rating,
-            "backloggdUrl": f"https://backloggd.com/games/{slug}/" if slug else ""
+            "backloggdUrl": f"https://backloggd.com/games/{slug}/" if slug else "",
+            "year": None
         }
 
     new_count = len(games) - prev_count
@@ -53,9 +55,27 @@ for page in range(1, 20):
         print('  No new games on this page, stopping.')
         break
 
+# Scrape release year from each game's individual page
+print(f'\nScraping release years for {len(games)} games...')
+for i, (name, game) in enumerate(games.items()):
+    slug = game.get("slug", "")
+    if not slug:
+        continue
+    game_url = f"https://backloggd.com/games/{slug}/"
+    try:
+        resp = scraper.get(game_url, timeout=15)
+        m = re.search(r'<title>[^<]*\((\d{4})\)</title>', resp.text)
+        if m:
+            game["year"] = int(m.group(1))
+        print(f'  [{i+1}/{len(games)}] {name}: {game["year"] or "no year"}')
+    except Exception as e:
+        print(f'  [{i+1}/{len(games)}] {name}: ERROR {e}')
+    time.sleep(0.3)
+
 result = list(games.values())
 print(f'\nTotal unique games: {len(result)}')
 print(f'Games with ratings: {sum(1 for g in result if g["userRating"] is not None)}')
+print(f'Games with years: {sum(1 for g in result if g["year"] is not None)}')
 
 data_dir = os.path.join(os.path.dirname(__file__), 'data')
 os.makedirs(data_dir, exist_ok=True)

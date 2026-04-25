@@ -8,6 +8,7 @@ interface TileProps {
   slug?: string;
   userRating?: number | null;
   backloggdUrl?: string;
+  year?: number | null;
 }
 
 const StarRating: React.FC<{ rating: number }> = ({ rating }) => {
@@ -33,6 +34,7 @@ const Tile: React.FC<TileProps> = ({
   slug,
   userRating,
   backloggdUrl,
+  year,
 }) => {
   const content = (
     <div
@@ -56,7 +58,7 @@ const Tile: React.FC<TileProps> = ({
           </div>
         )}
       </div>
-      <div className="p-1.5 flex flex-col items-center gap-1">
+      <div className="p-1.5 flex flex-col items-center gap-0.5">
         <div
           className="font-semibold text-xs leading-tight"
           style={{
@@ -68,6 +70,9 @@ const Tile: React.FC<TileProps> = ({
         >
           {name}
         </div>
+        {year && (
+          <span className="text-[10px] text-default-400">{year}</span>
+        )}
         {userRating && <StarRating rating={userRating} />}
       </div>
     </div>

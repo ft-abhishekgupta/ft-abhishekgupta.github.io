@@ -5,7 +5,8 @@
     "slug": "halo-4",
     "gameId": "991",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/halo-4/"
+    "backloggdUrl": "https://backloggd.com/games/halo-4/",
+    "year": 2012
   },
   {
     "name": "Bright Memory: Infinite",
@@ -13,7 +14,8 @@
     "slug": "bright-memory-infinite",
     "gameId": "113739",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/bright-memory-infinite/"
+    "backloggdUrl": "https://backloggd.com/games/bright-memory-infinite/",
+    "year": 2021
   },
   {
     "name": "God of War Ragnarök",
@@ -21,7 +23,8 @@
     "slug": "god-of-war-ragnarok",
     "gameId": "112875",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/god-of-war-ragnarok/"
+    "backloggdUrl": "https://backloggd.com/games/god-of-war-ragnarok/",
+    "year": 2022
   },
   {
     "name": "Mortal Kombat 1",
@@ -29,7 +32,8 @@
     "slug": "mortal-kombat-1--1",
     "gameId": "239392",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-1--1/"
+    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-1--1/",
+    "year": 2023
   },
   {
     "name": "Mafia: Definitive Edition",
@@ -37,7 +41,8 @@
     "slug": "mafia-definitive-edition",
     "gameId": "134070",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mafia-definitive-edition/"
+    "backloggdUrl": "https://backloggd.com/games/mafia-definitive-edition/",
+    "year": 2020
   },
   {
     "name": "Ori and the Blind Forest",
@@ -45,7 +50,8 @@
     "slug": "ori-and-the-blind-forest",
     "gameId": "7344",
     "userRating": 10,
-    "backloggdUrl": "https://backloggd.com/games/ori-and-the-blind-forest/"
+    "backloggdUrl": "https://backloggd.com/games/ori-and-the-blind-forest/",
+    "year": 2015
   },
   {
     "name": "Superliminal",
@@ -53,7 +59,8 @@
     "slug": "superliminal",
     "gameId": "68447",
     "userRating": 10,
-    "backloggdUrl": "https://backloggd.com/games/superliminal/"
+    "backloggdUrl": "https://backloggd.com/games/superliminal/",
+    "year": 2019
   },
   {
     "name": "Mad Max",
@@ -61,7 +68,8 @@
     "slug": "mad-max",
     "gameId": "2552",
     "userRating": 10,
-    "backloggdUrl": "https://backloggd.com/games/mad-max/"
+    "backloggdUrl": "https://backloggd.com/games/mad-max/",
+    "year": 2015
   },
   {
     "name": "Iron Man",
@@ -69,7 +77,8 @@
     "slug": "iron-man--3",
     "gameId": "257213",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/iron-man--3/"
+    "backloggdUrl": "https://backloggd.com/games/iron-man--3/",
+    "year": 2008
   },
   {
     "name": "Rise of the Tomb Raider",
@@ -77,7 +86,8 @@
     "slug": "rise-of-the-tomb-raider",
     "gameId": "7323",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/rise-of-the-tomb-raider/"
+    "backloggdUrl": "https://backloggd.com/games/rise-of-the-tomb-raider/",
+    "year": 2015
   },
   {
     "name": "Control",
@@ -85,7 +95,8 @@
     "slug": "control",
     "gameId": "103329",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/control/"
+    "backloggdUrl": "https://backloggd.com/games/control/",
+    "year": 2019
   },
   {
     "name": "Knight Rider: The Game",
@@ -93,7 +104,8 @@
     "slug": "knight-rider-the-game",
     "gameId": "22369",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/knight-rider-the-game/"
+    "backloggdUrl": "https://backloggd.com/games/knight-rider-the-game/",
+    "year": 2002
   },
   {
     "name": "Pikuniku",
@@ -101,7 +113,8 @@
     "slug": "pikuniku",
     "gameId": "55190",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/pikuniku/"
+    "backloggdUrl": "https://backloggd.com/games/pikuniku/",
+    "year": 2019
   },
   {
     "name": "XIII",
@@ -109,7 +122,8 @@
     "slug": "xiii--1",
     "gameId": "117509",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/xiii--1/"
+    "backloggdUrl": "https://backloggd.com/games/xiii--1/",
+    "year": 2020
   },
   {
     "name": "Shadow of the Tomb Raider",
@@ -117,7 +131,8 @@
     "slug": "shadow-of-the-tomb-raider",
     "gameId": "37777",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/shadow-of-the-tomb-raider/"
+    "backloggdUrl": "https://backloggd.com/games/shadow-of-the-tomb-raider/",
+    "year": 2018
   },
   {
     "name": "Art of Rally",
@@ -125,7 +140,8 @@
     "slug": "art-of-rally",
     "gameId": "118607",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/art-of-rally/"
+    "backloggdUrl": "https://backloggd.com/games/art-of-rally/",
+    "year": 2020
   },
   {
     "name": "FIFA 22",
@@ -133,7 +149,8 @@
     "slug": "fifa-22",
     "gameId": "154986",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/fifa-22/"
+    "backloggdUrl": "https://backloggd.com/games/fifa-22/",
+    "year": 2021
   },
   {
     "name": "Crab Game",
@@ -141,7 +158,8 @@
     "slug": "crab-game",
     "gameId": "178351",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crab-game/"
+    "backloggdUrl": "https://backloggd.com/games/crab-game/",
+    "year": 2021
   },
   {
     "name": "Battlefield 2042",
@@ -149,7 +167,8 @@
     "slug": "battlefield-2042",
     "gameId": "125166",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-2042/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-2042/",
+    "year": 2021
   },
   {
     "name": "Uncharted: Legacy of Thieves Collection",
@@ -157,7 +176,8 @@
     "slug": "uncharted-legacy-of-thieves-collection",
     "gameId": "168670",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/uncharted-legacy-of-thieves-collection/"
+    "backloggdUrl": "https://backloggd.com/games/uncharted-legacy-of-thieves-collection/",
+    "year": 2022
   },
   {
     "name": "FIFA 23",
@@ -165,7 +185,8 @@
     "slug": "fifa-23",
     "gameId": "205780",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/fifa-23/"
+    "backloggdUrl": "https://backloggd.com/games/fifa-23/",
+    "year": 2022
   },
   {
     "name": "Counter-Strike 2",
@@ -173,7 +194,8 @@
     "slug": "counter-strike-2",
     "gameId": "242408",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/counter-strike-2/"
+    "backloggdUrl": "https://backloggd.com/games/counter-strike-2/",
+    "year": 2023
   },
   {
     "name": "Road Rash",
@@ -181,7 +203,8 @@
     "slug": "road-rash--1",
     "gameId": "141271",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/road-rash--1/"
+    "backloggdUrl": "https://backloggd.com/games/road-rash--1/",
+    "year": 1994
   },
   {
     "name": "Midtown Madness",
@@ -189,7 +212,8 @@
     "slug": "midtown-madness",
     "gameId": "2348",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/midtown-madness/"
+    "backloggdUrl": "https://backloggd.com/games/midtown-madness/",
+    "year": 1999
   },
   {
     "name": "Pocket Tanks",
@@ -197,7 +221,8 @@
     "slug": "pocket-tanks",
     "gameId": "72176",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/pocket-tanks/"
+    "backloggdUrl": "https://backloggd.com/games/pocket-tanks/",
+    "year": 2001
   },
   {
     "name": "Need for Speed: Hot Pursuit 2",
@@ -205,7 +230,8 @@
     "slug": "need-for-speed-hot-pursuit-2",
     "gameId": "95",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-hot-pursuit-2/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-hot-pursuit-2/",
+    "year": 2002
   },
   {
     "name": "Hitman 2: Silent Assassin",
@@ -213,7 +239,8 @@
     "slug": "hitman-2-silent-assassin",
     "gameId": "748",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/hitman-2-silent-assassin/"
+    "backloggdUrl": "https://backloggd.com/games/hitman-2-silent-assassin/",
+    "year": 2002
   },
   {
     "name": "Spider-Man",
@@ -221,7 +248,8 @@
     "slug": "spider-man--1",
     "gameId": "19114",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/spider-man--1/"
+    "backloggdUrl": "https://backloggd.com/games/spider-man--1/",
+    "year": 2002
   },
   {
     "name": "Midnight Club II",
@@ -229,7 +257,8 @@
     "slug": "midnight-club-ii",
     "gameId": "4631",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/midnight-club-ii/"
+    "backloggdUrl": "https://backloggd.com/games/midnight-club-ii/",
+    "year": 2003
   },
   {
     "name": "I.G.I.-2: Covert Strike",
@@ -237,7 +266,8 @@
     "slug": "i-dot-g-i-dot-2-covert-strike",
     "gameId": "8559",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/i-dot-g-i-dot-2-covert-strike/"
+    "backloggdUrl": "https://backloggd.com/games/i-dot-g-i-dot-2-covert-strike/",
+    "year": 2003
   },
   {
     "name": "Freedom Fighters",
@@ -245,7 +275,8 @@
     "slug": "freedom-fighters",
     "gameId": "719",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/freedom-fighters/"
+    "backloggdUrl": "https://backloggd.com/games/freedom-fighters/",
+    "year": 2003
   },
   {
     "name": "Hulk",
@@ -253,7 +284,8 @@
     "slug": "hulk",
     "gameId": "3949",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/hulk/"
+    "backloggdUrl": "https://backloggd.com/games/hulk/",
+    "year": 2003
   },
   {
     "name": "Counter-Strike: Condition Zero",
@@ -261,7 +293,8 @@
     "slug": "counter-strike-condition-zero",
     "gameId": "297",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/counter-strike-condition-zero/"
+    "backloggdUrl": "https://backloggd.com/games/counter-strike-condition-zero/",
+    "year": 2004
   },
   {
     "name": "Call of Duty: United Offensive",
@@ -269,7 +302,8 @@
     "slug": "call-of-duty-united-offensive",
     "gameId": "624",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-united-offensive/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-united-offensive/",
+    "year": 2004
   },
   {
     "name": "Hitman: Contracts",
@@ -277,7 +311,8 @@
     "slug": "hitman-contracts",
     "gameId": "1049",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/hitman-contracts/"
+    "backloggdUrl": "https://backloggd.com/games/hitman-contracts/",
+    "year": 2004
   },
   {
     "name": "Halo 2",
@@ -285,7 +320,8 @@
     "slug": "halo-2",
     "gameId": "986",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/halo-2/"
+    "backloggdUrl": "https://backloggd.com/games/halo-2/",
+    "year": 2004
   },
   {
     "name": "Zuma Deluxe",
@@ -293,7 +329,8 @@
     "slug": "zuma-deluxe",
     "gameId": "20509",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/zuma-deluxe/"
+    "backloggdUrl": "https://backloggd.com/games/zuma-deluxe/",
+    "year": 2003
   },
   {
     "name": "X-Men Legends II: Rise of Apocalypse",
@@ -301,7 +338,8 @@
     "slug": "x-men-legends-ii-rise-of-apocalypse",
     "gameId": "4576",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/x-men-legends-ii-rise-of-apocalypse/"
+    "backloggdUrl": "https://backloggd.com/games/x-men-legends-ii-rise-of-apocalypse/",
+    "year": 2005
   },
   {
     "name": "Prince of Persia: The Two Thrones",
@@ -309,7 +347,8 @@
     "slug": "prince-of-persia-the-two-thrones",
     "gameId": "2437",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-two-thrones/"
+    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-two-thrones/",
+    "year": 2005
   },
   {
     "name": "SuperHot: Mind Control Delete",
@@ -317,7 +356,8 @@
     "slug": "superhot-mind-control-delete",
     "gameId": "27448",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/superhot-mind-control-delete/"
+    "backloggdUrl": "https://backloggd.com/games/superhot-mind-control-delete/",
+    "year": 2020
   },
   {
     "name": "Fall Guys",
@@ -325,7 +365,8 @@
     "slug": "fall-guys",
     "gameId": "119313",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/fall-guys/"
+    "backloggdUrl": "https://backloggd.com/games/fall-guys/",
+    "year": 2020
   },
   {
     "name": "Lonely Mountains: Downhill",
@@ -333,7 +374,8 @@
     "slug": "lonely-mountains-downhill",
     "gameId": "29144",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/lonely-mountains-downhill/"
+    "backloggdUrl": "https://backloggd.com/games/lonely-mountains-downhill/",
+    "year": 2019
   },
   {
     "name": "World War Z",
@@ -341,7 +383,8 @@
     "slug": "world-war-z",
     "gameId": "20910",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/world-war-z/"
+    "backloggdUrl": "https://backloggd.com/games/world-war-z/",
+    "year": 2019
   },
   {
     "name": "Mortal Kombat 11",
@@ -349,7 +392,8 @@
     "slug": "mortal-kombat-11",
     "gameId": "112916",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-11/"
+    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-11/",
+    "year": 2019
   },
   {
     "name": "Asphalt Legends",
@@ -357,7 +401,8 @@
     "slug": "asphalt-legends",
     "gameId": "23314",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/asphalt-legends/"
+    "backloggdUrl": "https://backloggd.com/games/asphalt-legends/",
+    "year": 2018
   },
   {
     "name": "Burnout Paradise Remastered",
@@ -365,7 +410,8 @@
     "slug": "burnout-paradise-remastered",
     "gameId": "78153",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/burnout-paradise-remastered/"
+    "backloggdUrl": "https://backloggd.com/games/burnout-paradise-remastered/",
+    "year": 2018
   },
   {
     "name": "Horizon Chase Turbo",
@@ -373,7 +419,8 @@
     "slug": "horizon-chase-turbo",
     "gameId": "96476",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/horizon-chase-turbo/"
+    "backloggdUrl": "https://backloggd.com/games/horizon-chase-turbo/",
+    "year": 2018
   },
   {
     "name": "Just Cause 4",
@@ -381,7 +428,8 @@
     "slug": "just-cause-4",
     "gameId": "103261",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/just-cause-4/"
+    "backloggdUrl": "https://backloggd.com/games/just-cause-4/",
+    "year": 2018
   },
   {
     "name": "Tetris Effect",
@@ -389,7 +437,8 @@
     "slug": "tetris-effect",
     "gameId": "103221",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/tetris-effect/"
+    "backloggdUrl": "https://backloggd.com/games/tetris-effect/",
+    "year": 2018
   },
   {
     "name": "Stick Fight: The Game",
@@ -397,7 +446,8 @@
     "slug": "stick-fight-the-game",
     "gameId": "65832",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/stick-fight-the-game/"
+    "backloggdUrl": "https://backloggd.com/games/stick-fight-the-game/",
+    "year": 2017
   },
   {
     "name": "Homefront: The Revolution",
@@ -405,7 +455,8 @@
     "slug": "homefront-the-revolution",
     "gameId": "1886",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/homefront-the-revolution/"
+    "backloggdUrl": "https://backloggd.com/games/homefront-the-revolution/",
+    "year": 2016
   },
   {
     "name": "Worms W.M.D",
@@ -413,7 +464,8 @@
     "slug": "worms-wmd",
     "gameId": "19696",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/worms-wmd/"
+    "backloggdUrl": "https://backloggd.com/games/worms-wmd/",
+    "year": 2016
   },
   {
     "name": "Drawful 2",
@@ -421,7 +473,8 @@
     "slug": "drawful-2",
     "gameId": "19083",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/drawful-2/"
+    "backloggdUrl": "https://backloggd.com/games/drawful-2/",
+    "year": 2016
   },
   {
     "name": "Slither.io",
@@ -429,7 +482,8 @@
     "slug": "slither-dot-io",
     "gameId": "22712",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/slither-dot-io/"
+    "backloggdUrl": "https://backloggd.com/games/slither-dot-io/",
+    "year": 2016
   },
   {
     "name": "Wolfenstein: The Old Blood",
@@ -437,7 +491,8 @@
     "slug": "wolfenstein-the-old-blood",
     "gameId": "9192",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-old-blood/"
+    "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-old-blood/",
+    "year": 2015
   },
   {
     "name": "Smash Hit",
@@ -445,7 +500,8 @@
     "slug": "smash-hit",
     "gameId": "39239",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/smash-hit/"
+    "backloggdUrl": "https://backloggd.com/games/smash-hit/",
+    "year": 2014
   },
   {
     "name": "Wreckfest",
@@ -453,7 +509,8 @@
     "slug": "wreckfest",
     "gameId": "3772",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/wreckfest/"
+    "backloggdUrl": "https://backloggd.com/games/wreckfest/",
+    "year": 2018
   },
   {
     "name": "Trials Fusion",
@@ -461,7 +518,8 @@
     "slug": "trials-fusion",
     "gameId": "3191",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/trials-fusion/"
+    "backloggdUrl": "https://backloggd.com/games/trials-fusion/",
+    "year": 2014
   },
   {
     "name": "Asphalt 8: Airborne",
@@ -469,7 +527,8 @@
     "slug": "asphalt-8-airborne",
     "gameId": "23306",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/asphalt-8-airborne/"
+    "backloggdUrl": "https://backloggd.com/games/asphalt-8-airborne/",
+    "year": 2013
   },
   {
     "name": "Company of Heroes 2",
@@ -477,7 +536,8 @@
     "slug": "company-of-heroes-2",
     "gameId": "1369",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/company-of-heroes-2/"
+    "backloggdUrl": "https://backloggd.com/games/company-of-heroes-2/",
+    "year": 2013
   },
   {
     "name": "Aliens: Colonial Marines",
@@ -485,7 +545,8 @@
     "slug": "aliens-colonial-marines",
     "gameId": "1021",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/aliens-colonial-marines/"
+    "backloggdUrl": "https://backloggd.com/games/aliens-colonial-marines/",
+    "year": 2013
   },
   {
     "name": "Dead Island: Riptide",
@@ -493,7 +554,8 @@
     "slug": "dead-island-riptide",
     "gameId": "1833",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dead-island-riptide/"
+    "backloggdUrl": "https://backloggd.com/games/dead-island-riptide/",
+    "year": 2013
   },
   {
     "name": "DayZ",
@@ -501,7 +563,8 @@
     "slug": "dayz",
     "gameId": "2117",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dayz/"
+    "backloggdUrl": "https://backloggd.com/games/dayz/",
+    "year": 2018
   },
   {
     "name": "Deadpool",
@@ -509,7 +572,8 @@
     "slug": "deadpool",
     "gameId": "1919",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/deadpool/"
+    "backloggdUrl": "https://backloggd.com/games/deadpool/",
+    "year": 2013
   },
   {
     "name": "Call of Duty: Ghosts",
@@ -517,7 +581,8 @@
     "slug": "call-of-duty-ghosts",
     "gameId": "2033",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-ghosts/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-ghosts/",
+    "year": 2013
   },
   {
     "name": "Hill Climb Racing",
@@ -525,7 +590,8 @@
     "slug": "hill-climb-racing",
     "gameId": "38680",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/hill-climb-racing/"
+    "backloggdUrl": "https://backloggd.com/games/hill-climb-racing/",
+    "year": 2012
   },
   {
     "name": "Shank 2",
@@ -533,7 +599,8 @@
     "slug": "shank-2",
     "gameId": "9623",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/shank-2/"
+    "backloggdUrl": "https://backloggd.com/games/shank-2/",
+    "year": 2012
   },
   {
     "name": "Syndicate",
@@ -541,7 +608,8 @@
     "slug": "syndicate--3",
     "gameId": "1006",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/syndicate--3/"
+    "backloggdUrl": "https://backloggd.com/games/syndicate--3/",
+    "year": 2012
   },
   {
     "name": "Vector",
@@ -549,7 +617,8 @@
     "slug": "vector",
     "gameId": "15545",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/vector/"
+    "backloggdUrl": "https://backloggd.com/games/vector/",
+    "year": 2012
   },
   {
     "name": "Medal of Honor: Warfighter",
@@ -557,7 +626,8 @@
     "slug": "medal-of-honor-warfighter",
     "gameId": "1306",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/medal-of-honor-warfighter/"
+    "backloggdUrl": "https://backloggd.com/games/medal-of-honor-warfighter/",
+    "year": 2012
   },
   {
     "name": "Orcs Must Die! 2",
@@ -565,7 +635,8 @@
     "slug": "orcs-must-die-2",
     "gameId": "8372",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/orcs-must-die-2/"
+    "backloggdUrl": "https://backloggd.com/games/orcs-must-die-2/",
+    "year": 2012
   },
   {
     "name": "Tom Clancy's Ghost Recon: Future Soldier",
@@ -573,7 +644,8 @@
     "slug": "tom-clancy-s-ghost-recon-future-soldier",
     "gameId": "1293",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-ghost-recon-future-soldier/"
+    "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-ghost-recon-future-soldier/",
+    "year": 2012
   },
   {
     "name": "Angry Birds Space",
@@ -581,7 +653,8 @@
     "slug": "angry-birds-space",
     "gameId": "16365",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/angry-birds-space/"
+    "backloggdUrl": "https://backloggd.com/games/angry-birds-space/",
+    "year": 2012
   },
   {
     "name": "Dishonored",
@@ -589,7 +662,8 @@
     "slug": "dishonored",
     "gameId": "533",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dishonored/"
+    "backloggdUrl": "https://backloggd.com/games/dishonored/",
+    "year": 2012
   },
   {
     "name": "Orcs Must Die!",
@@ -597,7 +671,8 @@
     "slug": "orcs-must-die--1",
     "gameId": "2355",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/orcs-must-die--1/"
+    "backloggdUrl": "https://backloggd.com/games/orcs-must-die--1/",
+    "year": 2011
   },
   {
     "name": "Need for Speed: The Run",
@@ -605,7 +680,8 @@
     "slug": "need-for-speed-the-run",
     "gameId": "526",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-the-run/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-the-run/",
+    "year": 2011
   },
   {
     "name": "Where's My Water?",
@@ -613,7 +689,8 @@
     "slug": "wheres-my-water",
     "gameId": "13460",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/wheres-my-water/"
+    "backloggdUrl": "https://backloggd.com/games/wheres-my-water/",
+    "year": 2011
   },
   {
     "name": "Angry Birds Rio",
@@ -621,7 +698,8 @@
     "slug": "angry-birds-rio",
     "gameId": "19271",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/angry-birds-rio/"
+    "backloggdUrl": "https://backloggd.com/games/angry-birds-rio/",
+    "year": 2011
   },
   {
     "name": "Driver: San Francisco",
@@ -629,7 +707,8 @@
     "slug": "driver-san-francisco",
     "gameId": "554",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/driver-san-francisco/"
+    "backloggdUrl": "https://backloggd.com/games/driver-san-francisco/",
+    "year": 2011
   },
   {
     "name": "Homefront",
@@ -637,7 +716,8 @@
     "slug": "homefront",
     "gameId": "1885",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/homefront/"
+    "backloggdUrl": "https://backloggd.com/games/homefront/",
+    "year": 2011
   },
   {
     "name": "Bulletstorm",
@@ -645,7 +725,8 @@
     "slug": "bulletstorm",
     "gameId": "494",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/bulletstorm/"
+    "backloggdUrl": "https://backloggd.com/games/bulletstorm/",
+    "year": 2011
   },
   {
     "name": "Sniper: Ghost Warrior",
@@ -653,7 +734,8 @@
     "slug": "sniper-ghost-warrior",
     "gameId": "1367",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/sniper-ghost-warrior/"
+    "backloggdUrl": "https://backloggd.com/games/sniper-ghost-warrior/",
+    "year": 2010
   },
   {
     "name": "Worms Reloaded",
@@ -661,7 +743,8 @@
     "slug": "worms-reloaded",
     "gameId": "1017",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/worms-reloaded/"
+    "backloggdUrl": "https://backloggd.com/games/worms-reloaded/",
+    "year": 2010
   },
   {
     "name": "Angry Birds Seasons",
@@ -669,7 +752,8 @@
     "slug": "angry-birds-seasons",
     "gameId": "19275",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/angry-birds-seasons/"
+    "backloggdUrl": "https://backloggd.com/games/angry-birds-seasons/",
+    "year": 2010
   },
   {
     "name": "Singularity",
@@ -677,7 +761,8 @@
     "slug": "singularity",
     "gameId": "571",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/singularity/"
+    "backloggdUrl": "https://backloggd.com/games/singularity/",
+    "year": 2010
   },
   {
     "name": "Blur",
@@ -685,7 +770,8 @@
     "slug": "blur",
     "gameId": "3235",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/blur/"
+    "backloggdUrl": "https://backloggd.com/games/blur/",
+    "year": 2010
   },
   {
     "name": "Transformers: War for Cybertron",
@@ -693,7 +779,8 @@
     "slug": "transformers-war-for-cybertron",
     "gameId": "555",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/transformers-war-for-cybertron/"
+    "backloggdUrl": "https://backloggd.com/games/transformers-war-for-cybertron/",
+    "year": 2010
   },
   {
     "name": "Prince of Persia: The Forgotten Sands",
@@ -701,7 +788,8 @@
     "slug": "prince-of-persia-the-forgotten-sands",
     "gameId": "2468",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-forgotten-sands/"
+    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-forgotten-sands/",
+    "year": 2010
   },
   {
     "name": "Medal of Honor",
@@ -709,7 +797,8 @@
     "slug": "medal-of-honor",
     "gameId": "556",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/medal-of-honor/"
+    "backloggdUrl": "https://backloggd.com/games/medal-of-honor/",
+    "year": 2010
   },
   {
     "name": "Tom Clancy's Splinter Cell: Conviction",
@@ -717,7 +806,8 @@
     "slug": "tom-clancy-s-splinter-cell-conviction",
     "gameId": "562",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-splinter-cell-conviction/"
+    "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-splinter-cell-conviction/",
+    "year": 2010
   },
   {
     "name": "Total Overdose",
@@ -725,7 +815,8 @@
     "slug": "total-overdose",
     "gameId": "6213",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/total-overdose/"
+    "backloggdUrl": "https://backloggd.com/games/total-overdose/",
+    "year": 2005
   },
   {
     "name": "Grand Theft Auto: Liberty City Stories",
@@ -733,7 +824,8 @@
     "slug": "grand-theft-auto-liberty-city-stories",
     "gameId": "3263",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-liberty-city-stories/"
+    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-liberty-city-stories/",
+    "year": 2005
   },
   {
     "name": "Call of Juarez: Gunslinger",
@@ -741,7 +833,8 @@
     "slug": "call-of-juarez-gunslinger",
     "gameId": "1976",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-juarez-gunslinger/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-juarez-gunslinger/",
+    "year": 2013
   },
   {
     "name": "A Plague Tale: Requiem",
@@ -749,7 +842,8 @@
     "slug": "a-plague-tale-requiem",
     "gameId": "152242",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/a-plague-tale-requiem/"
+    "backloggdUrl": "https://backloggd.com/games/a-plague-tale-requiem/",
+    "year": 2022
   },
   {
     "name": "Guns, Gore and Cannoli 2",
@@ -757,7 +851,8 @@
     "slug": "guns-gore-and-cannoli-2",
     "gameId": "56870",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli-2/"
+    "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli-2/",
+    "year": 2018
   },
   {
     "name": "Guns, Gore & Cannoli",
@@ -765,7 +860,8 @@
     "slug": "guns-gore-and-cannoli",
     "gameId": "13187",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli/"
+    "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli/",
+    "year": 2015
   },
   {
     "name": "Crysis Warhead",
@@ -773,7 +869,8 @@
     "slug": "crysis-warhead",
     "gameId": "336",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crysis-warhead/"
+    "backloggdUrl": "https://backloggd.com/games/crysis-warhead/",
+    "year": 2008
   },
   {
     "name": "Crysis 3",
@@ -781,7 +878,8 @@
     "slug": "crysis-3",
     "gameId": "1268",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crysis-3/"
+    "backloggdUrl": "https://backloggd.com/games/crysis-3/",
+    "year": 2013
   },
   {
     "name": "Crysis 2",
@@ -789,7 +887,8 @@
     "slug": "crysis-2",
     "gameId": "471",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crysis-2/"
+    "backloggdUrl": "https://backloggd.com/games/crysis-2/",
+    "year": 2011
   },
   {
     "name": "Need for Speed: Payback",
@@ -797,7 +896,8 @@
     "slug": "need-for-speed-payback",
     "gameId": "36662",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-payback/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-payback/",
+    "year": 2017
   },
   {
     "name": "Need for Speed: Most Wanted",
@@ -805,7 +905,8 @@
     "slug": "need-for-speed-most-wanted-53b9fef3-adb4-41a0-8ca0-ffcbb0060467",
     "gameId": "3193",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-most-wanted-53b9fef3-adb4-41a0-8ca0-ffcbb0060467/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-most-wanted-53b9fef3-adb4-41a0-8ca0-ffcbb0060467/",
+    "year": 2012
   },
   {
     "name": "Little Nightmares II",
@@ -813,7 +914,8 @@
     "slug": "little-nightmares-ii",
     "gameId": "121760",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/little-nightmares-ii/"
+    "backloggdUrl": "https://backloggd.com/games/little-nightmares-ii/",
+    "year": 2021
   },
   {
     "name": "Crysis",
@@ -821,7 +923,8 @@
     "slug": "crysis",
     "gameId": "296",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crysis/"
+    "backloggdUrl": "https://backloggd.com/games/crysis/",
+    "year": 2007
   },
   {
     "name": "Dead Space 3",
@@ -829,7 +932,8 @@
     "slug": "dead-space-3",
     "gameId": "1216",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dead-space-3/"
+    "backloggdUrl": "https://backloggd.com/games/dead-space-3/",
+    "year": 2013
   },
   {
     "name": "Need for Speed: Underground",
@@ -837,7 +941,8 @@
     "slug": "need-for-speed-underground",
     "gameId": "96",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground/",
+    "year": 2003
   },
   {
     "name": "Saints Row 2",
@@ -845,7 +950,8 @@
     "slug": "saints-row-2",
     "gameId": "826",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/saints-row-2/"
+    "backloggdUrl": "https://backloggd.com/games/saints-row-2/",
+    "year": 2008
   },
   {
     "name": "Call of Duty: Modern Warfare Remastered",
@@ -853,7 +959,8 @@
     "slug": "call-of-duty-modern-warfare-remastered",
     "gameId": "24920",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-remastered/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-remastered/",
+    "year": 2016
   },
   {
     "name": "Counter-Strike: Source",
@@ -861,7 +968,8 @@
     "slug": "counter-strike-source",
     "gameId": "307",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/counter-strike-source/"
+    "backloggdUrl": "https://backloggd.com/games/counter-strike-source/",
+    "year": 2004
   },
   {
     "name": "Call of Duty 2",
@@ -869,7 +977,8 @@
     "slug": "call-of-duty-2",
     "gameId": "622",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-2/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-2/",
+    "year": 2005
   },
   {
     "name": "Postal 2",
@@ -877,7 +986,8 @@
     "slug": "postal-2",
     "gameId": "3109",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/postal-2/"
+    "backloggdUrl": "https://backloggd.com/games/postal-2/",
+    "year": 2003
   },
   {
     "name": "Assassin's Creed Rogue",
@@ -885,7 +995,8 @@
     "slug": "assassins-creed-rogue",
     "gameId": "7570",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassins-creed-rogue/"
+    "backloggdUrl": "https://backloggd.com/games/assassins-creed-rogue/",
+    "year": 2014
   },
   {
     "name": "Battlefield V",
@@ -893,7 +1004,8 @@
     "slug": "battlefield-v",
     "gameId": "83728",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-v/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-v/",
+    "year": 2018
   },
   {
     "name": "Gang Beasts",
@@ -901,7 +1013,8 @@
     "slug": "gang-beasts",
     "gameId": "11177",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/gang-beasts/"
+    "backloggdUrl": "https://backloggd.com/games/gang-beasts/",
+    "year": 2017
   },
   {
     "name": "Broforce",
@@ -909,7 +1022,8 @@
     "slug": "broforce",
     "gameId": "5973",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/broforce/"
+    "backloggdUrl": "https://backloggd.com/games/broforce/",
+    "year": 2015
   },
   {
     "name": "Battlefield: Bad Company 2",
@@ -917,7 +1031,8 @@
     "slug": "battlefield-bad-company-2",
     "gameId": "352",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-bad-company-2/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-bad-company-2/",
+    "year": 2010
   },
   {
     "name": "My Friend Pedro",
@@ -925,7 +1040,8 @@
     "slug": "my-friend-pedro",
     "gameId": "25901",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/my-friend-pedro/"
+    "backloggdUrl": "https://backloggd.com/games/my-friend-pedro/",
+    "year": 2019
   },
   {
     "name": "Human: Fall Flat",
@@ -933,7 +1049,8 @@
     "slug": "human-fall-flat",
     "gameId": "16992",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/human-fall-flat/"
+    "backloggdUrl": "https://backloggd.com/games/human-fall-flat/",
+    "year": 2016
   },
   {
     "name": "Crazy Taxi",
@@ -941,7 +1058,8 @@
     "slug": "crazy-taxi",
     "gameId": "1805",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/crazy-taxi/"
+    "backloggdUrl": "https://backloggd.com/games/crazy-taxi/",
+    "year": 1999
   },
   {
     "name": "Cut the Rope",
@@ -949,7 +1067,8 @@
     "slug": "cut-the-rope",
     "gameId": "9761",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/cut-the-rope/"
+    "backloggdUrl": "https://backloggd.com/games/cut-the-rope/",
+    "year": 2010
   },
   {
     "name": "Agar.io",
@@ -957,7 +1076,8 @@
     "slug": "agar-dot-io",
     "gameId": "11283",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/agar-dot-io/"
+    "backloggdUrl": "https://backloggd.com/games/agar-dot-io/",
+    "year": 2015
   },
   {
     "name": "Max Payne 2: The Fall of Max Payne",
@@ -965,7 +1085,8 @@
     "slug": "max-payne-2-the-fall-of-max-payne",
     "gameId": "19",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/max-payne-2-the-fall-of-max-payne/"
+    "backloggdUrl": "https://backloggd.com/games/max-payne-2-the-fall-of-max-payne/",
+    "year": 2003
   },
   {
     "name": "Prototype",
@@ -973,7 +1094,8 @@
     "slug": "prototype",
     "gameId": "570",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/prototype/"
+    "backloggdUrl": "https://backloggd.com/games/prototype/",
+    "year": 2009
   },
   {
     "name": "Need for Speed: Underground 2",
@@ -981,7 +1103,8 @@
     "slug": "need-for-speed-underground-2",
     "gameId": "97",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground-2/"
+    "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground-2/",
+    "year": 2004
   },
   {
     "name": "Just Cause 2",
@@ -989,7 +1112,8 @@
     "slug": "just-cause-2",
     "gameId": "558",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/just-cause-2/"
+    "backloggdUrl": "https://backloggd.com/games/just-cause-2/",
+    "year": 2010
   },
   {
     "name": "Mafia II",
@@ -997,7 +1121,8 @@
     "slug": "mafia-ii",
     "gameId": "40",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mafia-ii/"
+    "backloggdUrl": "https://backloggd.com/games/mafia-ii/",
+    "year": 2010
   },
   {
     "name": "Wolfenstein II: The New Colossus",
@@ -1005,7 +1130,8 @@
     "slug": "wolfenstein-ii-the-new-colossus",
     "gameId": "36952",
     "userRating": 10,
-    "backloggdUrl": "https://backloggd.com/games/wolfenstein-ii-the-new-colossus/"
+    "backloggdUrl": "https://backloggd.com/games/wolfenstein-ii-the-new-colossus/",
+    "year": 2017
   },
   {
     "name": "PUBG: Battlegrounds",
@@ -1013,7 +1139,8 @@
     "slug": "pubg-battlegrounds",
     "gameId": "27789",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/pubg-battlegrounds/"
+    "backloggdUrl": "https://backloggd.com/games/pubg-battlegrounds/",
+    "year": 2017
   },
   {
     "name": "Prince of Persia: The Sands of Time",
@@ -1021,7 +1148,8 @@
     "slug": "prince-of-persia-the-sands-of-time",
     "gameId": "836",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-sands-of-time/"
+    "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-sands-of-time/",
+    "year": 2003
   },
   {
     "name": "Just Cause 3",
@@ -1029,7 +1157,8 @@
     "slug": "just-cause-3",
     "gameId": "8187",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/just-cause-3/"
+    "backloggdUrl": "https://backloggd.com/games/just-cause-3/",
+    "year": 2015
   },
   {
     "name": "Call of Duty: Advanced Warfare",
@@ -1037,7 +1166,8 @@
     "slug": "call-of-duty-advanced-warfare",
     "gameId": "6632",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-advanced-warfare/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-advanced-warfare/",
+    "year": 2014
   },
   {
     "name": "Rayman Origins",
@@ -1045,7 +1175,8 @@
     "slug": "rayman-origins",
     "gameId": "981",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/rayman-origins/"
+    "backloggdUrl": "https://backloggd.com/games/rayman-origins/",
+    "year": 2011
   },
   {
     "name": "Dead Space 2",
@@ -1053,7 +1184,8 @@
     "slug": "dead-space-2",
     "gameId": "38",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dead-space-2/"
+    "backloggdUrl": "https://backloggd.com/games/dead-space-2/",
+    "year": 2011
   },
   {
     "name": "A Plague Tale: Innocence",
@@ -1061,7 +1193,8 @@
     "slug": "a-plague-tale-innocence",
     "gameId": "27316",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/a-plague-tale-innocence/"
+    "backloggdUrl": "https://backloggd.com/games/a-plague-tale-innocence/",
+    "year": 2019
   },
   {
     "name": "Max Payne 3",
@@ -1069,7 +1202,8 @@
     "slug": "max-payne-3",
     "gameId": "960",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/max-payne-3/"
+    "backloggdUrl": "https://backloggd.com/games/max-payne-3/",
+    "year": 2012
   },
   {
     "name": "DmC: Devil May Cry",
@@ -1077,7 +1211,8 @@
     "slug": "dmc-devil-may-cry",
     "gameId": "1254",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/dmc-devil-may-cry/"
+    "backloggdUrl": "https://backloggd.com/games/dmc-devil-may-cry/",
+    "year": 2013
   },
   {
     "name": "Sleeping Dogs",
@@ -1085,7 +1220,8 @@
     "slug": "sleeping-dogs",
     "gameId": "1267",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/sleeping-dogs/"
+    "backloggdUrl": "https://backloggd.com/games/sleeping-dogs/",
+    "year": 2012
   },
   {
     "name": "Spec Ops: The Line",
@@ -1093,7 +1229,8 @@
     "slug": "spec-ops-the-line",
     "gameId": "1377",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/spec-ops-the-line/"
+    "backloggdUrl": "https://backloggd.com/games/spec-ops-the-line/",
+    "year": 2012
   },
   {
     "name": "Max Payne",
@@ -1101,7 +1238,8 @@
     "slug": "max-payne",
     "gameId": "18",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/max-payne/"
+    "backloggdUrl": "https://backloggd.com/games/max-payne/",
+    "year": 2001
   },
   {
     "name": "Battlefield 3",
@@ -1109,7 +1247,8 @@
     "slug": "battlefield-3",
     "gameId": "343",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-3/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-3/",
+    "year": 2011
   },
   {
     "name": "Brawlhalla",
@@ -1117,7 +1256,8 @@
     "slug": "brawlhalla",
     "gameId": "10233",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/brawlhalla/"
+    "backloggdUrl": "https://backloggd.com/games/brawlhalla/",
+    "year": 2017
   },
   {
     "name": "Halo Infinite",
@@ -1125,7 +1265,8 @@
     "slug": "halo-infinite",
     "gameId": "103281",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/halo-infinite/"
+    "backloggdUrl": "https://backloggd.com/games/halo-infinite/",
+    "year": 2021
   },
   {
     "name": "Mortal Kombat X",
@@ -1133,7 +1274,8 @@
     "slug": "mortal-kombat-x",
     "gameId": "7292",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-x/"
+    "backloggdUrl": "https://backloggd.com/games/mortal-kombat-x/",
+    "year": 2015
   },
   {
     "name": "Battlefield 4",
@@ -1141,7 +1283,8 @@
     "slug": "battlefield-4",
     "gameId": "1979",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-4/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-4/",
+    "year": 2013
   },
   {
     "name": "A Way Out",
@@ -1149,7 +1292,8 @@
     "slug": "a-way-out",
     "gameId": "36897",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/a-way-out/"
+    "backloggdUrl": "https://backloggd.com/games/a-way-out/",
+    "year": 2018
   },
   {
     "name": "Grand Theft Auto III",
@@ -1157,7 +1301,8 @@
     "slug": "grand-theft-auto-iii",
     "gameId": "730",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iii/"
+    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iii/",
+    "year": 2001
   },
   {
     "name": "Call of Duty: World at War",
@@ -1165,7 +1310,8 @@
     "slug": "call-of-duty-world-at-war",
     "gameId": "625",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-world-at-war/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-world-at-war/",
+    "year": 2008
   },
   {
     "name": "Battlefield 1",
@@ -1173,7 +1319,8 @@
     "slug": "battlefield-1",
     "gameId": "18320",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/battlefield-1/"
+    "backloggdUrl": "https://backloggd.com/games/battlefield-1/",
+    "year": 2016
   },
   {
     "name": "Batman: Arkham Origins",
@@ -1181,7 +1328,8 @@
     "slug": "batman-arkham-origins",
     "gameId": "2003",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/batman-arkham-origins/"
+    "backloggdUrl": "https://backloggd.com/games/batman-arkham-origins/",
+    "year": 2013
   },
   {
     "name": "Payday 2",
@@ -1189,7 +1337,8 @@
     "slug": "payday-2",
     "gameId": "2058",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/payday-2/"
+    "backloggdUrl": "https://backloggd.com/games/payday-2/",
+    "year": 2013
   },
   {
     "name": "Rainbow Six Siege",
@@ -1197,7 +1346,8 @@
     "slug": "rainbow-six-siege",
     "gameId": "7360",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/rainbow-six-siege/"
+    "backloggdUrl": "https://backloggd.com/games/rainbow-six-siege/",
+    "year": 2015
   },
   {
     "name": "Wolfenstein: The New Order",
@@ -1205,7 +1355,8 @@
     "slug": "wolfenstein-the-new-order",
     "gameId": "2031",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-new-order/"
+    "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-new-order/",
+    "year": 2014
   },
   {
     "name": "Assassin's Creed Revelations",
@@ -1213,7 +1364,8 @@
     "slug": "assassins-creed-revelations",
     "gameId": "537",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassins-creed-revelations/"
+    "backloggdUrl": "https://backloggd.com/games/assassins-creed-revelations/",
+    "year": 2011
   },
   {
     "name": "Mass Effect 2",
@@ -1221,7 +1373,8 @@
     "slug": "mass-effect-2",
     "gameId": "74",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mass-effect-2/"
+    "backloggdUrl": "https://backloggd.com/games/mass-effect-2/",
+    "year": 2010
   },
   {
     "name": "Little Nightmares",
@@ -1229,7 +1382,8 @@
     "slug": "little-nightmares",
     "gameId": "9174",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/little-nightmares/"
+    "backloggdUrl": "https://backloggd.com/games/little-nightmares/",
+    "year": 2017
   },
   {
     "name": "Saints Row: The Third",
@@ -1237,7 +1391,8 @@
     "slug": "saints-row-the-third",
     "gameId": "873",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/saints-row-the-third/"
+    "backloggdUrl": "https://backloggd.com/games/saints-row-the-third/",
+    "year": 2011
   },
   {
     "name": "Call of Duty: Black Ops III",
@@ -1245,7 +1400,8 @@
     "slug": "call-of-duty-black-ops-iii",
     "gameId": "9509",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-iii/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-iii/",
+    "year": 2015
   },
   {
     "name": "Inside",
@@ -1253,7 +1409,8 @@
     "slug": "inside",
     "gameId": "7342",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/inside/"
+    "backloggdUrl": "https://backloggd.com/games/inside/",
+    "year": 2016
   },
   {
     "name": "Rayman Legends",
@@ -1261,7 +1418,8 @@
     "slug": "rayman-legends",
     "gameId": "1968",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/rayman-legends/"
+    "backloggdUrl": "https://backloggd.com/games/rayman-legends/",
+    "year": 2013
   },
   {
     "name": "Mass Effect",
@@ -1269,7 +1427,8 @@
     "slug": "mass-effect",
     "gameId": "73",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mass-effect/"
+    "backloggdUrl": "https://backloggd.com/games/mass-effect/",
+    "year": 2007
   },
   {
     "name": "Call of Duty: Modern Warfare 3",
@@ -1277,7 +1436,8 @@
     "slug": "call-of-duty-modern-warfare-3",
     "gameId": "979",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-3/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-3/",
+    "year": 2011
   },
   {
     "name": "It Takes Two",
@@ -1285,7 +1445,8 @@
     "slug": "it-takes-two",
     "gameId": "135243",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/it-takes-two/"
+    "backloggdUrl": "https://backloggd.com/games/it-takes-two/",
+    "year": 2021
   },
   {
     "name": "Assassin's Creed Brotherhood",
@@ -1293,7 +1454,8 @@
     "slug": "assassins-creed-brotherhood",
     "gameId": "113",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassins-creed-brotherhood/"
+    "backloggdUrl": "https://backloggd.com/games/assassins-creed-brotherhood/",
+    "year": 2010
   },
   {
     "name": "Assassin's Creed III",
@@ -1301,7 +1463,8 @@
     "slug": "assassin-s-creed-iii",
     "gameId": "1266",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-iii/"
+    "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-iii/",
+    "year": 2012
   },
   {
     "name": "Call of Duty 4: Modern Warfare",
@@ -1309,7 +1472,8 @@
     "slug": "call-of-duty-4-modern-warfare",
     "gameId": "623",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-4-modern-warfare/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-4-modern-warfare/",
+    "year": 2007
   },
   {
     "name": "SuperHot",
@@ -1317,7 +1481,8 @@
     "slug": "superhot",
     "gameId": "7205",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/superhot/"
+    "backloggdUrl": "https://backloggd.com/games/superhot/",
+    "year": 2016
   },
   {
     "name": "Mirror's Edge",
@@ -1325,7 +1490,8 @@
     "slug": "mirror-s-edge",
     "gameId": "1051",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/mirror-s-edge/"
+    "backloggdUrl": "https://backloggd.com/games/mirror-s-edge/",
+    "year": 2008
   },
   {
     "name": "Titanfall 2",
@@ -1333,7 +1499,8 @@
     "slug": "titanfall-2",
     "gameId": "17447",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/titanfall-2/"
+    "backloggdUrl": "https://backloggd.com/games/titanfall-2/",
+    "year": 2016
   },
   {
     "name": "Minecraft",
@@ -1341,7 +1508,8 @@
     "slug": "minecraft--1",
     "gameId": "135400",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/minecraft--1/"
+    "backloggdUrl": "https://backloggd.com/games/minecraft--1/",
+    "year": 2016
   },
   {
     "name": "Limbo",
@@ -1349,7 +1517,8 @@
     "slug": "limbo",
     "gameId": "1331",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/limbo/"
+    "backloggdUrl": "https://backloggd.com/games/limbo/",
+    "year": 2010
   },
   {
     "name": "Chrome Dino",
@@ -1357,7 +1526,8 @@
     "slug": "chrome-dino",
     "gameId": "133890",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/chrome-dino/"
+    "backloggdUrl": "https://backloggd.com/games/chrome-dino/",
+    "year": 2014
   },
   {
     "name": "Counter-Strike: Global Offensive",
@@ -1365,7 +1535,8 @@
     "slug": "counter-strike-global-offensive",
     "gameId": "1372",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/counter-strike-global-offensive/"
+    "backloggdUrl": "https://backloggd.com/games/counter-strike-global-offensive/",
+    "year": 2012
   },
   {
     "name": "Batman: Arkham Knight",
@@ -1373,7 +1544,8 @@
     "slug": "batman-arkham-knight",
     "gameId": "5503",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/batman-arkham-knight/"
+    "backloggdUrl": "https://backloggd.com/games/batman-arkham-knight/",
+    "year": 2015
   },
   {
     "name": "Call of Duty: Black Ops",
@@ -1381,7 +1553,8 @@
     "slug": "call-of-duty-black-ops",
     "gameId": "545",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops/",
+    "year": 2010
   },
   {
     "name": "Assassin's Creed IV Black Flag",
@@ -1389,7 +1562,8 @@
     "slug": "assassins-creed-iv-black-flag",
     "gameId": "1970",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassins-creed-iv-black-flag/"
+    "backloggdUrl": "https://backloggd.com/games/assassins-creed-iv-black-flag/",
+    "year": 2013
   },
   {
     "name": "Uncharted 4: A Thief's End",
@@ -1397,7 +1571,8 @@
     "slug": "uncharted-4-a-thief-s-end",
     "gameId": "7331",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/uncharted-4-a-thief-s-end/"
+    "backloggdUrl": "https://backloggd.com/games/uncharted-4-a-thief-s-end/",
+    "year": 2016
   },
   {
     "name": "Call of Duty: Modern Warfare 2",
@@ -1405,7 +1580,8 @@
     "slug": "call-of-duty-modern-warfare-2",
     "gameId": "559",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-2/"
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-2/",
+    "year": 2009
   },
   {
     "name": "Plants vs. Zombies",
@@ -1413,7 +1589,8 @@
     "slug": "plants-vs-zombies",
     "gameId": "1277",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/plants-vs-zombies/"
+    "backloggdUrl": "https://backloggd.com/games/plants-vs-zombies/",
+    "year": 2009
   },
   {
     "name": "Grand Theft Auto IV",
@@ -1421,7 +1598,8 @@
     "slug": "grand-theft-auto-iv",
     "gameId": "731",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iv/"
+    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iv/",
+    "year": 2008
   },
   {
     "name": "Tomb Raider",
@@ -1429,7 +1607,8 @@
     "slug": "tomb-raider--2",
     "gameId": "1164",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/tomb-raider--2/"
+    "backloggdUrl": "https://backloggd.com/games/tomb-raider--2/",
+    "year": 2013
   },
   {
     "name": "Assassin's Creed II",
@@ -1437,7 +1616,8 @@
     "slug": "assassin-s-creed-ii",
     "gameId": "127",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-ii/"
+    "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-ii/",
+    "year": 2009
   },
   {
     "name": "Batman: Arkham City",
@@ -1445,7 +1625,8 @@
     "slug": "batman-arkham-city",
     "gameId": "501",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/batman-arkham-city/"
+    "backloggdUrl": "https://backloggd.com/games/batman-arkham-city/",
+    "year": 2011
   },
   {
     "name": "Rocket League",
@@ -1453,7 +1634,8 @@
     "slug": "rocket-league",
     "gameId": "11198",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/rocket-league/"
+    "backloggdUrl": "https://backloggd.com/games/rocket-league/",
+    "year": 2015
   },
   {
     "name": "Batman: Arkham Asylum",
@@ -1461,7 +1643,8 @@
     "slug": "batman-arkham-asylum",
     "gameId": "500",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/batman-arkham-asylum/"
+    "backloggdUrl": "https://backloggd.com/games/batman-arkham-asylum/",
+    "year": 2009
   },
   {
     "name": "Grand Theft Auto: San Andreas",
@@ -1469,7 +1652,8 @@
     "slug": "grand-theft-auto-san-andreas",
     "gameId": "732",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-san-andreas/"
+    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-san-andreas/",
+    "year": 2004
   },
   {
     "name": "God of War",
@@ -1477,7 +1661,8 @@
     "slug": "god-of-war--1",
     "gameId": "19560",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/god-of-war--1/"
+    "backloggdUrl": "https://backloggd.com/games/god-of-war--1/",
+    "year": 2018
   },
   {
     "name": "Among Us",
@@ -1485,7 +1670,8 @@
     "slug": "among-us",
     "gameId": "111469",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/among-us/"
+    "backloggdUrl": "https://backloggd.com/games/among-us/",
+    "year": 2018
   },
   {
     "name": "Grand Theft Auto V",
@@ -1493,6 +1679,7 @@
     "slug": "grand-theft-auto-v",
     "gameId": "1020",
     "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-v/"
+    "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-v/",
+    "year": 2013
   }
 ]

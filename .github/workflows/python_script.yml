@@ -1,4 +1,4 @@
-name: Update Games & Clicks Data
+name: Update Games, Movies & Clicks Data
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   update_data:
-    name: Scrape games and download click images
+    name: Scrape games, movies and download click images
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,6 +28,10 @@ jobs:
         working-directory: scripts
         run: python getGames.py
 
+      - name: Scrape movies from Letterboxd
+        working-directory: scripts
+        run: python getMovies.py
+
       - name: Update clicks and download images
         working-directory: scripts
         env:
@@ -40,5 +44,5 @@ jobs:
           git config --global user.name "Abhishek Gupta"
           git config --global user.email "ft.abhishekgupta@gmail.com"
           git add scripts/data/ public/clicks/
-          git diff --staged --quiet || git commit -m "Update games data and click images"
+          git diff --staged --quiet || git commit -m "Update games, movies data and click images"
           git push

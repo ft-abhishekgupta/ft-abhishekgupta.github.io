@@ -13,6 +13,10 @@ export const siteConfig = {
       href: "/games",
     },
     {
+      label: "Movies",
+      href: "/movies",
+    },
+    {
       label: "Clicks",
       href: "/clicks",
     },
@@ -29,6 +33,10 @@ export const siteConfig = {
     {
       label: "Games",
       href: "/games",
+    },
+    {
+      label: "Movies",
+      href: "/movies",
     },
     {
       label: "Clicks",

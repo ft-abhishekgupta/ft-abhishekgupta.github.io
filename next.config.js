@@ -20,6 +20,16 @@ module.exports = {
         hostname: "**.fbcdn.net",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "a.ltrbxd.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "s.ltrbxd.com",
+        port: "",
+      },
     ],
   },
 };

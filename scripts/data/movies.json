@@ -3,7 +3,7 @@
     "name": "Project Hail Mary",
     "slug": "project-hail-mary",
     "year": 2026,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/1/1/2/8/8/611288-project-hail-mary-0-230-0-345-crop.jpg?v=ac31b6ec03",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/project-hail-mary/",
     "source": "watched"
@@ -12,7 +12,7 @@
     "name": "The Housemaid",
     "slug": "the-housemaid-2025",
     "year": 2025,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/2/5/5/3/1/9/1255319-the-housemaid-2025-0-230-0-345-crop.jpg?v=b054fee6ec",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-housemaid-2025/",
     "source": "watched"
@@ -21,36 +21,288 @@
     "name": "The Fall Guy",
     "slug": "the-fall-guy-2024",
     "year": 2024,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/6/6/7/5/5/0/667550-the-fall-guy-0-230-0-345-crop.jpg?v=5f491a1281",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/the-fall-guy-2024/",
+    "source": "watched"
+  },
+  {
+    "name": "Dune: Part Two",
+    "slug": "dune-part-two",
+    "year": 2024,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/dune-part-two/",
+    "source": "watched"
+  },
+  {
+    "name": "Spider-Man: Across the Spider-Verse",
+    "slug": "spider-man-across-the-spider-verse",
+    "year": 2023,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/spider-man-across-the-spider-verse/",
+    "source": "watched"
+  },
+  {
+    "name": "Evil Dead Rise",
+    "slug": "evil-dead-rise",
+    "year": 2023,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/evil-dead-rise/",
+    "source": "watched"
+  },
+  {
+    "name": "Minions: The Rise of Gru",
+    "slug": "minions-the-rise-of-gru",
+    "year": 2022,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/minions-the-rise-of-gru/",
+    "source": "watched"
+  },
+  {
+    "name": "The Batman",
+    "slug": "the-batman",
+    "year": 2022,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-batman/",
+    "source": "watched"
+  },
+  {
+    "name": "Parasite",
+    "slug": "parasite-2019",
+    "year": 2019,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/parasite-2019/",
+    "source": "watched"
+  },
+  {
+    "name": "Chernobyl",
+    "slug": "chernobyl",
+    "year": 2019,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/chernobyl/",
+    "source": "watched"
+  },
+  {
+    "name": "Spider-Man: Into the Spider-Verse",
+    "slug": "spider-man-into-the-spider-verse",
+    "year": 2018,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/spider-man-into-the-spider-verse/",
+    "source": "watched"
+  },
+  {
+    "name": "Maze Runner: The Death Cure",
+    "slug": "maze-runner-the-death-cure",
+    "year": 2018,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/maze-runner-the-death-cure/",
+    "source": "watched"
+  },
+  {
+    "name": "Arrival",
+    "slug": "arrival-2016",
+    "year": 2016,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/arrival-2016/",
+    "source": "watched"
+  },
+  {
+    "name": "Sausage Party",
+    "slug": "sausage-party",
+    "year": 2016,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/sausage-party/",
+    "source": "watched"
+  },
+  {
+    "name": "Kung Fu Panda 3",
+    "slug": "kung-fu-panda-3",
+    "year": 2016,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/kung-fu-panda-3/",
+    "source": "watched"
+  },
+  {
+    "name": "Interstellar",
+    "slug": "interstellar",
+    "year": 2014,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/interstellar/",
+    "source": "watched"
+  },
+  {
+    "name": "Whiplash",
+    "slug": "whiplash-2014",
+    "year": 2014,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/whiplash-2014/",
+    "source": "watched"
+  },
+  {
+    "name": "Django Unchained",
+    "slug": "django-unchained",
+    "year": 2012,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/django-unchained/",
+    "source": "watched"
+  },
+  {
+    "name": "Scott Pilgrim vs. the World",
+    "slug": "scott-pilgrim-vs-the-world",
+    "year": 2010,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/scott-pilgrim-vs-the-world/",
+    "source": "watched"
+  },
+  {
+    "name": "Inception",
+    "slug": "inception",
+    "year": 2010,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/inception/",
+    "source": "watched"
+  },
+  {
+    "name": "The Karate Kid",
+    "slug": "the-karate-kid-2010",
+    "year": 2010,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-karate-kid-2010/",
     "source": "watched"
   },
   {
     "name": "Shutter Island",
     "slug": "shutter-island",
     "year": 2010,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/5/4/0/9/45409-shutter-island-0-230-0-345-crop.jpg?v=85dd4c38e3",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/shutter-island/",
+    "source": "watched"
+  },
+  {
+    "name": "Ice Age: Dawn of the Dinosaurs",
+    "slug": "ice-age-dawn-of-the-dinosaurs",
+    "year": 2009,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/ice-age-dawn-of-the-dinosaurs/",
+    "source": "watched"
+  },
+  {
+    "name": "The Dark Knight",
+    "slug": "the-dark-knight",
+    "year": 2008,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-dark-knight/",
+    "source": "watched"
+  },
+  {
+    "name": "Eternal Sunshine of the Spotless Mind",
+    "slug": "eternal-sunshine-of-the-spotless-mind",
+    "year": 2004,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
+    "source": "watched"
+  },
+  {
+    "name": "The Lord of the Rings: The Return of the King",
+    "slug": "the-lord-of-the-rings-the-return-of-the-king",
+    "year": 2003,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-lord-of-the-rings-the-return-of-the-king/",
     "source": "watched"
   },
   {
     "name": "Kill Bill: Vol. 1",
     "slug": "kill-bill-vol-1",
     "year": 2003,
-    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/sw/w2/ep/v4/9O50TVszkz0dcP5g6Ej33UhR7vw-0-230-0-345-crop.jpg?v=5a65f5202f",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/kill-bill-vol-1/",
+    "source": "watched"
+  },
+  {
+    "name": "The Lord of the Rings: The Fellowship of the Ring",
+    "slug": "the-lord-of-the-rings-the-fellowship-of-the-ring",
+    "year": 2001,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-lord-of-the-rings-the-fellowship-of-the-ring/",
     "source": "watched"
   },
   {
     "name": "Fight Club",
     "slug": "fight-club",
     "year": 1999,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/5/6/8/51568-fight-club-0-230-0-345-crop.jpg?v=768b32dfa4",
+    "imageUrl": "",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/fight-club/",
+    "source": "watched"
+  },
+  {
+    "name": "Rush Hour",
+    "slug": "rush-hour",
+    "year": 1998,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/rush-hour/",
+    "source": "watched"
+  },
+  {
+    "name": "The Truman Show",
+    "slug": "the-truman-show",
+    "year": 1998,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-truman-show/",
+    "source": "watched"
+  },
+  {
+    "name": "The Shawshank Redemption",
+    "slug": "the-shawshank-redemption",
+    "year": 1994,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-shawshank-redemption/",
+    "source": "watched"
+  },
+  {
+    "name": "Forrest Gump",
+    "slug": "forrest-gump",
+    "year": 1994,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/forrest-gump/",
+    "source": "watched"
+  },
+  {
+    "name": "Back to the Future",
+    "slug": "back-to-the-future",
+    "year": 1985,
+    "imageUrl": "",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/back-to-the-future/",
     "source": "watched"
   }
 ]

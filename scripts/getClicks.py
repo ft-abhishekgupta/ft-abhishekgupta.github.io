@@ -9,8 +9,8 @@ CLICKS_JSON = os.path.join(SCRIPT_DIR, 'data', 'clicks.json')
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, '..', 'public', 'clicks')
 
 # Instagram Graph API token (set via env var or GitHub Actions secret)
-IG_ACCESS_TOKEN = os.environ.get('IG_ACCESS_TOKEN', '')
-IG_USER_ID = os.environ.get('IG_USER_ID', '')
+IG_ACCESS_TOKEN = os.environ.get('IG_ACCESS_TOKEN', '').strip()
+IG_USER_ID = os.environ.get('IG_USER_ID', '').strip()
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 os.makedirs(os.path.join(SCRIPT_DIR, 'data'), exist_ok=True)
@@ -136,6 +136,12 @@ else:
 
 # Download images locally
 print(f"\nDownloading {len(data)} images to public/clicks/...")
+
+# If no data was fetched, preserve existing data
+if len(data) == 0 and len(previous_data) > 0:
+    print("No new data fetched. Keeping existing clicks data unchanged.")
+    exit(0)
+
 failed = []
 for i, click in enumerate(data):
     shortcode = click["permalink"]

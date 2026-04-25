@@ -1,8 +1,20 @@
 import Tile from "@/components/Tile";
-import data from "../scripts/data/games.json";
+import rawData from "../scripts/data/games.json";
 import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { useMemo, useState } from "react";
+
+interface GameItem {
+  name: string;
+  imageUrl: string;
+  slug: string;
+  gameId: string;
+  userRating: number | null;
+  backloggdUrl: string;
+  year: number | null;
+}
+
+const data: GameItem[] = rawData as GameItem[];
 
 type SortOption = "default" | "name-asc" | "name-desc" | "rated" | "year-new" | "year-old";
 
@@ -15,14 +27,14 @@ export default function Games() {
   // Compute available decades
   const decades = useMemo(() => {
     const ds = new Set<number>();
-    data.forEach((g: any) => {
+    data.forEach((g) => {
       if (g.year) ds.add(Math.floor(g.year / 10) * 10);
     });
     return Array.from(ds).sort((a, b) => b - a);
   }, []);
 
   const filteredGames = useMemo(() => {
-    let games = [...data] as any[];
+    let games = [...data];
 
     // Search filter
     if (search.trim()) {

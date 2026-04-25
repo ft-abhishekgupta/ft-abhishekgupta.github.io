@@ -1,8 +1,20 @@
 import Tile from "@/components/Tile";
-import data from "../scripts/data/movies.json";
+import rawData from "../scripts/data/movies.json";
 import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import { useMemo, useState } from "react";
+
+interface MovieItem {
+  name: string;
+  slug: string;
+  year: number | null;
+  imageUrl: string;
+  userRating: number | null;
+  letterboxdUrl: string;
+  source: string;
+}
+
+const data: MovieItem[] = rawData as MovieItem[];
 
 type SortOption = "default" | "name-asc" | "name-desc" | "year-new" | "year-old" | "rated";
 type SourceFilter = "all" | "watched" | "watchlist";
@@ -16,14 +28,14 @@ export default function Movies() {
 
   const decades = useMemo(() => {
     const ds = new Set<number>();
-    data.forEach((m: any) => {
+    data.forEach((m) => {
       if (m.year) ds.add(Math.floor(m.year / 10) * 10);
     });
     return Array.from(ds).sort((a, b) => b - a);
   }, []);
 
   const filteredMovies = useMemo(() => {
-    let movies = [...data] as any[];
+    let movies = [...data];
 
     if (search.trim()) {
       const q = search.toLowerCase().trim();

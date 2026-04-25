@@ -1,7 +1,14 @@
 import DefaultLayout from "@/layouts/default";
 import ClicksTile from "@/components/ClicksTile";
-import data from "../scripts/data/clicks.json";
+import rawData from "../scripts/data/clicks.json";
 import { Chip } from "@nextui-org/react";
+
+interface ClickItem {
+  permalink: string;
+  localPath: string;
+}
+
+const data: ClickItem[] = rawData as ClickItem[];
 
 export default function Clicks() {
   return (

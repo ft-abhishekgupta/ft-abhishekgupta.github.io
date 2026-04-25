@@ -17,7 +17,7 @@ export default function Clicks() {
         </div>
         <div className="flex flex-wrap justify-center">
           {data.map((item, index) => (
-            <ClicksTile key={index} link={item.permalink} imageUrl={item.url} />
+            <ClicksTile key={index} link={item.permalink} localPath={item.localPath} />
           ))}
         </div>
       </div>

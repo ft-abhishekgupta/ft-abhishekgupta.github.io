@@ -2,7 +2,7 @@ name: Run Python script
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Runs at 00:00 UTC every day. Adjust as needed.
+    - cron: "0 0 * * *" # Runs at 00:00 UTC every day
   workflow_dispatch: # Manual trigger
 
 jobs:
@@ -14,25 +14,26 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x" # Specify the version of Python you want to use
+          python-version: "3.x"
 
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run Python scripts
         working-directory: scripts
-        run: /
+        run: |
           python getGames.py
+          python getClicks.py
 
       - name: Commit changes
         run: |
           git config --global user.name "Abhishek Gupta"
           git config --global user.email "ft.abhishekgupta@gmail.com"
           git add .
-          git commit -m "Commit Python Script Changes"
+          git diff --staged --quiet || git commit -m "Update games and clicks data"
           git push

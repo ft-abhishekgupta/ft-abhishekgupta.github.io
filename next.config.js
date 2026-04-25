@@ -2,8 +2,8 @@
 
 module.exports = {
   output: "export",
-  images: { unoptimized: true },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -12,7 +12,12 @@ module.exports = {
       },
       {
         protocol: "https",
-        hostname: "instagram.fdel27-3.fna.fbcdn.net/v/",
+        hostname: "www.instagram.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "**.fbcdn.net",
         port: "",
       },
     ],

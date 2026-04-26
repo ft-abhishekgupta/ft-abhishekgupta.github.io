@@ -19,8 +19,7 @@ interface MovieItem {
 const data: MovieItem[] = rawData as MovieItem[];
 
 type SortOption = "default" | "name-asc" | "name-desc" | "year-new" | "year-old" | "rated";
-type SourceFilter = "all" | "watched" | "watchlist";
-type MediaTypeFilter = "all" | "movie" | "tv";
+type SourceFilter = "watched" | "watchlist";
 
 export default function Movies() {
   const [search, setSearch] = useState("");
@@ -29,7 +28,6 @@ export default function Movies() {
   const [decadeFilter, setDecadeFilter] = useState<string>("all");
   const [sourceFilter, setSourceFilter] = useState<SourceFilter>("watched");
   const [languageFilter, setLanguageFilter] = useState<string>("all");
-  const [mediaTypeFilter, setMediaTypeFilter] = useState<MediaTypeFilter>("all");
 
   const decades = useMemo(() => {
     const ds = new Set<number>();
@@ -59,16 +57,11 @@ export default function Movies() {
       movies = movies.filter((m) => m.userRating !== null);
     }
 
-    if (sourceFilter !== "all") {
-      movies = movies.filter((m) => m.source === sourceFilter);
-    }
+    // Source filter (always applied, like games status filter)
+    movies = movies.filter((m) => m.source === sourceFilter);
 
     if (languageFilter !== "all") {
       movies = movies.filter((m) => m.language === languageFilter);
-    }
-
-    if (mediaTypeFilter !== "all") {
-      movies = movies.filter((m) => m.mediaType === mediaTypeFilter);
     }
 
     if (decadeFilter !== "all") {
@@ -99,15 +92,23 @@ export default function Movies() {
     }
 
     return movies;
-  }, [search, sortBy, ratedOnly, decadeFilter, sourceFilter, languageFilter, mediaTypeFilter]);
+  }, [search, sortBy, ratedOnly, decadeFilter, sourceFilter, languageFilter]);
 
-  const ratedCount = data.filter((m) => m.userRating !== null).length;
+  const ratedCount = data.filter((m) => m.userRating !== null && m.source === sourceFilter).length;
   const watchedCount = data.filter((m) => m.source === "watched").length;
   const watchlistCount = data.filter((m) => m.source === "watchlist").length;
-  const movieCount = data.filter((m) => m.mediaType === "movie").length;
-  const tvCount = data.filter((m) => m.mediaType === "tv").length;
   const hasFilters =
-    search || ratedOnly || decadeFilter !== "all" || sourceFilter !== "all" || languageFilter !== "all" || mediaTypeFilter !== "all";
+    search || ratedOnly || decadeFilter !== "all" || languageFilter !== "all";
+
+  const sourceLabels: Record<SourceFilter, string> = {
+    watched: "🎬 Watched",
+    watchlist: "📋 Watchlist",
+  };
+
+  const sourceCounts: Record<SourceFilter, number> = {
+    watched: watchedCount,
+    watchlist: watchlistCount,
+  };
 
   return (
     <DefaultLayout>
@@ -118,8 +119,25 @@ export default function Movies() {
             {filteredMovies.length}
           </Chip>
           <h1 className="text-3xl font-bold text-center my-8 p-4">
-            Movies & TV
+            Movies {sourceLabels[sourceFilter]}
           </h1>
+        </div>
+
+        {/* Source filter tabs */}
+        <div className="flex justify-center gap-2 mb-6">
+          {(Object.keys(sourceCounts) as SourceFilter[]).map((source) => (
+            <button
+              key={source}
+              onClick={() => setSourceFilter(source)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                sourceFilter === source
+                  ? "bg-secondary text-white shadow-lg scale-105"
+                  : "bg-default-100 text-default-600 hover:bg-default-200"
+              }`}
+            >
+              {sourceLabels[source]} ({sourceCounts[source]})
+            </button>
+          ))}
         </div>
 
         {/* Controls */}
@@ -164,22 +182,6 @@ export default function Movies() {
           >
             {(item) => <SelectItem key={item.key}>{item.label}</SelectItem>}
           </Select>
-          <Select
-            className="max-w-[160px]"
-            label="Source"
-            size="sm"
-            selectedKeys={new Set([sourceFilter])}
-            onSelectionChange={(keys) => {
-              const val = Array.from(keys)[0] as string;
-              if (val) setSourceFilter(val as SourceFilter);
-            }}
-          >
-            <SelectItem key="all">All ({data.length})</SelectItem>
-            <SelectItem key="watched">Watched ({watchedCount})</SelectItem>
-            <SelectItem key="watchlist">
-              Watchlist ({watchlistCount})
-            </SelectItem>
-          </Select>
           {languages.length > 0 && (
             <Select
               className="max-w-[150px]"
@@ -199,22 +201,6 @@ export default function Movies() {
               ]}
             </Select>
           )}
-          {(movieCount > 0 || tvCount > 0) && (
-            <Select
-              className="max-w-[150px]"
-              label="Type"
-              size="sm"
-              selectedKeys={new Set([mediaTypeFilter])}
-              onSelectionChange={(keys) => {
-                const val = Array.from(keys)[0] as string;
-                if (val) setMediaTypeFilter(val as MediaTypeFilter);
-              }}
-            >
-              <SelectItem key="all">All Types</SelectItem>
-              <SelectItem key="movie">🎬 Movies ({movieCount})</SelectItem>
-              <SelectItem key="tv">📺 TV Series ({tvCount})</SelectItem>
-            </Select>
-          )}
           {ratedCount > 0 && (
             <div className="flex items-center gap-2">
               <Switch
@@ -232,7 +218,7 @@ export default function Movies() {
         {/* Results count */}
         {hasFilters && (
           <p className="text-center text-sm text-default-400 mb-4">
-            Showing {filteredMovies.length} of {data.length} movies
+            Showing {filteredMovies.length} of {sourceCounts[sourceFilter]} movies
           </p>
         )}
 

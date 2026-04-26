@@ -136,10 +136,13 @@ export default function Movies() {
           />
           <Select
             className="max-w-[180px]"
-            placeholder="Sort by"
+            label="Sort by"
             size="sm"
-            selectedKeys={[sortBy]}
-            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            selectedKeys={new Set([sortBy])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              if (val) setSortBy(val as SortOption);
+            }}
           >
             <SelectItem key="default">Recently Added</SelectItem>
             <SelectItem key="name-asc">Name (A → Z)</SelectItem>
@@ -150,38 +153,43 @@ export default function Movies() {
           </Select>
           <Select
             className="max-w-[140px]"
-            placeholder="Decade"
+            label="Decade"
             size="sm"
-            selectedKeys={[decadeFilter]}
-            onChange={(e) => setDecadeFilter(e.target.value || "all")}
+            selectedKeys={new Set([decadeFilter])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              setDecadeFilter(val || "all");
+            }}
             items={[{ key: "all", label: "All Decades" }, ...decades.map((d) => ({ key: String(d), label: `${d}s` }))]}
           >
             {(item) => <SelectItem key={item.key}>{item.label}</SelectItem>}
           </Select>
-          {watchlistCount > 0 && (
-            <Select
-              className="max-w-[160px]"
-              placeholder="Source"
-              size="sm"
-              selectedKeys={[sourceFilter]}
-              onChange={(e) =>
-                setSourceFilter((e.target.value || "all") as SourceFilter)
-              }
-            >
-              <SelectItem key="all">All ({data.length})</SelectItem>
-              <SelectItem key="watched">Watched ({watchedCount})</SelectItem>
-              <SelectItem key="watchlist">
-                Watchlist ({watchlistCount})
-              </SelectItem>
-            </Select>
-          )}
-          {languages.length > 1 && (
+          <Select
+            className="max-w-[160px]"
+            label="Source"
+            size="sm"
+            selectedKeys={new Set([sourceFilter])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              if (val) setSourceFilter(val as SourceFilter);
+            }}
+          >
+            <SelectItem key="all">All ({data.length})</SelectItem>
+            <SelectItem key="watched">Watched ({watchedCount})</SelectItem>
+            <SelectItem key="watchlist">
+              Watchlist ({watchlistCount})
+            </SelectItem>
+          </Select>
+          {languages.length > 0 && (
             <Select
               className="max-w-[150px]"
-              placeholder="Language"
+              label="Language"
               size="sm"
-              selectedKeys={[languageFilter]}
-              onChange={(e) => setLanguageFilter(e.target.value || "all")}
+              selectedKeys={new Set([languageFilter])}
+              onSelectionChange={(keys) => {
+                const val = Array.from(keys)[0] as string;
+                setLanguageFilter(val || "all");
+              }}
             >
               {[
                 <SelectItem key="all">All Languages</SelectItem>,
@@ -191,15 +199,16 @@ export default function Movies() {
               ]}
             </Select>
           )}
-          {(movieCount > 0 && tvCount > 0) && (
+          {(movieCount > 0 || tvCount > 0) && (
             <Select
               className="max-w-[150px]"
-              placeholder="Type"
+              label="Type"
               size="sm"
-              selectedKeys={[mediaTypeFilter]}
-              onChange={(e) =>
-                setMediaTypeFilter((e.target.value || "all") as MediaTypeFilter)
-              }
+              selectedKeys={new Set([mediaTypeFilter])}
+              onSelectionChange={(keys) => {
+                const val = Array.from(keys)[0] as string;
+                if (val) setMediaTypeFilter(val as MediaTypeFilter);
+              }}
             >
               <SelectItem key="all">All Types</SelectItem>
               <SelectItem key="movie">🎬 Movies ({movieCount})</SelectItem>

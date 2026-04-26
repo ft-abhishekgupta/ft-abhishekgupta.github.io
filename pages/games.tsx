@@ -141,10 +141,13 @@ export default function Games() {
           />
           <Select
             className="max-w-[180px]"
-            placeholder="Sort by"
+            label="Sort by"
             size="sm"
-            selectedKeys={[sortBy]}
-            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            selectedKeys={new Set([sortBy])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              if (val) setSortBy(val as SortOption);
+            }}
           >
             <SelectItem key="default">Recently Added</SelectItem>
             <SelectItem key="name-asc">Name (A → Z)</SelectItem>
@@ -155,10 +158,13 @@ export default function Games() {
           </Select>
           <Select
             className="max-w-[140px]"
-            placeholder="Decade"
+            label="Decade"
             size="sm"
-            selectedKeys={[decadeFilter]}
-            onChange={(e) => setDecadeFilter(e.target.value || "all")}
+            selectedKeys={new Set([decadeFilter])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              setDecadeFilter(val || "all");
+            }}
             items={[{ key: "all", label: "All Decades" }, ...decades.map((d) => ({ key: String(d), label: `${d}s` }))]}
           >
             {(item) => <SelectItem key={item.key}>{item.label}</SelectItem>}

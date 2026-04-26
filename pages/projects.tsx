@@ -206,10 +206,13 @@ export default function Projects() {
           />
           <Select
             className="max-w-[180px]"
-            placeholder="Sort by"
+            label="Sort by"
             size="sm"
-            selectedKeys={[sortBy]}
-            onChange={(e) => setSortBy(e.target.value as SortOption)}
+            selectedKeys={new Set([sortBy])}
+            onSelectionChange={(keys) => {
+              const val = Array.from(keys)[0] as string;
+              if (val) setSortBy(val as SortOption);
+            }}
           >
             <SelectItem key="recent">Most Recent</SelectItem>
             <SelectItem key="stars">Most Stars</SelectItem>

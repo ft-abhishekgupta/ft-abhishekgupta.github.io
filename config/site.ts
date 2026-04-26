@@ -24,6 +24,10 @@ export const siteConfig = {
       label: "Clicks",
       href: "/clicks",
     },
+    {
+      label: "Notes",
+      href: "/notes",
+    },
   ],
   navMenuItems: [
     {
@@ -49,6 +53,10 @@ export const siteConfig = {
     {
       label: "Clicks",
       href: "/clicks",
+    },
+    {
+      label: "Notes",
+      href: "/notes",
     },
   ],
   links: {

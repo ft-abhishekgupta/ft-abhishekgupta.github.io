@@ -2,232 +2,524 @@
   {
     "name": "ft-abhishekgupta.github.io",
     "displayName": "Portfolio Website",
-    "description": "",
+    "description": "Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.",
     "url": "https://github.com/ft-abhishekgupta/ft-abhishekgupta.github.io",
     "language": "TypeScript",
     "topics": [],
     "stars": 0,
-    "updatedAt": "2026-04-26T03:48:23Z",
-    "category": "Web"
+    "updatedAt": "2026-04-26T07:24:51Z",
+    "category": "Web",
+    "screenshots": [],
+    "features": []
   },
   {
     "name": "android-pharmacy-inventory-system-pharmware",
     "displayName": "PharmWare – Pharmacy Inventory",
-    "description": "Medical Store Inventory Management , Billing and Customer Management System on Android",
+    "description": "Complete pharmacy inventory management system with billing and customer tracking.",
     "url": "https://github.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware",
     "language": "Java",
     "topics": [],
     "stars": 31,
     "updatedAt": "2026-02-24T14:18:50Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/usecase.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot4.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot5.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware/master/images/Screenshot6.jpg"
+    ],
+    "features": [
+      "Google Authentication",
+      "Maintain List of Items in Inventory",
+      "Items also contain various relevant informations like",
+      "Selling Price, Cost Price, Discount, Count, Expiry Date etc.",
+      "Keep track of transactions and update stocks accordingly",
+      "Keep record of regular customers and suppliers , and also the money dues"
+    ]
   },
   {
     "name": "telebot-reminderservice",
     "displayName": "Telegram Reminder Bot",
-    "description": "Reminder Service on Telegram using Python and Telegram Bot API",
+    "description": "Telegram bot that schedules and sends reminders using natural language input.",
     "url": "https://github.com/ft-abhishekgupta/telebot-reminderservice",
     "language": "Python",
     "topics": [],
     "stars": 7,
     "updatedAt": "2025-04-12T15:53:54Z",
-    "category": "Bot"
+    "category": "Bot",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/Image.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/architecture.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/Screenshot1.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/Screenshot2.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/Screenshot3.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-reminderservice/master/images/Screenshot4.png"
+    ],
+    "features": [
+      "Build a simplified reminder service on android platform.",
+      "New technique to add reminder via chat.",
+      "Provide extra services that user can subscribe to get updates",
+      "Anybody who wants to get notification about some events",
+      "Cryptocurrency Investors",
+      "TV Shows and Movies Buffs"
+    ]
   },
   {
     "name": "php-mysql-onlinequizportal",
     "displayName": "Online Quiz Portal",
-    "description": "Random Quiz Generator and Quiz Portal with PHP , MySQL , CSS",
+    "description": "Online quiz portal with random question generation, user management, and score tracking.",
     "url": "https://github.com/ft-abhishekgupta/php-mysql-onlinequizportal",
     "language": "CSS",
     "topics": [],
     "stars": 7,
     "updatedAt": "2024-10-18T16:09:13Z",
-    "category": "Web"
+    "category": "Web",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/architecture.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/usecase.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/Screenshot1.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/Screenshot2.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/Screenshot3.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/Screenshot4.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/php-mysql-onlinequizportal/master/images/Screenshot5.png"
+    ],
+    "features": [
+      "Template For Website : Material Design Template",
+      "https://www.creative-tim.com/product/material-kit",
+      "Clone Repository",
+      "Install Dependencies :",
+      "Apache Server",
+      "Copy files in code to Apache Directory : var/www/html/"
+    ]
   },
   {
     "name": "android-game-puzzle-pairemup",
     "displayName": "Pair 'Em Up – Puzzle Game",
-    "description": "Android Puzzle Game",
+    "description": "A memory card matching game for Android with leaderboards, published on the Play Store.",
     "url": "https://github.com/ft-abhishekgupta/android-game-puzzle-pairemup",
     "language": "Java",
     "topics": [],
     "stars": 2,
     "updatedAt": "2023-02-08T09:11:28Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/promo.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/Screenshot4.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-game-puzzle-pairemup/master/Screenshot5.jpg"
+    ],
+    "features": []
   },
   {
     "name": "material-kit-react",
     "displayName": "Material Kit React",
-    "description": "Material Kit React free and open source by Creative Tim",
+    "description": "Free React UI Kit based on Material Design with reusable components.",
     "url": "https://github.com/ft-abhishekgupta/material-kit-react",
     "language": "JavaScript",
     "topics": [],
     "stars": 0,
     "updatedAt": "2022-12-26T08:33:26Z",
-    "category": "Web"
+    "category": "Web",
+    "screenshots": [
+      "https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react-logo.jpg?raw=true"
+    ],
+    "features": [
+      "View Github Repository",
+      "Check FAQ Page",
+      "MUI - The React UI library for faster and easier web development.",
+      "React Flatpickr - Useful library used to select date.",
+      "React Copy to Clipboard - Useful library used for copying data to the clipboard.",
+      "React Syntax Highlighter - Syntax highlighting component for react with prismjs or highlightjs ast using inline styles."
+    ]
   },
   {
     "name": "ethereum-dapp-votingsystem",
     "displayName": "Ethereum DApp – Voting System",
-    "description": "Voting System for Student Senate on Ethereum Blockchain",
+    "description": "A decentralized voting system built on Ethereum blockchain with Solidity smart contracts.",
     "url": "https://github.com/ft-abhishekgupta/ethereum-dapp-votingsystem",
     "language": "CSS",
     "topics": [],
     "stars": 1,
     "updatedAt": "2021-11-01T09:49:33Z",
-    "category": "Blockchain"
+    "category": "Blockchain",
+    "screenshots": [
+      "https://img.youtube.com/vi/oJozUyqi3fY/0.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot1.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot2.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot3.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot4.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot5.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot6.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/ethereum-dapp-votingsystem/master/images/Screenshot7.png"
+    ],
+    "features": [
+      "Our project will implement Student Senate Voting System using Blockchain technology.",
+      "Privacy will be provided to voters as only their vote will be recorded but not mapped.",
+      "Ganache GUI",
+      "Metamask Plugin",
+      "Template For Website : Material Design Template",
+      "Clone Repository"
+    ]
   },
   {
     "name": "android-socialnetwork-linkr",
     "displayName": "Linkr – Social Network",
-    "description": "Contacts Information Sharing Social Network on Android ",
+    "description": "A full-featured social networking app with real-time messaging, posts, and user profiles.",
     "url": "https://github.com/ft-abhishekgupta/android-socialnetwork-linkr",
     "language": "Java",
     "topics": [],
     "stars": 2,
     "updatedAt": "2021-08-05T10:51:16Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/highleveldesign.PNG",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot4.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot5.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-socialnetwork-linkr/master/images/Screenshot6.jpg"
+    ],
+    "features": [
+      "Google Authentication",
+      "Control Your Profile and also its privacy",
+      "Create connections with other users",
+      "Chat Interface also available",
+      "Used Google Firebase for server requirement"
+    ]
   },
   {
     "name": "telebot-wordpress-bloggingviamessaging-xeon",
     "displayName": "Xeon – WordPress Blogging Bot",
-    "description": "Blogging Website with messaging as a Platform using Telegram Bot API",
+    "description": "Telegram bot for publishing WordPress blog posts directly via messaging.",
     "url": "https://github.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon",
     "language": "Python",
     "topics": [],
     "stars": 2,
     "updatedAt": "2020-03-11T10:22:48Z",
-    "category": "Bot"
+    "category": "Bot",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/architecture.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/image.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/Screenshot4.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/Screenshot3.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/Screenshot5.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/Screenshot6.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon/master/images/Screenshot1.png"
+    ],
+    "features": [
+      "Build a simple blog website",
+      "Build a bot to manage the website",
+      "Enable anyone to contribute to the website",
+      "Enable admin to manage website content using the same messaging service",
+      "Website Managers",
+      "Management of blogs using telegram app."
+    ]
   },
   {
     "name": "java-swing-games",
     "displayName": "Java Swing Games",
-    "description": "Snakes , Tetris , Snakes and Ladder , Chess , Pair Up , Sudoku , Tic Tac Toe",
+    "description": "Collection of 7 classic games built with Java Swing: Chess, Tetris, Sudoku, Snake & Ladders, and more.",
     "url": "https://github.com/ft-abhishekgupta/java-swing-games",
     "language": "Java",
     "topics": [],
     "stars": 1,
     "updatedAt": "2019-06-28T07:43:42Z",
-    "category": "Desktop"
+    "category": "Desktop",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/snakes.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/tetris.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/snl.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/chess.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/pairup.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/sudoku.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/java-swing-games/master/readme-images/ttt.jpg"
+    ],
+    "features": [
+      "Change relative paths to images if using Ubuntu",
+      "Compile and run Main.java",
+      "Play your favourite childhood game.",
+      "Eat as much as you can, but dont eat yourself.",
+      "Highscores are recorded and kept safe.",
+      "Complete as many lines as you can by fitting random blocks."
+    ]
   },
   {
     "name": "android-event-app-magnumopus",
     "displayName": "Magnum Opus – Event App",
-    "description": "Android App for College Fest",
+    "description": "Official event app for Magnum Opus college fest with event info and live updates.",
     "url": "https://github.com/ft-abhishekgupta/android-event-app-magnumopus",
     "language": "Java",
     "topics": [],
     "stars": 1,
     "updatedAt": "2019-06-28T07:43:37Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/promo.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot4.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot5.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-magnumopus/master/Screenshot6.jpg"
+    ],
+    "features": [
+      "Detailed Description of each event",
+      "Visually stunning graphics",
+      "Easy UI design",
+      "Provisional Schedule of entire festival",
+      "Notification Section to receive timely updates for the events",
+      "Notification includes result announcements , schedule changes , and other important announcements"
+    ]
   },
   {
     "name": "android-calculator",
     "displayName": "Android Calculator",
-    "description": "Android Calculator with Dark Theme and Other Functions",
+    "description": "A full-featured scientific calculator for Android, published on the Play Store.",
     "url": "https://github.com/ft-abhishekgupta/android-calculator",
     "language": "Java",
     "topics": [],
     "stars": 1,
     "updatedAt": "2019-06-28T07:43:32Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/promo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/Screenshot4.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-calculator/master/Screenshot5.jpg"
+    ],
+    "features": [
+      "Fractional number support",
+      "Subtraction",
+      "Multiplication",
+      "Radian, PI, e values",
+      "Square root",
+      "Sin Inverse"
+    ]
   },
   {
     "name": "mpich-visualisation",
     "displayName": "MPICH Visualisation",
-    "description": "Visual Representation of MPICH Communication over Fat-Tree, 2D-Mesh and Dragonfly",
+    "description": "Visualization tool for MPI/HPC network topologies: Fat Tree, Torus, and Dragonfly.",
     "url": "https://github.com/ft-abhishekgupta/mpich-visualisation",
     "language": "Python",
     "topics": [],
     "stars": 1,
     "updatedAt": "2019-06-28T07:43:27Z",
-    "category": "HPC"
+    "category": "HPC",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/Image.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/fattree.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/torus.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/dragonfly.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/mpich-visualisation/master/images/Screenshot4.jpg"
+    ],
+    "features": [
+      "Build a GUI application for the users to give configuration of the system",
+      "Show different kind topologies",
+      "Implement many different MPI calls on these topologies and show how the nodes",
+      "Calculate number of hops messages take in each phase and in total",
+      "Generate snapshots of event that happened during the communication for a",
+      "Gallery to show the snapshots"
+    ]
   },
   {
     "name": "android-event-app-encoreiet",
     "displayName": "Encore IET – Event App",
-    "description": "Android App for College Fest with Better Design",
+    "description": "Official event app for Encore IET college fest with schedules, maps, and notifications.",
     "url": "https://github.com/ft-abhishekgupta/android-event-app-encoreiet",
     "language": "Java",
     "topics": [],
     "stars": 1,
     "updatedAt": "2019-06-28T07:43:15Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/promo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/poster.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/Screenshot(1",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/Screenshot(2",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/Screenshot(3",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/Screenshot(4",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-event-app-encoreiet/master/images/Screenshot(5"
+    ],
+    "features": [
+      "Notifications",
+      "Competitions",
+      "Contact Details",
+      "Prize details",
+      "Sponsors List"
+    ]
   },
   {
     "name": "android-microprocessor-notes-app",
     "displayName": "Microprocessor Notes App",
-    "description": "Notes App for Microprocessor 8085 - Material Design",
+    "description": "Study notes app for Microprocessor course with diagrams and offline reading.",
     "url": "https://github.com/ft-abhishekgupta/android-microprocessor-notes-app",
     "language": "HTML",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-24T06:30:58Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-microprocessor-notes-app/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-microprocessor-notes-app/master/promo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-microprocessor-notes-app/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-microprocessor-notes-app/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-microprocessor-notes-app/master/Screenshot3.jpg"
+    ],
+    "features": [
+      "Simple Layout",
+      "Easy Navigation from one section to another",
+      "All the 8085 instructions are discussed separately under the section \"Instruction Set\"",
+      "Easy and neat Diagrams are used to make the concept more clear.",
+      "Easy to read and understandable font is used",
+      "To the point explanation of topics"
+    ]
   },
   {
     "name": "android-industrialsociology-notes-app",
     "displayName": "Industrial Sociology Notes App",
-    "description": "Notes App for Industrial Sociology- Material Design",
+    "description": "Study notes app for Industrial Sociology with offline access, published on the Play Store.",
     "url": "https://github.com/ft-abhishekgupta/android-industrialsociology-notes-app",
     "language": "HTML",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-23T19:39:30Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-industrialsociology-notes-app/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-industrialsociology-notes-app/master/promo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-industrialsociology-notes-app/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-industrialsociology-notes-app/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-industrialsociology-notes-app/master/Screenshot3.jpg"
+    ],
+    "features": [
+      "Simple Layout",
+      "Easy Navigation from one section to another",
+      "Easy and neat Diagrams are used to make the concept more clear.",
+      "Easy to read and understandable font is used",
+      "To the point explanation of topics",
+      "Handy for quick revision"
+    ]
   },
   {
     "name": "android-notes-app",
     "displayName": "Android Notes App",
-    "description": "Android Appication to Share Notes",
+    "description": "Engineering notes apps for Strength of Materials and Mechanics & Thermodynamics.",
     "url": "https://github.com/ft-abhishekgupta/android-notes-app",
     "language": "HTML",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-23T14:34:04Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/strengthofmaterial_logo.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/mechanicsandthermodynamics_logo.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/Screenshot1.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/Screenshot2.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/Screenshot3.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-notes-app/master/Screenshot4.png"
+    ],
+    "features": [
+      "Zoomable View",
+      "Source Notes Files not Visible"
+    ]
   },
   {
     "name": "android-simple-birthday-app",
     "displayName": "Android Simple Birthday App",
-    "description": "Make an app for someones birthday in minutes.",
+    "description": "A minimal birthday greeting app for Android.",
     "url": "https://github.com/ft-abhishekgupta/android-simple-birthday-app",
     "language": "Java",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-22T06:26:52Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-simple-birthday-app/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-simple-birthday-app/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-simple-birthday-app/master/Screenshot2.jpg"
+    ],
+    "features": []
   },
   {
     "name": "android-website-app-template",
     "displayName": "Android WebView App Template",
-    "description": "Template to create android app for any website in minutes.",
+    "description": "A reusable Android template for wrapping websites as native apps using WebView.",
     "url": "https://github.com/ft-abhishekgupta/android-website-app-template",
     "language": "Java",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-22T05:49:50Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-website-app-template/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-website-app-template/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-website-app-template/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-website-app-template/master/Screenshot3.jpg"
+    ],
+    "features": [
+      "URL Bar will not be visible to give better feel of mobile application",
+      "Custom Loading Screen",
+      "Custom Page for No Internet Connection",
+      "Pull Down to Refresh Integrated"
+    ]
   },
   {
     "name": "android-basic-puzzle-game",
     "displayName": "Android Basic Puzzle Game",
-    "description": "Memory Based Puzzle Android App with Simple UI Design",
+    "description": "A sliding puzzle game for Android with multiple difficulty levels.",
     "url": "https://github.com/ft-abhishekgupta/android-basic-puzzle-game",
     "language": "Java",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-21T11:19:57Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-puzzle-game/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-puzzle-game/master/Screenshot1.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-puzzle-game/master/Screenshot2.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-puzzle-game/master/Screenshot3.jpg",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-puzzle-game/master/Screenshot4.jpg"
+    ],
+    "features": [
+      "Symbols occurs in pair, but are hidden",
+      "Find all the corresponding pair in minimum time."
+    ]
   },
   {
     "name": "android-basic-calculator",
     "displayName": "Android Basic Calculator",
-    "description": "Basic Calculator Application on Android",
+    "description": "A simple calculator app built for Android.",
     "url": "https://github.com/ft-abhishekgupta/android-basic-calculator",
     "language": "Java",
     "topics": [],
     "stars": 0,
     "updatedAt": "2019-06-21T11:13:57Z",
-    "category": "Android"
+    "category": "Android",
+    "screenshots": [
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-calculator/master/logo.png",
+      "https://raw.githubusercontent.com/ft-abhishekgupta/android-basic-calculator/master/Screenshot.jpg"
+    ],
+    "features": []
   }
 ]

@@ -1,0 +1,233 @@
+[
+  {
+    "name": "ft-abhishekgupta.github.io",
+    "displayName": "Portfolio Website",
+    "description": "",
+    "url": "https://github.com/ft-abhishekgupta/ft-abhishekgupta.github.io",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2026-04-26T03:48:23Z",
+    "category": "Web"
+  },
+  {
+    "name": "android-pharmacy-inventory-system-pharmware",
+    "displayName": "PharmWare – Pharmacy Inventory",
+    "description": "Medical Store Inventory Management , Billing and Customer Management System on Android",
+    "url": "https://github.com/ft-abhishekgupta/android-pharmacy-inventory-system-pharmware",
+    "language": "Java",
+    "topics": [],
+    "stars": 31,
+    "updatedAt": "2026-02-24T14:18:50Z",
+    "category": "Android"
+  },
+  {
+    "name": "telebot-reminderservice",
+    "displayName": "Telegram Reminder Bot",
+    "description": "Reminder Service on Telegram using Python and Telegram Bot API",
+    "url": "https://github.com/ft-abhishekgupta/telebot-reminderservice",
+    "language": "Python",
+    "topics": [],
+    "stars": 7,
+    "updatedAt": "2025-04-12T15:53:54Z",
+    "category": "Bot"
+  },
+  {
+    "name": "php-mysql-onlinequizportal",
+    "displayName": "Online Quiz Portal",
+    "description": "Random Quiz Generator and Quiz Portal with PHP , MySQL , CSS",
+    "url": "https://github.com/ft-abhishekgupta/php-mysql-onlinequizportal",
+    "language": "CSS",
+    "topics": [],
+    "stars": 7,
+    "updatedAt": "2024-10-18T16:09:13Z",
+    "category": "Web"
+  },
+  {
+    "name": "android-game-puzzle-pairemup",
+    "displayName": "Pair 'Em Up – Puzzle Game",
+    "description": "Android Puzzle Game",
+    "url": "https://github.com/ft-abhishekgupta/android-game-puzzle-pairemup",
+    "language": "Java",
+    "topics": [],
+    "stars": 2,
+    "updatedAt": "2023-02-08T09:11:28Z",
+    "category": "Android"
+  },
+  {
+    "name": "material-kit-react",
+    "displayName": "Material Kit React",
+    "description": "Material Kit React free and open source by Creative Tim",
+    "url": "https://github.com/ft-abhishekgupta/material-kit-react",
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2022-12-26T08:33:26Z",
+    "category": "Web"
+  },
+  {
+    "name": "ethereum-dapp-votingsystem",
+    "displayName": "Ethereum DApp – Voting System",
+    "description": "Voting System for Student Senate on Ethereum Blockchain",
+    "url": "https://github.com/ft-abhishekgupta/ethereum-dapp-votingsystem",
+    "language": "CSS",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2021-11-01T09:49:33Z",
+    "category": "Blockchain"
+  },
+  {
+    "name": "android-socialnetwork-linkr",
+    "displayName": "Linkr – Social Network",
+    "description": "Contacts Information Sharing Social Network on Android ",
+    "url": "https://github.com/ft-abhishekgupta/android-socialnetwork-linkr",
+    "language": "Java",
+    "topics": [],
+    "stars": 2,
+    "updatedAt": "2021-08-05T10:51:16Z",
+    "category": "Android"
+  },
+  {
+    "name": "telebot-wordpress-bloggingviamessaging-xeon",
+    "displayName": "Xeon – WordPress Blogging Bot",
+    "description": "Blogging Website with messaging as a Platform using Telegram Bot API",
+    "url": "https://github.com/ft-abhishekgupta/telebot-wordpress-bloggingviamessaging-xeon",
+    "language": "Python",
+    "topics": [],
+    "stars": 2,
+    "updatedAt": "2020-03-11T10:22:48Z",
+    "category": "Bot"
+  },
+  {
+    "name": "java-swing-games",
+    "displayName": "Java Swing Games",
+    "description": "Snakes , Tetris , Snakes and Ladder , Chess , Pair Up , Sudoku , Tic Tac Toe",
+    "url": "https://github.com/ft-abhishekgupta/java-swing-games",
+    "language": "Java",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2019-06-28T07:43:42Z",
+    "category": "Desktop"
+  },
+  {
+    "name": "android-event-app-magnumopus",
+    "displayName": "Magnum Opus – Event App",
+    "description": "Android App for College Fest",
+    "url": "https://github.com/ft-abhishekgupta/android-event-app-magnumopus",
+    "language": "Java",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2019-06-28T07:43:37Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-calculator",
+    "displayName": "Android Calculator",
+    "description": "Android Calculator with Dark Theme and Other Functions",
+    "url": "https://github.com/ft-abhishekgupta/android-calculator",
+    "language": "Java",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2019-06-28T07:43:32Z",
+    "category": "Android"
+  },
+  {
+    "name": "mpich-visualisation",
+    "displayName": "MPICH Visualisation",
+    "description": "Visual Representation of MPICH Communication over Fat-Tree, 2D-Mesh and Dragonfly",
+    "url": "https://github.com/ft-abhishekgupta/mpich-visualisation",
+    "language": "Python",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2019-06-28T07:43:27Z",
+    "category": "HPC"
+  },
+  {
+    "name": "android-event-app-encoreiet",
+    "displayName": "Encore IET – Event App",
+    "description": "Android App for College Fest with Better Design",
+    "url": "https://github.com/ft-abhishekgupta/android-event-app-encoreiet",
+    "language": "Java",
+    "topics": [],
+    "stars": 1,
+    "updatedAt": "2019-06-28T07:43:15Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-microprocessor-notes-app",
+    "displayName": "Microprocessor Notes App",
+    "description": "Notes App for Microprocessor 8085 - Material Design",
+    "url": "https://github.com/ft-abhishekgupta/android-microprocessor-notes-app",
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-24T06:30:58Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-industrialsociology-notes-app",
+    "displayName": "Industrial Sociology Notes App",
+    "description": "Notes App for Industrial Sociology- Material Design",
+    "url": "https://github.com/ft-abhishekgupta/android-industrialsociology-notes-app",
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-23T19:39:30Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-notes-app",
+    "displayName": "Android Notes App",
+    "description": "Android Appication to Share Notes",
+    "url": "https://github.com/ft-abhishekgupta/android-notes-app",
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-23T14:34:04Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-simple-birthday-app",
+    "displayName": "Android Simple Birthday App",
+    "description": "Make an app for someones birthday in minutes.",
+    "url": "https://github.com/ft-abhishekgupta/android-simple-birthday-app",
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-22T06:26:52Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-website-app-template",
+    "displayName": "Android WebView App Template",
+    "description": "Template to create android app for any website in minutes.",
+    "url": "https://github.com/ft-abhishekgupta/android-website-app-template",
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-22T05:49:50Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-basic-puzzle-game",
+    "displayName": "Android Basic Puzzle Game",
+    "description": "Memory Based Puzzle Android App with Simple UI Design",
+    "url": "https://github.com/ft-abhishekgupta/android-basic-puzzle-game",
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-21T11:19:57Z",
+    "category": "Android"
+  },
+  {
+    "name": "android-basic-calculator",
+    "displayName": "Android Basic Calculator",
+    "description": "Basic Calculator Application on Android",
+    "url": "https://github.com/ft-abhishekgupta/android-basic-calculator",
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2019-06-21T11:13:57Z",
+    "category": "Android"
+  }
+]

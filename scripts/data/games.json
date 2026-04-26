@@ -6,7 +6,8 @@
     "gameId": "18968",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-infinite-warfare/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Halo 4",
@@ -15,7 +16,8 @@
     "gameId": "991",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/halo-4/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Bright Memory: Infinite",
@@ -24,7 +26,8 @@
     "gameId": "113739",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/bright-memory-infinite/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "God of War Ragnarök",
@@ -33,7 +36,8 @@
     "gameId": "112875",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/god-of-war-ragnarok/",
-    "year": 2022
+    "year": 2022,
+    "status": "played"
   },
   {
     "name": "Mortal Kombat 1",
@@ -42,7 +46,8 @@
     "gameId": "239392",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mortal-kombat-1--1/",
-    "year": 2023
+    "year": 2023,
+    "status": "played"
   },
   {
     "name": "Mafia: Definitive Edition",
@@ -51,7 +56,8 @@
     "gameId": "134070",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mafia-definitive-edition/",
-    "year": 2020
+    "year": 2020,
+    "status": "played"
   },
   {
     "name": "Ori and the Blind Forest",
@@ -60,7 +66,8 @@
     "gameId": "7344",
     "userRating": 10,
     "backloggdUrl": "https://backloggd.com/games/ori-and-the-blind-forest/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Superliminal",
@@ -69,7 +76,8 @@
     "gameId": "68447",
     "userRating": 10,
     "backloggdUrl": "https://backloggd.com/games/superliminal/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Mad Max",
@@ -78,7 +86,8 @@
     "gameId": "2552",
     "userRating": 10,
     "backloggdUrl": "https://backloggd.com/games/mad-max/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Iron Man",
@@ -87,7 +96,8 @@
     "gameId": "257213",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/iron-man--3/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Rise of the Tomb Raider",
@@ -96,7 +106,8 @@
     "gameId": "7323",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/rise-of-the-tomb-raider/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Control",
@@ -105,7 +116,8 @@
     "gameId": "103329",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/control/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Knight Rider: The Game",
@@ -114,7 +126,8 @@
     "gameId": "22369",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/knight-rider-the-game/",
-    "year": 2002
+    "year": 2002,
+    "status": "played"
   },
   {
     "name": "Pikuniku",
@@ -123,7 +136,8 @@
     "gameId": "55190",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/pikuniku/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "XIII",
@@ -132,7 +146,8 @@
     "gameId": "117509",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/xiii--1/",
-    "year": 2020
+    "year": 2020,
+    "status": "played"
   },
   {
     "name": "Shadow of the Tomb Raider",
@@ -141,7 +156,8 @@
     "gameId": "37777",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/shadow-of-the-tomb-raider/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Art of Rally",
@@ -150,7 +166,8 @@
     "gameId": "118607",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/art-of-rally/",
-    "year": 2020
+    "year": 2020,
+    "status": "played"
   },
   {
     "name": "FIFA 22",
@@ -159,7 +176,8 @@
     "gameId": "154986",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/fifa-22/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Crab Game",
@@ -168,7 +186,8 @@
     "gameId": "178351",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crab-game/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Battlefield 2042",
@@ -177,7 +196,8 @@
     "gameId": "125166",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-2042/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Uncharted: Legacy of Thieves Collection",
@@ -186,7 +206,8 @@
     "gameId": "168670",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/uncharted-legacy-of-thieves-collection/",
-    "year": 2022
+    "year": 2022,
+    "status": "played"
   },
   {
     "name": "FIFA 23",
@@ -195,7 +216,8 @@
     "gameId": "205780",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/fifa-23/",
-    "year": 2022
+    "year": 2022,
+    "status": "played"
   },
   {
     "name": "Counter-Strike 2",
@@ -204,7 +226,8 @@
     "gameId": "242408",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/counter-strike-2/",
-    "year": 2023
+    "year": 2023,
+    "status": "played"
   },
   {
     "name": "Road Rash",
@@ -213,7 +236,8 @@
     "gameId": "141271",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/road-rash--1/",
-    "year": 1994
+    "year": 1994,
+    "status": "played"
   },
   {
     "name": "Midtown Madness",
@@ -222,7 +246,8 @@
     "gameId": "2348",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/midtown-madness/",
-    "year": 1999
+    "year": 1999,
+    "status": "played"
   },
   {
     "name": "Pocket Tanks",
@@ -231,7 +256,8 @@
     "gameId": "72176",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/pocket-tanks/",
-    "year": 2001
+    "year": 2001,
+    "status": "played"
   },
   {
     "name": "Need for Speed: Hot Pursuit 2",
@@ -240,7 +266,8 @@
     "gameId": "95",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-hot-pursuit-2/",
-    "year": 2002
+    "year": 2002,
+    "status": "played"
   },
   {
     "name": "Hitman 2: Silent Assassin",
@@ -249,7 +276,8 @@
     "gameId": "748",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/hitman-2-silent-assassin/",
-    "year": 2002
+    "year": 2002,
+    "status": "played"
   },
   {
     "name": "Spider-Man",
@@ -258,7 +286,8 @@
     "gameId": "19114",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/spider-man--1/",
-    "year": 2002
+    "year": 2002,
+    "status": "played"
   },
   {
     "name": "Midnight Club II",
@@ -267,7 +296,8 @@
     "gameId": "4631",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/midnight-club-ii/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "I.G.I.-2: Covert Strike",
@@ -276,7 +306,8 @@
     "gameId": "8559",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/i-dot-g-i-dot-2-covert-strike/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Freedom Fighters",
@@ -285,7 +316,8 @@
     "gameId": "719",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/freedom-fighters/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Hulk",
@@ -294,7 +326,8 @@
     "gameId": "3949",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/hulk/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Counter-Strike: Condition Zero",
@@ -303,7 +336,8 @@
     "gameId": "297",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/counter-strike-condition-zero/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Call of Duty: United Offensive",
@@ -312,7 +346,8 @@
     "gameId": "624",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-united-offensive/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Hitman: Contracts",
@@ -321,7 +356,8 @@
     "gameId": "1049",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/hitman-contracts/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Halo 2",
@@ -330,7 +366,8 @@
     "gameId": "986",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/halo-2/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Zuma Deluxe",
@@ -339,7 +376,8 @@
     "gameId": "20509",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/zuma-deluxe/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "X-Men Legends II: Rise of Apocalypse",
@@ -348,7 +386,8 @@
     "gameId": "4576",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/x-men-legends-ii-rise-of-apocalypse/",
-    "year": 2005
+    "year": 2005,
+    "status": "played"
   },
   {
     "name": "Prince of Persia: The Two Thrones",
@@ -357,7 +396,8 @@
     "gameId": "2437",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-two-thrones/",
-    "year": 2005
+    "year": 2005,
+    "status": "played"
   },
   {
     "name": "SuperHot: Mind Control Delete",
@@ -366,7 +406,8 @@
     "gameId": "27448",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/superhot-mind-control-delete/",
-    "year": 2020
+    "year": 2020,
+    "status": "played"
   },
   {
     "name": "Fall Guys",
@@ -375,7 +416,8 @@
     "gameId": "119313",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/fall-guys/",
-    "year": 2020
+    "year": 2020,
+    "status": "played"
   },
   {
     "name": "Lonely Mountains: Downhill",
@@ -384,7 +426,8 @@
     "gameId": "29144",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/lonely-mountains-downhill/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "World War Z",
@@ -393,7 +436,8 @@
     "gameId": "20910",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/world-war-z/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Mortal Kombat 11",
@@ -402,7 +446,8 @@
     "gameId": "112916",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mortal-kombat-11/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Asphalt Legends",
@@ -411,7 +456,8 @@
     "gameId": "23314",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/asphalt-legends/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Burnout Paradise Remastered",
@@ -420,7 +466,8 @@
     "gameId": "78153",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/burnout-paradise-remastered/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Horizon Chase Turbo",
@@ -429,7 +476,8 @@
     "gameId": "96476",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/horizon-chase-turbo/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Just Cause 4",
@@ -438,7 +486,8 @@
     "gameId": "103261",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/just-cause-4/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Tetris Effect",
@@ -447,7 +496,8 @@
     "gameId": "103221",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/tetris-effect/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Stick Fight: The Game",
@@ -456,7 +506,8 @@
     "gameId": "65832",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/stick-fight-the-game/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Homefront: The Revolution",
@@ -465,7 +516,8 @@
     "gameId": "1886",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/homefront-the-revolution/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Worms W.M.D",
@@ -474,7 +526,8 @@
     "gameId": "19696",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/worms-wmd/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Drawful 2",
@@ -483,7 +536,8 @@
     "gameId": "19083",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/drawful-2/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Slither.io",
@@ -492,7 +546,8 @@
     "gameId": "22712",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/slither-dot-io/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Wolfenstein: The Old Blood",
@@ -501,7 +556,8 @@
     "gameId": "9192",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-old-blood/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Smash Hit",
@@ -510,7 +566,8 @@
     "gameId": "39239",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/smash-hit/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Wreckfest",
@@ -519,7 +576,8 @@
     "gameId": "3772",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/wreckfest/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Trials Fusion",
@@ -528,7 +586,8 @@
     "gameId": "3191",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/trials-fusion/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Asphalt 8: Airborne",
@@ -537,7 +596,8 @@
     "gameId": "23306",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/asphalt-8-airborne/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Company of Heroes 2",
@@ -546,7 +606,8 @@
     "gameId": "1369",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/company-of-heroes-2/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Aliens: Colonial Marines",
@@ -555,7 +616,8 @@
     "gameId": "1021",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/aliens-colonial-marines/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Dead Island: Riptide",
@@ -564,7 +626,8 @@
     "gameId": "1833",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dead-island-riptide/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "DayZ",
@@ -573,7 +636,8 @@
     "gameId": "2117",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dayz/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Deadpool",
@@ -582,7 +646,8 @@
     "gameId": "1919",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/deadpool/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Ghosts",
@@ -591,7 +656,8 @@
     "gameId": "2033",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-ghosts/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Hill Climb Racing",
@@ -600,7 +666,8 @@
     "gameId": "38680",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/hill-climb-racing/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Shank 2",
@@ -609,7 +676,8 @@
     "gameId": "9623",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/shank-2/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Syndicate",
@@ -618,7 +686,8 @@
     "gameId": "1006",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/syndicate--3/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Vector",
@@ -627,7 +696,8 @@
     "gameId": "15545",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/vector/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Medal of Honor: Warfighter",
@@ -636,7 +706,8 @@
     "gameId": "1306",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/medal-of-honor-warfighter/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Orcs Must Die! 2",
@@ -645,7 +716,8 @@
     "gameId": "8372",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/orcs-must-die-2/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Tom Clancy's Ghost Recon: Future Soldier",
@@ -654,7 +726,8 @@
     "gameId": "1293",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-ghost-recon-future-soldier/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Angry Birds Space",
@@ -663,7 +736,8 @@
     "gameId": "16365",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/angry-birds-space/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Dishonored",
@@ -672,7 +746,8 @@
     "gameId": "533",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dishonored/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Orcs Must Die!",
@@ -681,7 +756,8 @@
     "gameId": "2355",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/orcs-must-die--1/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Need for Speed: The Run",
@@ -690,7 +766,8 @@
     "gameId": "526",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-the-run/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Where's My Water?",
@@ -699,7 +776,8 @@
     "gameId": "13460",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/wheres-my-water/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Angry Birds Rio",
@@ -708,7 +786,8 @@
     "gameId": "19271",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/angry-birds-rio/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Driver: San Francisco",
@@ -717,7 +796,8 @@
     "gameId": "554",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/driver-san-francisco/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Homefront",
@@ -726,7 +806,8 @@
     "gameId": "1885",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/homefront/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Bulletstorm",
@@ -735,7 +816,8 @@
     "gameId": "494",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/bulletstorm/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Sniper: Ghost Warrior",
@@ -744,7 +826,8 @@
     "gameId": "1367",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/sniper-ghost-warrior/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Worms Reloaded",
@@ -753,7 +836,8 @@
     "gameId": "1017",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/worms-reloaded/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Angry Birds Seasons",
@@ -762,7 +846,8 @@
     "gameId": "19275",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/angry-birds-seasons/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Singularity",
@@ -771,7 +856,8 @@
     "gameId": "571",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/singularity/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Blur",
@@ -780,7 +866,8 @@
     "gameId": "3235",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/blur/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Transformers: War for Cybertron",
@@ -789,7 +876,8 @@
     "gameId": "555",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/transformers-war-for-cybertron/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Prince of Persia: The Forgotten Sands",
@@ -798,7 +886,8 @@
     "gameId": "2468",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-forgotten-sands/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Medal of Honor",
@@ -807,7 +896,8 @@
     "gameId": "556",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/medal-of-honor/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Tom Clancy's Splinter Cell: Conviction",
@@ -816,7 +906,8 @@
     "gameId": "562",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/tom-clancy-s-splinter-cell-conviction/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Total Overdose",
@@ -825,7 +916,8 @@
     "gameId": "6213",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/total-overdose/",
-    "year": 2005
+    "year": 2005,
+    "status": "played"
   },
   {
     "name": "Grand Theft Auto: Liberty City Stories",
@@ -834,7 +926,8 @@
     "gameId": "3263",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-liberty-city-stories/",
-    "year": 2005
+    "year": 2005,
+    "status": "played"
   },
   {
     "name": "Call of Juarez: Gunslinger",
@@ -843,7 +936,8 @@
     "gameId": "1976",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-juarez-gunslinger/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "A Plague Tale: Requiem",
@@ -852,7 +946,8 @@
     "gameId": "152242",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/a-plague-tale-requiem/",
-    "year": 2022
+    "year": 2022,
+    "status": "played"
   },
   {
     "name": "Guns, Gore and Cannoli 2",
@@ -861,7 +956,8 @@
     "gameId": "56870",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli-2/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Guns, Gore & Cannoli",
@@ -870,7 +966,8 @@
     "gameId": "13187",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/guns-gore-and-cannoli/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Crysis Warhead",
@@ -879,7 +976,8 @@
     "gameId": "336",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crysis-warhead/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Crysis 3",
@@ -888,7 +986,8 @@
     "gameId": "1268",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crysis-3/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Crysis 2",
@@ -897,7 +996,8 @@
     "gameId": "471",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crysis-2/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Need for Speed: Payback",
@@ -906,7 +1006,8 @@
     "gameId": "36662",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-payback/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Need for Speed: Most Wanted",
@@ -915,7 +1016,8 @@
     "gameId": "3193",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-most-wanted-53b9fef3-adb4-41a0-8ca0-ffcbb0060467/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Little Nightmares II",
@@ -924,7 +1026,8 @@
     "gameId": "121760",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/little-nightmares-ii/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Crysis",
@@ -933,7 +1036,8 @@
     "gameId": "296",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crysis/",
-    "year": 2007
+    "year": 2007,
+    "status": "played"
   },
   {
     "name": "Dead Space 3",
@@ -942,7 +1046,8 @@
     "gameId": "1216",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dead-space-3/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Need for Speed: Underground",
@@ -951,7 +1056,8 @@
     "gameId": "96",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Saints Row 2",
@@ -960,7 +1066,8 @@
     "gameId": "826",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/saints-row-2/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Modern Warfare Remastered",
@@ -969,7 +1076,8 @@
     "gameId": "24920",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-remastered/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Counter-Strike: Source",
@@ -978,7 +1086,8 @@
     "gameId": "307",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/counter-strike-source/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Call of Duty 2",
@@ -987,7 +1096,8 @@
     "gameId": "622",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-2/",
-    "year": 2005
+    "year": 2005,
+    "status": "played"
   },
   {
     "name": "Postal 2",
@@ -996,7 +1106,8 @@
     "gameId": "3109",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/postal-2/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed Rogue",
@@ -1005,7 +1116,8 @@
     "gameId": "7570",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassins-creed-rogue/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Battlefield V",
@@ -1014,7 +1126,8 @@
     "gameId": "83728",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-v/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Gang Beasts",
@@ -1023,7 +1136,8 @@
     "gameId": "11177",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/gang-beasts/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Broforce",
@@ -1032,7 +1146,8 @@
     "gameId": "5973",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/broforce/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Battlefield: Bad Company 2",
@@ -1041,7 +1156,8 @@
     "gameId": "352",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-bad-company-2/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "My Friend Pedro",
@@ -1050,7 +1166,8 @@
     "gameId": "25901",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/my-friend-pedro/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Human: Fall Flat",
@@ -1059,7 +1176,8 @@
     "gameId": "16992",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/human-fall-flat/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Crazy Taxi",
@@ -1068,7 +1186,8 @@
     "gameId": "1805",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/crazy-taxi/",
-    "year": 1999
+    "year": 1999,
+    "status": "played"
   },
   {
     "name": "Cut the Rope",
@@ -1077,7 +1196,8 @@
     "gameId": "9761",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/cut-the-rope/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Agar.io",
@@ -1086,7 +1206,8 @@
     "gameId": "11283",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/agar-dot-io/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Max Payne 2: The Fall of Max Payne",
@@ -1095,7 +1216,8 @@
     "gameId": "19",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/max-payne-2-the-fall-of-max-payne/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Prototype",
@@ -1104,7 +1226,8 @@
     "gameId": "570",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/prototype/",
-    "year": 2009
+    "year": 2009,
+    "status": "played"
   },
   {
     "name": "Need for Speed: Underground 2",
@@ -1113,7 +1236,8 @@
     "gameId": "97",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/need-for-speed-underground-2/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "Just Cause 2",
@@ -1122,7 +1246,8 @@
     "gameId": "558",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/just-cause-2/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Mafia II",
@@ -1131,7 +1256,8 @@
     "gameId": "40",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mafia-ii/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Wolfenstein II: The New Colossus",
@@ -1140,7 +1266,8 @@
     "gameId": "36952",
     "userRating": 10,
     "backloggdUrl": "https://backloggd.com/games/wolfenstein-ii-the-new-colossus/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "PUBG: Battlegrounds",
@@ -1149,7 +1276,8 @@
     "gameId": "27789",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/pubg-battlegrounds/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Prince of Persia: The Sands of Time",
@@ -1158,7 +1286,8 @@
     "gameId": "836",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/prince-of-persia-the-sands-of-time/",
-    "year": 2003
+    "year": 2003,
+    "status": "played"
   },
   {
     "name": "Just Cause 3",
@@ -1167,7 +1296,8 @@
     "gameId": "8187",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/just-cause-3/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Advanced Warfare",
@@ -1176,7 +1306,8 @@
     "gameId": "6632",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-advanced-warfare/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Rayman Origins",
@@ -1185,7 +1316,8 @@
     "gameId": "981",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/rayman-origins/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Dead Space 2",
@@ -1194,7 +1326,8 @@
     "gameId": "38",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dead-space-2/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "A Plague Tale: Innocence",
@@ -1203,7 +1336,8 @@
     "gameId": "27316",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/a-plague-tale-innocence/",
-    "year": 2019
+    "year": 2019,
+    "status": "played"
   },
   {
     "name": "Max Payne 3",
@@ -1212,7 +1346,8 @@
     "gameId": "960",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/max-payne-3/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "DmC: Devil May Cry",
@@ -1221,7 +1356,8 @@
     "gameId": "1254",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/dmc-devil-may-cry/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Sleeping Dogs",
@@ -1230,7 +1366,8 @@
     "gameId": "1267",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/sleeping-dogs/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Spec Ops: The Line",
@@ -1239,7 +1376,8 @@
     "gameId": "1377",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/spec-ops-the-line/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Max Payne",
@@ -1248,7 +1386,8 @@
     "gameId": "18",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/max-payne/",
-    "year": 2001
+    "year": 2001,
+    "status": "played"
   },
   {
     "name": "Battlefield 3",
@@ -1257,7 +1396,8 @@
     "gameId": "343",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-3/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Brawlhalla",
@@ -1266,7 +1406,8 @@
     "gameId": "10233",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/brawlhalla/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Halo Infinite",
@@ -1275,7 +1416,8 @@
     "gameId": "103281",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/halo-infinite/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Mortal Kombat X",
@@ -1284,7 +1426,8 @@
     "gameId": "7292",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mortal-kombat-x/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Battlefield 4",
@@ -1293,7 +1436,8 @@
     "gameId": "1979",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-4/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "A Way Out",
@@ -1302,7 +1446,8 @@
     "gameId": "36897",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/a-way-out/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Grand Theft Auto III",
@@ -1311,7 +1456,8 @@
     "gameId": "730",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iii/",
-    "year": 2001
+    "year": 2001,
+    "status": "played"
   },
   {
     "name": "Call of Duty: World at War",
@@ -1320,7 +1466,8 @@
     "gameId": "625",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-world-at-war/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Battlefield 1",
@@ -1329,7 +1476,8 @@
     "gameId": "18320",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/battlefield-1/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Batman: Arkham Origins",
@@ -1338,7 +1486,8 @@
     "gameId": "2003",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/batman-arkham-origins/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Payday 2",
@@ -1347,7 +1496,8 @@
     "gameId": "2058",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/payday-2/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Rainbow Six Siege",
@@ -1356,7 +1506,8 @@
     "gameId": "7360",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/rainbow-six-siege/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Wolfenstein: The New Order",
@@ -1365,7 +1516,8 @@
     "gameId": "2031",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/wolfenstein-the-new-order/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed Revelations",
@@ -1374,7 +1526,8 @@
     "gameId": "537",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassins-creed-revelations/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Mass Effect 2",
@@ -1383,7 +1536,8 @@
     "gameId": "74",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mass-effect-2/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Little Nightmares",
@@ -1392,7 +1546,8 @@
     "gameId": "9174",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/little-nightmares/",
-    "year": 2017
+    "year": 2017,
+    "status": "played"
   },
   {
     "name": "Saints Row: The Third",
@@ -1401,7 +1556,8 @@
     "gameId": "873",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/saints-row-the-third/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Black Ops III",
@@ -1410,7 +1566,8 @@
     "gameId": "9509",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-iii/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Inside",
@@ -1419,7 +1576,8 @@
     "gameId": "7342",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/inside/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Rayman Legends",
@@ -1428,7 +1586,8 @@
     "gameId": "1968",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/rayman-legends/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Mass Effect",
@@ -1437,7 +1596,8 @@
     "gameId": "73",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mass-effect/",
-    "year": 2007
+    "year": 2007,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Modern Warfare 3",
@@ -1446,7 +1606,8 @@
     "gameId": "979",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-3/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "It Takes Two",
@@ -1455,7 +1616,8 @@
     "gameId": "135243",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/it-takes-two/",
-    "year": 2021
+    "year": 2021,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed Brotherhood",
@@ -1464,7 +1626,8 @@
     "gameId": "113",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassins-creed-brotherhood/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed III",
@@ -1473,7 +1636,8 @@
     "gameId": "1266",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-iii/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Call of Duty 4: Modern Warfare",
@@ -1482,7 +1646,8 @@
     "gameId": "623",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-4-modern-warfare/",
-    "year": 2007
+    "year": 2007,
+    "status": "played"
   },
   {
     "name": "SuperHot",
@@ -1491,7 +1656,8 @@
     "gameId": "7205",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/superhot/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Mirror's Edge",
@@ -1500,7 +1666,8 @@
     "gameId": "1051",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/mirror-s-edge/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Titanfall 2",
@@ -1509,7 +1676,8 @@
     "gameId": "17447",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/titanfall-2/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Minecraft",
@@ -1518,7 +1686,8 @@
     "gameId": "135400",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/minecraft--1/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Limbo",
@@ -1527,7 +1696,8 @@
     "gameId": "1331",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/limbo/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Chrome Dino",
@@ -1536,7 +1706,8 @@
     "gameId": "133890",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/chrome-dino/",
-    "year": 2014
+    "year": 2014,
+    "status": "played"
   },
   {
     "name": "Counter-Strike: Global Offensive",
@@ -1545,7 +1716,8 @@
     "gameId": "1372",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/counter-strike-global-offensive/",
-    "year": 2012
+    "year": 2012,
+    "status": "played"
   },
   {
     "name": "Batman: Arkham Knight",
@@ -1554,7 +1726,8 @@
     "gameId": "5503",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/batman-arkham-knight/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Black Ops",
@@ -1563,7 +1736,8 @@
     "gameId": "545",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops/",
-    "year": 2010
+    "year": 2010,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed IV Black Flag",
@@ -1572,7 +1746,8 @@
     "gameId": "1970",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassins-creed-iv-black-flag/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Uncharted 4: A Thief's End",
@@ -1581,7 +1756,8 @@
     "gameId": "7331",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/uncharted-4-a-thief-s-end/",
-    "year": 2016
+    "year": 2016,
+    "status": "played"
   },
   {
     "name": "Call of Duty: Modern Warfare 2",
@@ -1590,7 +1766,8 @@
     "gameId": "559",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-2/",
-    "year": 2009
+    "year": 2009,
+    "status": "played"
   },
   {
     "name": "Plants vs. Zombies",
@@ -1599,7 +1776,8 @@
     "gameId": "1277",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/plants-vs-zombies/",
-    "year": 2009
+    "year": 2009,
+    "status": "played"
   },
   {
     "name": "Grand Theft Auto IV",
@@ -1608,7 +1786,8 @@
     "gameId": "731",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-iv/",
-    "year": 2008
+    "year": 2008,
+    "status": "played"
   },
   {
     "name": "Tomb Raider",
@@ -1617,7 +1796,8 @@
     "gameId": "1164",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/tomb-raider--2/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   },
   {
     "name": "Assassin's Creed II",
@@ -1626,7 +1806,8 @@
     "gameId": "127",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/assassin-s-creed-ii/",
-    "year": 2009
+    "year": 2009,
+    "status": "played"
   },
   {
     "name": "Batman: Arkham City",
@@ -1635,7 +1816,8 @@
     "gameId": "501",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/batman-arkham-city/",
-    "year": 2011
+    "year": 2011,
+    "status": "played"
   },
   {
     "name": "Rocket League",
@@ -1644,7 +1826,8 @@
     "gameId": "11198",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/rocket-league/",
-    "year": 2015
+    "year": 2015,
+    "status": "played"
   },
   {
     "name": "Batman: Arkham Asylum",
@@ -1653,7 +1836,8 @@
     "gameId": "500",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/batman-arkham-asylum/",
-    "year": 2009
+    "year": 2009,
+    "status": "played"
   },
   {
     "name": "Grand Theft Auto: San Andreas",
@@ -1662,7 +1846,8 @@
     "gameId": "732",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-san-andreas/",
-    "year": 2004
+    "year": 2004,
+    "status": "played"
   },
   {
     "name": "God of War",
@@ -1671,7 +1856,8 @@
     "gameId": "19560",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/god-of-war--1/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Among Us",
@@ -1680,7 +1866,8 @@
     "gameId": "111469",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/among-us/",
-    "year": 2018
+    "year": 2018,
+    "status": "played"
   },
   {
     "name": "Grand Theft Auto V",
@@ -1689,6 +1876,7 @@
     "gameId": "1020",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/grand-theft-auto-v/",
-    "year": 2013
+    "year": 2013,
+    "status": "played"
   }
 ]

@@ -12,19 +12,24 @@ interface MovieItem {
   userRating: number | null;
   letterboxdUrl: string;
   source: string;
+  language: string | null;
+  mediaType: string | null;
 }
 
 const data: MovieItem[] = rawData as MovieItem[];
 
 type SortOption = "default" | "name-asc" | "name-desc" | "year-new" | "year-old" | "rated";
 type SourceFilter = "all" | "watched" | "watchlist";
+type MediaTypeFilter = "all" | "movie" | "tv";
 
 export default function Movies() {
   const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<SortOption>("default");
+  const [sortBy, setSortBy] = useState<SortOption>("year-new");
   const [ratedOnly, setRatedOnly] = useState(false);
   const [decadeFilter, setDecadeFilter] = useState<string>("all");
-  const [sourceFilter, setSourceFilter] = useState<SourceFilter>("all");
+  const [sourceFilter, setSourceFilter] = useState<SourceFilter>("watched");
+  const [languageFilter, setLanguageFilter] = useState<string>("all");
+  const [mediaTypeFilter, setMediaTypeFilter] = useState<MediaTypeFilter>("all");
 
   const decades = useMemo(() => {
     const ds = new Set<number>();
@@ -32,6 +37,14 @@ export default function Movies() {
       if (m.year) ds.add(Math.floor(m.year / 10) * 10);
     });
     return Array.from(ds).sort((a, b) => b - a);
+  }, []);
+
+  const languages = useMemo(() => {
+    const ls = new Set<string>();
+    data.forEach((m) => {
+      if (m.language) ls.add(m.language);
+    });
+    return Array.from(ls).sort();
   }, []);
 
   const filteredMovies = useMemo(() => {
@@ -48,6 +61,14 @@ export default function Movies() {
 
     if (sourceFilter !== "all") {
       movies = movies.filter((m) => m.source === sourceFilter);
+    }
+
+    if (languageFilter !== "all") {
+      movies = movies.filter((m) => m.language === languageFilter);
+    }
+
+    if (mediaTypeFilter !== "all") {
+      movies = movies.filter((m) => m.mediaType === mediaTypeFilter);
     }
 
     if (decadeFilter !== "all") {
@@ -78,13 +99,15 @@ export default function Movies() {
     }
 
     return movies;
-  }, [search, sortBy, ratedOnly, decadeFilter, sourceFilter]);
+  }, [search, sortBy, ratedOnly, decadeFilter, sourceFilter, languageFilter, mediaTypeFilter]);
 
   const ratedCount = data.filter((m) => m.userRating !== null).length;
   const watchedCount = data.filter((m) => m.source === "watched").length;
   const watchlistCount = data.filter((m) => m.source === "watchlist").length;
+  const movieCount = data.filter((m) => m.mediaType === "movie").length;
+  const tvCount = data.filter((m) => m.mediaType === "tv").length;
   const hasFilters =
-    search || ratedOnly || decadeFilter !== "all" || sourceFilter !== "all";
+    search || ratedOnly || decadeFilter !== "all" || sourceFilter !== "all" || languageFilter !== "all" || mediaTypeFilter !== "all";
 
   return (
     <DefaultLayout>
@@ -92,7 +115,7 @@ export default function Movies() {
         {/* Header */}
         <div className="flex items-center justify-center flex-row gap-2 mb-4">
           <Chip color="secondary" size="lg" variant="bordered">
-            {data.length}
+            {filteredMovies.length}
           </Chip>
           <h1 className="text-3xl font-bold text-center my-8 p-4">
             Movies & TV
@@ -137,7 +160,7 @@ export default function Movies() {
           </Select>
           {watchlistCount > 0 && (
             <Select
-              className="max-w-[150px]"
+              className="max-w-[160px]"
               placeholder="Source"
               size="sm"
               selectedKeys={[sourceFilter]}
@@ -150,6 +173,37 @@ export default function Movies() {
               <SelectItem key="watchlist">
                 Watchlist ({watchlistCount})
               </SelectItem>
+            </Select>
+          )}
+          {languages.length > 1 && (
+            <Select
+              className="max-w-[150px]"
+              placeholder="Language"
+              size="sm"
+              selectedKeys={[languageFilter]}
+              onChange={(e) => setLanguageFilter(e.target.value || "all")}
+            >
+              {[
+                <SelectItem key="all">All Languages</SelectItem>,
+                ...languages.map((lang) => (
+                  <SelectItem key={lang}>{lang}</SelectItem>
+                )),
+              ]}
+            </Select>
+          )}
+          {(movieCount > 0 && tvCount > 0) && (
+            <Select
+              className="max-w-[150px]"
+              placeholder="Type"
+              size="sm"
+              selectedKeys={[mediaTypeFilter]}
+              onChange={(e) =>
+                setMediaTypeFilter((e.target.value || "all") as MediaTypeFilter)
+              }
+            >
+              <SelectItem key="all">All Types</SelectItem>
+              <SelectItem key="movie">🎬 Movies ({movieCount})</SelectItem>
+              <SelectItem key="tv">📺 TV Series ({tvCount})</SelectItem>
             </Select>
           )}
           {ratedCount > 0 && (

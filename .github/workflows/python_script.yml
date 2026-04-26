@@ -1,4 +1,4 @@
-name: Update Games, Movies & Clicks Data
+name: Update Games, Movies, Clicks & Projects Data
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   update_data:
-    name: Scrape games, movies and download click images
+    name: Scrape games, movies, projects and download click images
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,6 +34,13 @@ jobs:
         run: python getMovies.py
         continue-on-error: true
 
+      - name: Fetch projects from GitHub
+        working-directory: scripts
+        run: python getProjects.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
       - name: Update clicks and download images
         working-directory: scripts
         env:
@@ -47,5 +54,5 @@ jobs:
           git config --global user.name "Abhishek Gupta"
           git config --global user.email "ft.abhishekgupta@gmail.com"
           git add scripts/data/ public/clicks/
-          git diff --staged --quiet || git commit -m "Update games, movies data and click images"
+          git diff --staged --quiet || git commit -m "Update games, movies, projects data and click images"
           git push

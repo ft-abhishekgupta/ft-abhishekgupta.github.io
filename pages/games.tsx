@@ -12,17 +12,26 @@ interface GameItem {
   userRating: number | null;
   backloggdUrl: string;
   year: number | null;
+  status: string;
 }
 
 const data: GameItem[] = rawData as GameItem[];
 
 type SortOption = "default" | "name-asc" | "name-desc" | "rated" | "year-new" | "year-old";
+type StatusFilter = "played" | "playing" | "backlog";
 
 export default function Games() {
   const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<SortOption>("default");
+  const [sortBy, setSortBy] = useState<SortOption>("year-new");
   const [ratedOnly, setRatedOnly] = useState(false);
   const [decadeFilter, setDecadeFilter] = useState<string>("all");
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>("played");
+
+  const statusCounts = useMemo(() => ({
+    played: data.filter((g) => g.status === "played").length,
+    playing: data.filter((g) => g.status === "playing").length,
+    backlog: data.filter((g) => g.status === "backlog").length,
+  }), []);
 
   // Compute available decades
   const decades = useMemo(() => {
@@ -35,6 +44,9 @@ export default function Games() {
 
   const filteredGames = useMemo(() => {
     let games = [...data];
+
+    // Status filter
+    games = games.filter((g) => g.status === statusFilter);
 
     // Search filter
     if (search.trim()) {
@@ -75,9 +87,15 @@ export default function Games() {
     }
 
     return games;
-  }, [search, sortBy, ratedOnly, decadeFilter]);
+  }, [search, sortBy, ratedOnly, decadeFilter, statusFilter]);
 
-  const ratedCount = data.filter((g) => g.userRating !== null).length;
+  const ratedCount = data.filter((g) => g.userRating !== null && g.status === statusFilter).length;
+
+  const statusLabels: Record<StatusFilter, string> = {
+    played: "🎮 Played",
+    playing: "▶️ Playing",
+    backlog: "📋 Backlog",
+  };
 
   return (
     <DefaultLayout>
@@ -85,11 +103,28 @@ export default function Games() {
         {/* Header */}
         <div className="flex items-center justify-center flex-row gap-2 mb-4">
           <Chip color="primary" size="lg" variant="bordered">
-            {data.length}
+            {filteredGames.length}
           </Chip>
           <h1 className="text-3xl font-bold text-center my-8 p-4">
-            Games Played
+            Games {statusLabels[statusFilter]}
           </h1>
+        </div>
+
+        {/* Status filter tabs */}
+        <div className="flex justify-center gap-2 mb-6">
+          {(Object.keys(statusCounts) as StatusFilter[]).map((status) => (
+            <button
+              key={status}
+              onClick={() => setStatusFilter(status)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                statusFilter === status
+                  ? "bg-primary text-white shadow-lg scale-105"
+                  : "bg-default-100 text-default-600 hover:bg-default-200"
+              }`}
+            >
+              {statusLabels[status]} ({statusCounts[status]})
+            </button>
+          ))}
         </div>
 
         {/* Controls */}
@@ -145,7 +180,7 @@ export default function Games() {
         {/* Results count */}
         {(search || ratedOnly || decadeFilter !== "all") && (
           <p className="text-center text-sm text-default-400 mb-4">
-            Showing {filteredGames.length} of {data.length} games
+            Showing {filteredGames.length} of {statusCounts[statusFilter]} games
           </p>
         )}
 

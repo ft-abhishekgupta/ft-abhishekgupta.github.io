@@ -15,10 +15,16 @@ if os.path.exists(json_path):
         existing_data = json.load(f)
     print(f"Loaded {len(existing_data)} existing games as fallback")
 
+USERNAME = "ftAbhishek"
+CATEGORIES = {
+    "played": f"https://backloggd.com/u/{USERNAME}/played",
+    "playing": f"https://backloggd.com/u/{USERNAME}/playing",
+    "backlog": f"https://backloggd.com/u/{USERNAME}/backlog",
+}
+
 
 def create_fetcher():
     """Try multiple HTTP clients to bypass Cloudflare."""
-    # Try curl_cffi first (best TLS fingerprint impersonation)
     try:
         from curl_cffi import requests as cffi_requests
         session = cffi_requests.Session(impersonate="chrome")
@@ -29,7 +35,6 @@ def create_fetcher():
     except Exception as e:
         print(f"curl_cffi init failed: {e}")
 
-    # Fallback to cloudscraper
     try:
         import cloudscraper
         scraper = cloudscraper.create_scraper(
@@ -65,54 +70,57 @@ if not session:
 
 games = {}
 
-for page in range(1, 20):
-    url = f'https://backloggd.com/u/ftAbhishek/played?page={page}'
-    r = fetch_page(session, url)
-    if not r:
-        print(f'Page {page}: failed after retries')
-        break
+for status, base_url in CATEGORIES.items():
+    print(f"\n=== Scraping {status} games ===")
+    for page in range(1, 20):
+        url = f'{base_url}?page={page}' if page > 1 else base_url
+        r = fetch_page(session, url)
+        if not r:
+            print(f'  Page {page}: failed after retries')
+            break
 
-    print(f'Page {page}: status {r.status_code}')
+        print(f'  [{status}] Page {page}: status {r.status_code}')
 
-    meta_pattern = r'game-cover\s+(?:user-rating\s+)?(?:"?\s*data-rating="(\d+)")?\s*[^>]*game_id="(\d+)">\s*<a href="/games/([^"]+)/"'
-    img_pattern = r'<img class="card-img height" src="([^"]+)" alt="([^"]+)">'
+        meta_pattern = r'game-cover\s+(?:user-rating\s+)?(?:"?\s*data-rating="(\d+)")?\s*[^>]*game_id="(\d+)">\s*<a href="/games/([^"]+)/"'
+        img_pattern = r'<img class="card-img height" src="([^"]+)" alt="([^"]+)">'
 
-    metas = re.findall(meta_pattern, r.text)
-    imgs = re.findall(img_pattern, r.text)
+        metas = re.findall(meta_pattern, r.text)
+        imgs = re.findall(img_pattern, r.text)
 
-    if not imgs:
-        print('  No games found, stopping.')
-        break
+        if not imgs:
+            print(f'    No games found, stopping {status}.')
+            break
 
-    prev_count = len(games)
-    for i, (img_url, name_raw) in enumerate(imgs):
-        name = html.unescape(name_raw).strip()
-        if name in games:
-            continue
-        rating = None
-        slug = ""
-        game_id = ""
-        if i < len(metas):
-            r_val, gid, s = metas[i]
-            rating = int(r_val) if r_val else None
-            slug = s
-            game_id = gid
-        games[name] = {
-            "name": name,
-            "imageUrl": img_url,
-            "slug": slug,
-            "gameId": game_id,
-            "userRating": rating,
-            "backloggdUrl": f"https://backloggd.com/games/{slug}/" if slug else "",
-            "year": None
-        }
+        prev_count = len(games)
+        for i, (img_url, name_raw) in enumerate(imgs):
+            name = html.unescape(name_raw).strip()
+            if name in games:
+                continue
+            rating = None
+            slug = ""
+            game_id = ""
+            if i < len(metas):
+                r_val, gid, s = metas[i]
+                rating = int(r_val) if r_val else None
+                slug = s
+                game_id = gid
+            games[name] = {
+                "name": name,
+                "imageUrl": img_url,
+                "slug": slug,
+                "gameId": game_id,
+                "userRating": rating,
+                "backloggdUrl": f"https://backloggd.com/games/{slug}/" if slug else "",
+                "year": None,
+                "status": status
+            }
 
-    new_count = len(games) - prev_count
-    print(f'  Found {len(imgs)} games, {new_count} new (total: {len(games)})')
+        new_count = len(games) - prev_count
+        print(f'    Found {len(imgs)} games, {new_count} new (total: {len(games)})')
 
-    if new_count == 0:
-        print('  No new games on this page, stopping.')
-        break
+        if new_count == 0:
+            print(f'    No new games on this page, stopping {status}.')
+            break
 
 # If scraping returned nothing, keep existing data
 if len(games) == 0:
@@ -125,7 +133,6 @@ existing_years = {g["name"]: g.get("year") for g in existing_data if g.get("year
 # Scrape release year from each game's individual page
 print(f'\nScraping release years for {len(games)} games...')
 for i, (name, game) in enumerate(games.items()):
-    # Use cached year if available
     if name in existing_years:
         game["year"] = existing_years[name]
         continue
@@ -147,6 +154,9 @@ for i, (name, game) in enumerate(games.items()):
 
 result = list(games.values())
 print(f'\nTotal unique games: {len(result)}')
+print(f'Played: {sum(1 for g in result if g["status"] == "played")}')
+print(f'Playing: {sum(1 for g in result if g["status"] == "playing")}')
+print(f'Backlog: {sum(1 for g in result if g["status"] == "backlog")}')
 print(f'Games with ratings: {sum(1 for g in result if g["userRating"] is not None)}')
 print(f'Games with years: {sum(1 for g in result if g["year"] is not None)}')
 

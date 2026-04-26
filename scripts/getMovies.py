@@ -105,7 +105,9 @@ for label, base_url in BASE_URLS.items():
                 "imageUrl": image_url,
                 "userRating": user_rating,
                 "letterboxdUrl": f"https://letterboxd.com/film/{slug}/",
-                "source": label
+                "source": label,
+                "language": None,
+                "mediaType": None
             })
         print(f"  Found {count} new films")
         if count == 0:
@@ -119,40 +121,98 @@ if len(all_items) == 0:
     print("\nScraping returned 0 movies. Keeping existing data unchanged.")
     exit(0)
 
-# Fetch poster images from individual film pages (lazy-loaded on list page)
-existing_posters = {m["slug"]: m["imageUrl"] for m in existing_data if m.get("imageUrl")}
-missing_posters = [item for item in all_items if not item["imageUrl"]]
-print(f"\nFetching poster images for {len(missing_posters)} films...")
+# Build cache from existing data for language/mediaType/poster
+existing_details = {}
+for m in existing_data:
+    if m.get("slug"):
+        existing_details[m["slug"]] = {
+            "imageUrl": m.get("imageUrl", ""),
+            "language": m.get("language"),
+            "mediaType": m.get("mediaType"),
+        }
 
-for i, item in enumerate(missing_posters):
+# Fetch poster images and detail info from individual film pages
+items_needing_details = [
+    item for item in all_items
+    if not item["imageUrl"] or item["language"] is None or item["mediaType"] is None
+]
+
+# First, apply cached data
+for item in all_items:
     slug = item["slug"]
-    # Use cached poster if available
-    if slug in existing_posters:
-        item["imageUrl"] = existing_posters[slug]
-        continue
+    if slug in existing_details:
+        cached = existing_details[slug]
+        if not item["imageUrl"] and cached.get("imageUrl"):
+            item["imageUrl"] = cached["imageUrl"]
+        if item["language"] is None and cached.get("language"):
+            item["language"] = cached["language"]
+        if item["mediaType"] is None and cached.get("mediaType"):
+            item["mediaType"] = cached["mediaType"]
 
+# Re-check what still needs fetching
+items_needing_fetch = [
+    item for item in all_items
+    if not item["imageUrl"] or item["language"] is None or item["mediaType"] is None
+]
+print(f"\nFetching details for {len(items_needing_fetch)} films...")
+
+for i, item in enumerate(items_needing_fetch):
+    slug = item["slug"]
     film_url = f"https://letterboxd.com/film/{slug}/"
     try:
         resp = fetch_page(session, film_url, retries=1)
         if resp:
-            # Try film-poster URL first (best quality)
-            poster_m = re.search(r'https://a\.ltrbxd\.com/resized/film-poster/[^\s"\']+', resp.text)
-            if poster_m:
-                item["imageUrl"] = poster_m.group(0)
-            else:
-                # Fallback to og:image
-                og_m = re.search(r'og:image.*?content="([^"]+)"', resp.text)
-                if og_m:
-                    item["imageUrl"] = og_m.group(1)
-        print(f"  [{i+1}/{len(missing_posters)}] {item['name']}: {'OK' if item['imageUrl'] else 'no poster'}")
+            # Extract media type from body tag: data-tmdb-type="movie" or "tv"
+            if item["mediaType"] is None:
+                type_m = re.search(r'data-tmdb-type="([^"]+)"', resp.text)
+                if type_m:
+                    tmdb_type = type_m.group(1)
+                    item["mediaType"] = "tv" if tmdb_type == "tv" else "movie"
+
+            # Extract primary language from details tab
+            if item["language"] is None:
+                lang_m = re.search(
+                    r'<h3><span>Primary Language</span></h3>\s*<div[^>]*>\s*<p>\s*<a[^>]*>([^<]+)</a>',
+                    resp.text
+                )
+                if lang_m:
+                    item["language"] = lang_m.group(1).strip()
+
+            # Extract poster if missing
+            if not item["imageUrl"]:
+                poster_m = re.search(r'https://a\.ltrbxd\.com/resized/film-poster/[^\s"\']+', resp.text)
+                if poster_m:
+                    item["imageUrl"] = poster_m.group(0)
+                else:
+                    og_m = re.search(r'og:image.*?content="([^"]+)"', resp.text)
+                    if og_m:
+                        item["imageUrl"] = og_m.group(1)
+
+        status_parts = []
+        if item["imageUrl"]:
+            status_parts.append("poster")
+        if item["language"]:
+            status_parts.append(f"lang:{item['language']}")
+        if item["mediaType"]:
+            status_parts.append(f"type:{item['mediaType']}")
+        print(f"  [{i+1}/{len(items_needing_fetch)}] {item['name']}: {', '.join(status_parts) or 'no data'}")
     except Exception as e:
-        print(f"  [{i+1}/{len(missing_posters)}] {item['name']}: ERROR {e}")
+        print(f"  [{i+1}/{len(items_needing_fetch)}] {item['name']}: ERROR {e}")
     time.sleep(0.3)
 
 print(f"\nTotal: {len(all_items)} films")
 watched = [i for i in all_items if i["source"] == "watched"]
 watchlist = [i for i in all_items if i["source"] == "watchlist"]
+movies = [i for i in all_items if i["mediaType"] == "movie"]
+tv = [i for i in all_items if i["mediaType"] == "tv"]
+with_lang = [i for i in all_items if i["language"]]
 print(f"Watched: {len(watched)}, Watchlist: {len(watchlist)}")
+print(f"Movies: {len(movies)}, TV: {len(tv)}")
+print(f"With language: {len(with_lang)}")
+
+# Get unique languages
+languages = set(i["language"] for i in all_items if i["language"])
+print(f"Languages found: {sorted(languages)}")
 
 with open(json_path, "w", encoding="utf-8") as f:
     json.dump(all_items, f, indent=2, ensure_ascii=False)

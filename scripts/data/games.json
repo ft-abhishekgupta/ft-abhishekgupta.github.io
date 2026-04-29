@@ -1,5 +1,45 @@
 [
   {
+    "name": "Left 4 Dead",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qrm.jpg",
+    "slug": "left-4-dead",
+    "gameId": "122",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/left-4-dead/",
+    "year": 2008,
+    "status": "played"
+  },
+  {
+    "name": "Halo: Combat Evolved",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2r2r.jpg",
+    "slug": "halo-combat-evolved",
+    "gameId": "740",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/halo-combat-evolved/",
+    "year": 2001,
+    "status": "played"
+  },
+  {
+    "name": "Halo: Reach",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xha.jpg",
+    "slug": "halo-reach",
+    "gameId": "990",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/halo-reach/",
+    "year": 2010,
+    "status": "played"
+  },
+  {
+    "name": "Call of Duty: Black Ops II",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkv.jpg",
+    "slug": "call-of-duty-black-ops-ii",
+    "gameId": "1122",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-ii/",
+    "year": 2012,
+    "status": "played"
+  },
+  {
     "name": "Call of Duty: Infinite Warfare",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkp.jpg",
     "slug": "call-of-duty-infinite-warfare",
@@ -1888,6 +1928,86 @@
     "backloggdUrl": "https://backloggd.com/games/split-fiction/",
     "year": 2025,
     "status": "playing"
+  },
+  {
+    "name": "Borderlands",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tx.jpg",
+    "slug": "borderlands",
+    "gameId": "498",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/borderlands/",
+    "year": 2009,
+    "status": "backlog"
+  },
+  {
+    "name": "BioShock 2",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mlj.jpg",
+    "slug": "bioshock-2",
+    "gameId": "21",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/bioshock-2/",
+    "year": 2010,
+    "status": "backlog"
+  },
+  {
+    "name": "The Elder Scrolls V: Skyrim - Special Edition",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1vco.jpg",
+    "slug": "the-elder-scrolls-v-skyrim-special-edition",
+    "gameId": "19457",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/the-elder-scrolls-v-skyrim-special-edition/",
+    "year": 2016,
+    "status": "backlog"
+  },
+  {
+    "name": "Halo 3",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xhc.jpg",
+    "slug": "halo-3",
+    "gameId": "987",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/halo-3/",
+    "year": 2007,
+    "status": "backlog"
+  },
+  {
+    "name": "Hollow Knight: Silksong",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobebu.jpg",
+    "slug": "hollow-knight-silksong",
+    "gameId": "115289",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/hollow-knight-silksong/",
+    "year": 2025,
+    "status": "backlog"
+  },
+  {
+    "name": "BioShock",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2mli.jpg",
+    "slug": "bioshock",
+    "gameId": "20",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/bioshock/",
+    "year": 2007,
+    "status": "backlog"
+  },
+  {
+    "name": "Doom",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nc7.jpg",
+    "slug": "doom--2",
+    "gameId": "7351",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/doom--2/",
+    "year": 2016,
+    "status": "backlog"
+  },
+  {
+    "name": "Hades",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cob9kr.jpg",
+    "slug": "hades--1",
+    "gameId": "113112",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/hades--1/",
+    "year": 2020,
+    "status": "backlog"
   },
   {
     "name": "Marvel's Spider-Man: Miles Morales",

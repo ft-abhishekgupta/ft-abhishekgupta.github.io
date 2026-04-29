@@ -10,7 +10,7 @@ on:
 
   # Re-deploy after data scraping workflow completes
   workflow_run:
-    workflows: ["Update Games, Movies & Clicks Data"]
+    workflows: ["Update Games, Movies, Clicks & Travel Data"]
     types: [completed]
     branches: [main]
 

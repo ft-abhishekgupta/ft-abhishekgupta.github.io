@@ -1,4 +1,4 @@
-name: Update Games, Movies & Clicks Data
+name: Update Games, Movies, Clicks &amp; Travel Data
 
 on:
   schedule:
@@ -42,10 +42,15 @@ jobs:
         run: python getClicks.py
         continue-on-error: true
 
+      - name: Sync travel from beeneverywhere
+        working-directory: scripts
+        run: python getTravel.py
+        continue-on-error: true
+
       - name: Commit and push changes
         run: |
           git config --global user.name "Abhishek Gupta"
           git config --global user.email "ft.abhishekgupta@gmail.com"
           git add scripts/data/ public/clicks/
-          git diff --staged --quiet || git commit -m "Update games, movies data and click images"
+          git diff --staged --quiet || git commit -m "Update games, movies, clicks and travel data"
           git push

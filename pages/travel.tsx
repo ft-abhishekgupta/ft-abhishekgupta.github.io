@@ -192,31 +192,13 @@ export default function Travel() {
                   </div>
                 </div>
               ) : (
-                <div className="p-5 pb-2">
+                <div className="p-5">
                   <h2 className="text-xl font-bold">📍 {city.name}</h2>
                   <span className="text-xs uppercase tracking-wider text-default-400">
                     {city.country}
                   </span>
                 </div>
               )}
-
-              <div className="p-4">
-                {city.wiki_extract && (
-                  <p className="text-sm text-default-600 line-clamp-4">
-                    {city.wiki_extract}
-                  </p>
-                )}
-                {city.wiki_url && (
-                  <a
-                    href={city.wiki_url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-block mt-2 text-xs text-primary hover:underline"
-                  >
-                    Read more on Wikipedia ↗
-                  </a>
-                )}
-              </div>
             </article>
           ))}
         </div>

@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Lucknow",
+    "country": "India",
+    "emoji": "🇮🇳",
+    "lat": 26.8467,
+    "lng": 80.9462,
+    "notes": "City of Nawabs",
+    "places": [
+      {
+        "name": "Bara Imambara",
+        "lat": 26.8693,
+        "lng": 80.9118,
+        "notes": "Historic mosque-cum-mausoleum complex with the famous Bhul Bhulaiya labyrinth."
+      },
+      {
+        "name": "Chhota Imambara",
+        "lat": 26.8740,
+        "lng": 80.9085,
+        "notes": "Ornate 19th-century imambara, beautifully lit during Muharram."
+      }
+    ]
+  },
+  {
+    "name": "Delhi",
+    "country": "India",
+    "emoji": "🇮🇳",
+    "lat": 28.6139,
+    "lng": 77.2090,
+    "notes": "Capital — layered with Mughal and modern history",
+    "places": [
+      {
+        "name": "Red Fort (Lal Qila)",
+        "lat": 28.6562,
+        "lng": 77.2410,
+        "notes": "UNESCO World Heritage Mughal-era fort; site of the PM's Independence Day address."
+      },
+      {
+        "name": "India Gate",
+        "lat": 28.6129,
+        "lng": 77.2295,
+        "notes": "War memorial arch on Rajpath; lovely at dusk."
+      }
+    ]
+  },
+  {
+    "name": "Hanoi",
+    "country": "Vietnam",
+    "emoji": "🇻🇳",
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "notes": "Vietnam's capital — old quarter charm, lakes, and street food.",
+    "places": []
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "emoji": "🇻🇳",
+    "lat": 10.8231,
+    "lng": 106.6297,
+    "notes": "Saigon — buzzing southern metropolis.",
+    "places": []
+  }
+]

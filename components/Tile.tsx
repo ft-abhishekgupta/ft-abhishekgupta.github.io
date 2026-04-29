@@ -37,18 +37,15 @@ const Tile: React.FC<TileProps> = ({
   year,
 }) => {
   const content = (
-    <div
-      className="shadow-lg m-1.5 flex flex-col text-center rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200 bg-content1"
-      style={{ width: "160px" }}
-    >
-      <div className="relative">
+    <div className="shadow-lg flex flex-col text-center rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200 bg-content1 w-full">
+      <div className="relative w-full aspect-[160/213] bg-default-100">
         <Image
           src={imageUrl}
-          className="rounded-t"
+          className="rounded-t w-full h-full object-cover"
           alt={name}
           width={160}
           height={213}
-          style={{ width: "160px", height: "213px", objectFit: "cover" }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
         {userRating && (
           <div className="absolute bottom-1 right-1 z-10">
@@ -84,7 +81,7 @@ const Tile: React.FC<TileProps> = ({
         href={backloggdUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="no-underline"
+        className="no-underline block w-full"
       >
         {content}
       </a>

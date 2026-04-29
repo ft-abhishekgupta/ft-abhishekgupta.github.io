@@ -50,11 +50,11 @@ export default function Clicks() {
           <Chip color="primary" size="lg" variant="bordered">
             {data.length}
           </Chip>
-          <h1 className="text-3xl font-bold text-center my-8 p-4">
+          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
             Photos Clicked
           </h1>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
           {data.map((item, index) => (
             <ClicksTile
               key={index}

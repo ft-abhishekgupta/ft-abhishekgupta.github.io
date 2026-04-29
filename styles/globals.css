@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  /* Prevent horizontal scroll exposing the dark body background on mobile */
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Honor iOS safe areas so content doesn't slip under notches / home indicators */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Make any media inherently responsive so fixed width/height attributes
+   don't cause horizontal overflow on small screens */
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}

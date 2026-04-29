@@ -105,13 +105,13 @@ export default function Games() {
           <Chip color="primary" size="lg" variant="bordered">
             {filteredGames.length}
           </Chip>
-          <h1 className="text-3xl font-bold text-center my-8 p-4">
+          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
             Games {statusLabels[statusFilter]}
           </h1>
         </div>
 
         {/* Status filter tabs */}
-        <div className="flex justify-center gap-2 mb-6">
+        <div className="flex flex-wrap justify-center gap-2 mb-6">
           {(Object.keys(statusCounts) as StatusFilter[]).map((status) => (
             <button
               key={status}
@@ -191,7 +191,7 @@ export default function Games() {
         )}
 
         {/* Game grid */}
-        <div className="flex flex-wrap justify-center">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-3">
           {filteredGames.map((item, index) => (
             <Tile
               key={item.slug || index}

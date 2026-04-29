@@ -10,17 +10,13 @@ const ClicksTile: React.FC<TileProps> = ({ link, localPath, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="shadow-lg m-2 flex p-1 text-center hover:opacity-80 transition-opacity rounded-lg overflow-hidden cursor-pointer"
-      style={{ maxWidth: "300px" }}
+      className="shadow-lg flex p-1 text-center hover:opacity-80 transition-opacity rounded-lg overflow-hidden cursor-pointer w-full"
     >
       <img
         src={localPath}
         alt={link}
-        width={300}
-        height={300}
         loading="lazy"
-        style={{ maxWidth: "300px", objectFit: "cover" }}
-        className="rounded"
+        className="rounded w-full h-auto object-cover"
       />
     </div>
   );

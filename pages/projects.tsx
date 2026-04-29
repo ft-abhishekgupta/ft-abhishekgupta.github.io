@@ -157,7 +157,7 @@ export default function Projects() {
           <Chip color="success" size="lg" variant="bordered">
             {data.length}
           </Chip>
-          <h1 className="text-3xl font-bold text-center my-8 p-4">
+          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
             Projects
           </h1>
         </div>

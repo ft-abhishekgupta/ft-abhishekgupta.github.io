@@ -1,16 +1,5 @@
 [
   {
-    "name": "Delhi",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 28.6328027,
-    "lng": 77.2197713,
-    "source": "beeneverywhere",
-    "source_id": "R1942586",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jama_Masjid_2011.jpg",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Lucknow",
     "country": "India",
     "country_code": "IN",
@@ -19,6 +8,39 @@
     "source": "beeneverywhere",
     "source_id": "N245753718",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Harzratganj_Market%2C_Lucknow.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Mumbai",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 19.054999,
+    "lng": 72.8692035,
+    "source": "beeneverywhere",
+    "source_id": "N16173235",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "New Delhi",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 28.6138954,
+    "lng": 77.2090057,
+    "source": "beeneverywhere",
+    "source_id": "R2763541",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg/3840px-Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Pune",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 18.521428,
+    "lng": 73.8544541,
+    "source": "beeneverywhere",
+    "source_id": "R10351626",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Pune_West_skyline_-_March_2017.jpg/3840px-Pune_West_skyline_-_March_2017.jpg",
     "image_credit": "Wikipedia"
   },
   {

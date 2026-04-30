@@ -174,7 +174,16 @@ export default function CityMap({ cities, activeCity, onSelect }: Props) {
   );
 
   return (
-    <div style={{ height: 480, width: "100%", background: palette.bg }}>
+    <div
+      style={{
+        height: 480,
+        width: "100%",
+        background: palette.bg,
+        position: "relative",
+        zIndex: 0,
+        isolation: "isolate",
+      }}
+    >
       <MapContainer
         center={[20, 60]}
         zoom={2}

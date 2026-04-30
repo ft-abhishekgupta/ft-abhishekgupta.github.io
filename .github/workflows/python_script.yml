@@ -1,4 +1,4 @@
-name: Update Games, Movies, Clicks &amp; Travel Data
+name: Update Games, Movies, Clicks & Travel Data
 
 on:
   schedule:

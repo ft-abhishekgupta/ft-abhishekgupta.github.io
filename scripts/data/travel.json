@@ -1,5 +1,27 @@
 [
   {
+    "name": "Bengaluru",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 12.9767936,
+    "lng": 77.590082,
+    "source": "beeneverywhere",
+    "source_id": "R7902476",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg/3840px-View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Chandigarh",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 30.7334421,
+    "lng": 76.7797143,
+    "source": "beeneverywhere",
+    "source_id": "R1942809",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Open_Hand_monument%2C_Chandigarh.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Lucknow",
     "country": "India",
     "country_code": "IN",
@@ -33,6 +55,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Pahalgam",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 34.0322048,
+    "lng": 75.3226479,
+    "source": "beeneverywhere",
+    "source_id": "N165089167",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Pune",
     "country": "India",
     "country_code": "IN",
@@ -50,8 +83,41 @@
     "lat": 30.1086537,
     "lng": 78.2916193,
     "source": "beeneverywhere",
-    "source_id": "N3735821429",
+    "source_id": "R9984824",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Trayambakeshwar_Temple_VK.jpg/3840px-Trayambakeshwar_Temple_VK.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Sonamarg",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 34.302387,
+    "lng": 75.2965551,
+    "source": "beeneverywhere",
+    "source_id": "N342119097",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sonmarg_rishav7336.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Srinagar",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 34.0747444,
+    "lng": 74.8204443,
+    "source": "beeneverywhere",
+    "source_id": "N273658993",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Red_and_Yellow_Tulips.JPG",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Udhagamandalam",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 11.4126769,
+    "lng": 76.7030504,
+    "source": "beeneverywhere",
+    "source_id": "N245592179",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Ooty_lake.jpg",
     "image_credit": "Wikipedia"
   },
   {

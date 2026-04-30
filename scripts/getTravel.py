@@ -1,18 +1,21 @@
-"""Fetch visited cities from beeneverywhere.net and enrich with Wikipedia.
+"""Fetch all visited cities from beeneverywhere.net and enrich with Wikipedia.
 
 Source: https://beeneverywhere.net/user/40272
 
 Strategy:
-  beeneverywhere doesn't expose a public "all visits" API, but its SvelteKit
-  data endpoint `/user/{id}/__data.json` includes the four cardinal extremes
-  (most_southern / most_western / most_eastern / most_northern). We dedupe by
-  city id and write each unique city to travel.json, then enrich with a
-  Wikipedia thumbnail + summary.
-
-  This works well when the user has up to ~4 cities (currently 3) and roughly
-  one extreme per direction. If the user grows past that we may miss interior
-  cities — at which point we should look for a richer endpoint or scrape the
-  map JSON directly. For now this is a reasonable compromise.
+  1. GET /query-visits/{user_id}
+       Returns a GeoJSON FeatureCollection with one Point per visited city
+       (rounded to ~0.01°) plus a `stats` object that names the four cardinal
+       extremes (most_southern / most_western / most_eastern / most_nothern).
+  2. For each visited point, look up the city name and country:
+       - First, snap to one of the named cardinal extremes (handles 4 of 7
+         cities for the current profile and gives us proper diacritics).
+       - Otherwise, POST /_api/nominatim/moveend with a small viewbox around
+         the point. The API returns the tracked city in that bounding box
+         with a localised name + country. This is the same call the
+         beeneverywhere map itself makes when it pans, so we get the
+         canonical city name without hitting OSM Nominatim externally.
+  3. Enrich each city with a Wikipedia thumbnail.
 
 Run manually:
     python scripts/getTravel.py
@@ -29,20 +32,23 @@ DATA_PATH = os.path.join(DATA_DIR, "travel.json")
 os.makedirs(DATA_DIR, exist_ok=True)
 
 USER_ID = "40272"
-BEEN_URL = f"https://beeneverywhere.net/user/{USER_ID}/__data.json"
+BASE = "https://beeneverywhere.net"
+QUERY_VISITS_URL = f"{BASE}/query-visits/{USER_ID}"
+MOVEEND_URL = f"{BASE}/_api/nominatim/moveend"
 WIKI_SUMMARY = "https://en.wikipedia.org/api/rest_v1/page/summary/{title}"
 
-# Minimal ISO-3166 alpha-2 -> country name map; extend as travel grows.
+# Map the 2-letter ISO codes beeneverywhere uses (UNP) onto display names.
+# Extend as travel grows; falls back to the code if missing.
 COUNTRY_NAMES = {
     "IN": "India",
     "VN": "Vietnam",
+    "TH": "Thailand",
     "US": "United States",
     "GB": "United Kingdom",
     "FR": "France",
     "DE": "Germany",
     "JP": "Japan",
     "CN": "China",
-    "TH": "Thailand",
     "SG": "Singapore",
     "AE": "United Arab Emirates",
     "NL": "Netherlands",
@@ -59,14 +65,70 @@ COUNTRY_NAMES = {
     "KR": "South Korea",
 }
 
+# Reverse-mapping (display name -> 2-letter code) for the moveend response,
+# whose `country` field is a localised display name (e.g. "Viet Nam").
+COUNTRY_CODE_BY_NAME = {
+    "India": "IN",
+    "Viet Nam": "VN",
+    "Vietnam": "VN",
+    "Thailand": "TH",
+    "United States": "US",
+    "United Kingdom": "GB",
+    "France": "FR",
+    "Germany": "DE",
+    "Japan": "JP",
+    "China": "CN",
+    "Singapore": "SG",
+    "United Arab Emirates": "AE",
+    "Netherlands": "NL",
+    "Italy": "IT",
+    "Spain": "ES",
+    "Indonesia": "ID",
+    "Australia": "AU",
+    "Nepal": "NP",
+    "Sri Lanka": "LK",
+    "Bhutan": "BT",
+    "Bangladesh": "BD",
+    "Malaysia": "MY",
+    "Philippines": "PH",
+    "South Korea": "KR",
+    "Korea, Republic of": "KR",
+}
+
 HEADERS = {
     "User-Agent": "ft-abhishekgupta-portfolio/1.0 (https://ft-abhishekgupta.github.io)",
     "Accept": "application/json",
 }
 
+# Match tolerance when snapping query-visits coords (rounded to 0.01°) to the
+# higher-precision coords in stats.most_*.
+COORD_TOLERANCE = 0.05
+
 
 def http_get_json(url: str):
     req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return json.loads(resp.read().decode("utf-8"))
+
+
+def http_post_multipart_json(url: str, fields: dict):
+    boundary = "----ftBoundary7XfBz9"
+    parts = []
+    for name, value in fields.items():
+        parts.append(f"--{boundary}\r\n"
+                     f"Content-Disposition: form-data; name=\"{name}\"\r\n\r\n"
+                     f"{value}\r\n")
+    parts.append(f"--{boundary}--\r\n")
+    body = "".join(parts).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=body,
+        headers={
+            **HEADERS,
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+        method="POST",
+    )
     with urllib.request.urlopen(req, timeout=20) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
@@ -80,56 +142,47 @@ def fetch_wiki(title: str):
         return None
 
 
-def resolve_sveltekit_data(payload):
-    """SvelteKit __data.json uses a flattened, index-based pool.
+def lookup_city_via_moveend(lon: float, lat: float):
+    """Ask beeneverywhere's moveend API for the tracked city around (lon, lat).
 
-    `nodes[i].data` is an array; index 0 is the root object whose values are
-    integer indices into the same array. We resolve the second node (page
-    data) recursively.
+    Returns (name, country_display_name, osm_uid, precise_lon, precise_lat) or None.
     """
-    if not isinstance(payload, dict) or payload.get("type") != "data":
+    pad = 0.4
+    viewbox = f"{lon - pad},{lat - pad},{lon + pad},{lat + pad}"
+    try:
+        features = http_post_multipart_json(MOVEEND_URL, {
+            "page": f"/user/{USER_ID}",
+            "viewbox": viewbox,
+        })
+    except Exception as e:
+        print(f"  ! moveend failed for ({lon},{lat}): {e}")
         return None
-    nodes = payload.get("nodes") or []
-    # The page-level node (second one) carries the profile + stats.
-    page_node = next(
-        (n for n in nodes if isinstance(n, dict) and n.get("type") == "data"
-         and isinstance(n.get("data"), list) and n["data"]
-         and isinstance(n["data"][0], dict) and "stats" in n["data"][0]),
-        None,
+    if not isinstance(features, list):
+        return None
+    # Pick the feature whose centre is closest to the requested point.
+    best = None
+    best_d = None
+    for f in features:
+        flon, flat = f.get("lon"), f.get("lat")
+        if flon is None or flat is None:
+            continue
+        d = (flon - lon) ** 2 + (flat - lat) ** 2
+        if best_d is None or d < best_d:
+            best_d = d
+            best = f
+    if best is None:
+        return None
+    return (
+        best.get("name"),
+        best.get("country"),
+        best.get("osm_uid"),
+        best.get("lon"),
+        best.get("lat"),
     )
-    if page_node is None:
-        return None
-    pool = page_node["data"]
-
-    def resolve(idx):
-        if not isinstance(idx, int) or idx < 0 or idx >= len(pool):
-            return idx
-        val = pool[idx]
-        if isinstance(val, dict):
-            return {k: resolve(v) for k, v in val.items()}
-        if isinstance(val, list):
-            return [resolve(v) for v in val]
-        return val
-
-    return resolve(0)
-
-
-def extract_cities(resolved: dict):
-    """Pull unique cities out of the most_* extremes."""
-    stats = resolved.get("stats") or {}
-    seen = {}  # id -> city dict
-    for key in ("most_southern", "most_western", "most_eastern", "most_nothern"):
-        c = stats.get(key)
-        if not isinstance(c, dict) or not c.get("id"):
-            continue
-        if c["id"] in seen:
-            continue
-        seen[c["id"]] = c
-    return list(seen.values())
 
 
 def enrich_with_wiki(city: dict):
-    """Add image, wiki_extract, wiki_url. Tolerates failures."""
+    """Add image (best-effort). Tolerates failures."""
     name = city["name"]
     country = city["country"]
     print(f"  wiki: {name}, {country}")
@@ -143,36 +196,70 @@ def enrich_with_wiki(city: dict):
     if thumb:
         city["image"] = thumb
         city["image_credit"] = "Wikipedia"
-    extract = data.get("extract")
-    if extract:
-        city["wiki_extract"] = extract
-    page_url = (data.get("content_urls") or {}).get("desktop", {}).get("page")
-    if page_url:
-        city["wiki_url"] = page_url
 
 
 def main():
-    print(f"Fetching beeneverywhere data for user {USER_ID}…")
-    payload = http_get_json(BEEN_URL)
-    resolved = resolve_sveltekit_data(payload)
-    if not resolved:
-        raise SystemExit("Could not parse beeneverywhere __data.json structure")
+    print(f"Fetching beeneverywhere visits for user {USER_ID}…")
+    payload = http_get_json(QUERY_VISITS_URL)
+    features = payload.get("features") or []
+    stats = payload.get("stats") or {}
 
-    profile = resolved.get("profile") or {}
-    raw_cities = extract_cities(resolved)
-    print(f"  found {len(raw_cities)} unique cities for {profile.get('displayname', USER_ID)}")
+    # Build a lookup of the 4 named extremes from stats.
+    named_extremes = []
+    for key in ("most_southern", "most_western", "most_eastern", "most_nothern"):
+        c = stats.get(key)
+        if isinstance(c, dict) and c.get("id"):
+            named_extremes.append(c)
+
+    def find_extreme(lon, lat):
+        for c in named_extremes:
+            if (abs(c["lon"] - lon) <= COORD_TOLERANCE
+                    and abs(c["lat"] - lat) <= COORD_TOLERANCE):
+                return c
+        return None
+
+    print(f"  found {len(features)} visited points "
+          f"({len(named_extremes)} named via cardinal extremes)")
 
     cities = []
-    for c in raw_cities:
-        cc = c.get("unp") or ""
+    seen_ids = set()
+    for feat in features:
+        coords = (feat.get("geometry") or {}).get("coordinates") or []
+        if len(coords) < 2:
+            continue
+        lon, lat = float(coords[0]), float(coords[1])
+
+        extreme = find_extreme(lon, lat)
+        if extreme is not None:
+            name = extreme["name"]
+            cc = extreme.get("unp") or ""
+            country = COUNTRY_NAMES.get(cc, cc or "Unknown")
+            source_id = extreme["id"]
+            precise_lon = extreme["lon"]
+            precise_lat = extreme["lat"]
+        else:
+            looked_up = lookup_city_via_moveend(lon, lat)
+            if looked_up is None:
+                print(f"  ! could not name point ({lon},{lat}); skipping")
+                continue
+            name, country_display, osm_uid, precise_lon, precise_lat = looked_up
+            cc = COUNTRY_CODE_BY_NAME.get(country_display or "", "")
+            country = COUNTRY_NAMES.get(cc, country_display or "Unknown")
+            source_id = osm_uid or f"point-{lon:.4f}-{lat:.4f}"
+            time.sleep(0.4)  # be polite to beeneverywhere
+
+        if source_id in seen_ids:
+            continue
+        seen_ids.add(source_id)
+
         cities.append({
-            "name": c["name"],
-            "country": COUNTRY_NAMES.get(cc, cc or "Unknown"),
+            "name": name,
+            "country": country,
             "country_code": cc,
-            "lat": c["lat"],
-            "lng": c["lon"],
+            "lat": precise_lat if precise_lat is not None else lat,
+            "lng": precise_lon if precise_lon is not None else lon,
             "source": "beeneverywhere",
-            "source_id": c["id"],
+            "source_id": source_id,
         })
 
     cities.sort(key=lambda x: (x["country"], x["name"]))

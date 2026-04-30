@@ -240,7 +240,7 @@ export default function Projects() {
                     <img
                       src={project.screenshots[0]}
                       alt={project.displayName}
-                      className="w-full h-full object-cover"
+                      className="max-w-full max-h-full object-contain"
                       loading="lazy"
                       onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
                     />

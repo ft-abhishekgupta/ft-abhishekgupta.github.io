@@ -99,14 +99,7 @@ export default function Travel() {
           <CityMap
             cities={cities}
             activeCity={activeCity}
-            onSelect={(name) => {
-              setActiveCity(name);
-              if (typeof window !== "undefined") {
-                const el = document.getElementById(`city-${name}`);
-                if (el)
-                  el.scrollIntoView({ behavior: "smooth", block: "center" });
-              }
-            }}
+            onSelect={(name) => setActiveCity(name)}
           />
         </div>
 

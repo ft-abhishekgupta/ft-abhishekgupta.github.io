@@ -33,6 +33,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Calangute",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 15.5460146,
+    "lng": 73.763253,
+    "source": "beeneverywhere",
+    "source_id": "N1688110013",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Chandigarh",
     "country": "India",
     "country_code": "IN",
@@ -74,6 +85,17 @@
     "source": "beeneverywhere",
     "source_id": "N3582568815",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Vatika_Business_Towers_Faridabad.png",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Fatehpur Sikri",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 27.0911655,
+    "lng": 77.6623984,
+    "source": "beeneverywhere",
+    "source_id": "N568383174",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg",
     "image_credit": "Wikipedia"
   },
   {
@@ -228,6 +250,17 @@
     "source": "beeneverywhere",
     "source_id": "N165089167",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Prayagraj",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 25.4381302,
+    "lng": 81.8338005,
+    "source": "beeneverywhere",
+    "source_id": "N245733956",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Allahabad_Montage_II_Dec_2014.jpg",
     "image_credit": "Wikipedia"
   },
   {

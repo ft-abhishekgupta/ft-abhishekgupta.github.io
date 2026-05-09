@@ -7502,17 +7502,6 @@
     "mediaType": "movie"
   },
   {
-    "name": "Cloverfield",
-    "slug": "cloverfield",
-    "year": 2008,
-    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/i7/89/56/z0/cloverfield-1200-1200-675-675-crop-000000.jpg?v=bcf8de0303",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/cloverfield/",
-    "source": "watched",
-    "language": "English",
-    "mediaType": "movie"
-  },
-  {
     "name": "Return Of Hanuman",
     "slug": "return-of-hanuman",
     "year": 2007,
@@ -9886,6 +9875,28 @@
     "letterboxdUrl": "https://letterboxd.com/film/amar-akbar-anthony/",
     "source": "watched",
     "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Troll Hunter",
+    "slug": "troll-hunter",
+    "year": 2010,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/9/1/6/4/19164-troll-hunter-0-230-0-345-crop.jpg?v=22ba64cf6d",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/troll-hunter/",
+    "source": "watchlist",
+    "language": "Norwegian",
+    "mediaType": "movie"
+  },
+  {
+    "name": "Cloverfield",
+    "slug": "cloverfield",
+    "year": 2008,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/i7/89/56/z0/cloverfield-1200-1200-675-675-crop-000000.jpg?v=bcf8de0303",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/cloverfield/",
+    "source": "watchlist",
+    "language": "English",
     "mediaType": "movie"
   },
   {

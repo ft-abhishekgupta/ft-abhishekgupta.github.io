@@ -9878,6 +9878,17 @@
     "mediaType": "movie"
   },
   {
+    "name": "Troy",
+    "slug": "troy",
+    "year": 2004,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/e3/gm/qm/wd/troy-1200-1200-675-675-crop-000000.jpg?v=580e6f3adc",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/troy/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
     "name": "Troll Hunter",
     "slug": "troll-hunter",
     "year": 2010,

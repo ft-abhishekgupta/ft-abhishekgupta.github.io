@@ -1930,6 +1930,26 @@
     "status": "playing"
   },
   {
+    "name": "Dying Light",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co65yq.jpg",
+    "slug": "dying-light",
+    "gameId": "3042",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/dying-light/",
+    "year": 2015,
+    "status": "backlog"
+  },
+  {
+    "name": "The Last of Us Part II",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5ziw.jpg",
+    "slug": "the-last-of-us-part-ii",
+    "gameId": "26192",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/the-last-of-us-part-ii/",
+    "year": 2020,
+    "status": "backlog"
+  },
+  {
     "name": "Borderlands",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20tx.jpg",
     "slug": "borderlands",

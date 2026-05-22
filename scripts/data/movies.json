@@ -3036,23 +3036,23 @@
     "mediaType": "movie"
   },
   {
-    "name": "Captain Marvel",
-    "slug": "captain-marvel",
-    "year": 2019,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/2/6/7/5/0/226750-captain-marvel-0-230-0-345-crop.jpg?v=4be3c0c011",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/captain-marvel/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Luka Chuppi",
     "slug": "luka-chuppi",
     "year": 2019,
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/1/2/8/2/5/512825-luka-chuppi-0-230-0-345-crop.jpg?v=eafaaa6ea8",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/luka-chuppi/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Captain Marvel",
+    "slug": "captain-marvel",
+    "year": 2019,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/2/6/7/5/0/226750-captain-marvel-0-230-0-345-crop.jpg?v=4be3c0c011",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/captain-marvel/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"
@@ -5016,17 +5016,6 @@
     "mediaType": "movie"
   },
   {
-    "name": "Guardians of the Galaxy",
-    "slug": "guardians-of-the-galaxy",
-    "year": 2014,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/3/6/7/6/93676-guardians-of-the-galaxy-0-230-0-345-crop.jpg?v=3cc8cb967f",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/guardians-of-the-galaxy/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Kick",
     "slug": "kick-2014",
     "year": 2014,
@@ -5044,6 +5033,17 @@
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/6/8/8/6/0/168860-lucy-0-230-0-345-crop.jpg?v=768578ef62",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/lucy-2014/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Guardians of the Galaxy",
+    "slug": "guardians-of-the-galaxy",
+    "year": 2014,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/3/6/7/6/93676-guardians-of-the-galaxy-0-230-0-345-crop.jpg?v=3cc8cb967f",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/guardians-of-the-galaxy/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"
@@ -6094,23 +6094,23 @@
     "mediaType": "movie"
   },
   {
-    "name": "The Avengers",
-    "slug": "the-avengers-2012",
-    "year": 2012,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/6/7/7/8/36778-the-avengers-2012-0-230-0-345-crop.jpg?v=d0e2add158",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/the-avengers-2012/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Vicky Donor",
     "slug": "vicky-donor",
     "year": 2012,
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/8/3/7/8/9/83789-vicky-donor-0-230-0-345-crop.jpg?v=87a0923824",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/vicky-donor/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "The Avengers",
+    "slug": "the-avengers-2012",
+    "year": 2012,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/6/7/7/8/36778-the-avengers-2012-0-230-0-345-crop.jpg?v=d0e2add158",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-avengers-2012/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"

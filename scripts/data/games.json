@@ -1,5 +1,15 @@
 [
   {
+    "name": "Marvel's Spider-Man Remastered",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1l.jpg",
+    "slug": "marvels-spider-man-remastered",
+    "gameId": "138949",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/marvels-spider-man-remastered/",
+    "year": 2020,
+    "status": "played"
+  },
+  {
     "name": "Left 4 Dead",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1qrm.jpg",
     "slug": "left-4-dead",
@@ -1751,7 +1761,7 @@
   },
   {
     "name": "Counter-Strike: Global Offensive",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobt66.jpg",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/coc32n.jpg",
     "slug": "counter-strike-global-offensive",
     "gameId": "1372",
     "userRating": null,
@@ -3547,16 +3557,6 @@
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/forza-horizon-5/",
     "year": 2021,
-    "status": "backlog"
-  },
-  {
-    "name": "Marvel's Spider-Man Remastered",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1l.jpg",
-    "slug": "marvels-spider-man-remastered",
-    "gameId": "138949",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/marvels-spider-man-remastered/",
-    "year": 2020,
     "status": "backlog"
   },
   {

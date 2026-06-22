@@ -1,5 +1,15 @@
 [
   {
+    "name": "Marvel's Spider-Man 2",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1k.jpg",
+    "slug": "marvels-spider-man-2",
+    "gameId": "127044",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/marvels-spider-man-2/",
+    "year": 2023,
+    "status": "played"
+  },
+  {
     "name": "Marvel's Spider-Man: Miles Morales",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1j.jpg",
     "slug": "marvels-spider-man-miles-morales",
@@ -1960,16 +1970,6 @@
     "status": "playing"
   },
   {
-    "name": "Marvel's Spider-Man 2",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1k.jpg",
-    "slug": "marvels-spider-man-2",
-    "gameId": "127044",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/marvels-spider-man-2/",
-    "year": 2023,
-    "status": "playing"
-  },
-  {
     "name": "Split Fiction",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co95gf.jpg",
     "slug": "split-fiction",
@@ -1978,6 +1978,46 @@
     "backloggdUrl": "https://backloggd.com/games/split-fiction/",
     "year": 2025,
     "status": "playing"
+  },
+  {
+    "name": "Call of Duty: Black Ops 7",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9xwv.jpg",
+    "slug": "call-of-duty-black-ops-7",
+    "gameId": "348220",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-7/",
+    "year": 2025,
+    "status": "backlog"
+  },
+  {
+    "name": "Call of Duty: Vanguard",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kq8.jpg",
+    "slug": "call-of-duty-vanguard",
+    "gameId": "165067",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-vanguard/",
+    "year": 2021,
+    "status": "backlog"
+  },
+  {
+    "name": "Call of Duty: Black Ops 6",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8zis.jpg",
+    "slug": "call-of-duty-black-ops-6",
+    "gameId": "302156",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-6/",
+    "year": 2024,
+    "status": "backlog"
+  },
+  {
+    "name": "Call of Duty: WWII",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rdj.jpg",
+    "slug": "call-of-duty-wwii",
+    "gameId": "28204",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-wwii/",
+    "year": 2017,
+    "status": "backlog"
   },
   {
     "name": "007 First Light",

@@ -1,5 +1,16 @@
 [
   {
+    "name": "Tom Clancy&#039;s Jack Ryan: Ghost War",
+    "slug": "tom-clancys-jack-ryan-ghost-war",
+    "year": 2026,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/2/6/6/2/0/4/1266204-tom-clancys-jack-ryan-ghost-war-0-230-0-345-crop.jpg?v=1f8cb40f25",
+    "userRating": 4,
+    "letterboxdUrl": "https://letterboxd.com/film/tom-clancys-jack-ryan-ghost-war/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
     "name": "Raja Shivaji",
     "slug": "raja-shivaji",
     "year": 2026,
@@ -8,6 +19,17 @@
     "letterboxdUrl": "https://letterboxd.com/film/raja-shivaji/",
     "source": "watched",
     "language": "Marathi",
+    "mediaType": "movie"
+  },
+  {
+    "name": "Bhooth Bangla",
+    "slug": "bhooth-bangla",
+    "year": 2026,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/1/2/2/2/6/7/1122267-bhooth-bangla-0-230-0-345-crop.jpg?v=eccb3add6b",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/bhooth-bangla/",
+    "source": "watched",
+    "language": null,
     "mediaType": "movie"
   },
   {
@@ -52,6 +74,17 @@
     "letterboxdUrl": "https://letterboxd.com/film/project-hail-mary/",
     "source": "watched",
     "language": "English",
+    "mediaType": "movie"
+  },
+  {
+    "name": "War Machine",
+    "slug": "war-machine-2026",
+    "year": 2026,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/1/4/9/6/7/6/1149676-war-machine-2026-0-230-0-345-crop.jpg?v=75d5b01b26",
+    "userRating": 8,
+    "letterboxdUrl": "https://letterboxd.com/film/war-machine-2026/",
+    "source": "watched",
+    "language": null,
     "mediaType": "movie"
   },
   {
@@ -173,6 +206,17 @@
     "letterboxdUrl": "https://letterboxd.com/film/jolly-llb-3/",
     "source": "watched",
     "language": "Hindi",
+    "mediaType": "movie"
+  },
+  {
+    "name": "Obsession",
+    "slug": "obsession-2025",
+    "year": 2025,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-230-0-345-crop.jpg?v=cff6fc00b6",
+    "userRating": 10,
+    "letterboxdUrl": "https://letterboxd.com/film/obsession-2025/",
+    "source": "watched",
+    "language": null,
     "mediaType": "movie"
   },
   {
@@ -9878,17 +9922,6 @@
     "mediaType": "movie"
   },
   {
-    "name": "Obsession",
-    "slug": "obsession-2025",
-    "year": 2025,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/2/3/4/4/7/2/1234472-obsession-2025-2-0-230-0-345-crop.jpg?v=cff6fc00b6",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/obsession-2025/",
-    "source": "watchlist",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Troy",
     "slug": "troy",
     "year": 2004,
@@ -10082,17 +10115,6 @@
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/4/1/5/9/2/941592-badass-ravikumar-0-230-0-345-crop.jpg?v=5c3ccf248f",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/badass-ravikumar/",
-    "source": "watchlist",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
-    "name": "Bhooth Bangla",
-    "slug": "bhooth-bangla",
-    "year": 2026,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/1/2/2/2/6/7/1122267-bhooth-bangla-0-230-0-345-crop.jpg?v=eccb3add6b",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/bhooth-bangla/",
     "source": "watchlist",
     "language": null,
     "mediaType": "movie"

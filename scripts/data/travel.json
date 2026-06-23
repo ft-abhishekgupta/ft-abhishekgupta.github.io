@@ -1,16 +1,5 @@
 [
   {
-    "name": "Agra",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 27.1752554,
-    "lng": 78.0098161,
-    "source": "beeneverywhere",
-    "source_id": "N567267943",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Taj_Mahal%2C_Agra%2C_India.jpg",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Amritsar",
     "country": "India",
     "country_code": "IN",
@@ -204,7 +193,7 @@
     "lat": 19.054999,
     "lng": 72.8692035,
     "source": "beeneverywhere",
-    "source_id": "R7964375",
+    "source_id": "N16173235",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg",
     "image_credit": "Wikipedia"
   },

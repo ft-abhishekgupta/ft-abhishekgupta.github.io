@@ -1,5 +1,25 @@
 [
   {
+    "name": "Call of Duty: Modern Warfare II",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4sbw.jpg",
+    "slug": "call-of-duty-modern-warfare-ii",
+    "gameId": "200165",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-ii/",
+    "year": 2022,
+    "status": "played"
+  },
+  {
+    "name": "Call of Duty: Black Ops",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2adk.jpg",
+    "slug": "call-of-duty-black-ops--1",
+    "gameId": "135299",
+    "userRating": null,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops--1/",
+    "year": 2010,
+    "status": "played"
+  },
+  {
     "name": "Marvel's Spider-Man 2",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/cobg1k.jpg",
     "slug": "marvels-spider-man-2",
@@ -1810,16 +1830,6 @@
     "status": "played"
   },
   {
-    "name": "Call of Duty: Black Ops",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkl.jpg",
-    "slug": "call-of-duty-black-ops",
-    "gameId": "545",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops/",
-    "year": 2010,
-    "status": "played"
-  },
-  {
     "name": "Assassin's Creed IV Black Flag",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4qfn.jpg",
     "slug": "assassins-creed-iv-black-flag",
@@ -2420,16 +2430,6 @@
     "status": "backlog"
   },
   {
-    "name": "Call of Duty: Modern Warfare II",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4sbw.jpg",
-    "slug": "call-of-duty-modern-warfare-ii",
-    "gameId": "200165",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-modern-warfare-ii/",
-    "year": 2022,
-    "status": "backlog"
-  },
-  {
     "name": "High on Life",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co67qo.jpg",
     "slug": "high-on-life",
@@ -2466,16 +2466,6 @@
     "gameId": "194837",
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/one-piece-odyssey/",
-    "year": 2023,
-    "status": "backlog"
-  },
-  {
-    "name": "Avatar: Frontiers of Pandora",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9oe3.jpg",
-    "slug": "avatar-frontiers-of-pandora",
-    "gameId": "152202",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/avatar-frontiers-of-pandora/",
     "year": 2023,
     "status": "backlog"
   },
@@ -2567,16 +2557,6 @@
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/metal-gear-solid-delta-snake-eater/",
     "year": 2025,
-    "status": "backlog"
-  },
-  {
-    "name": "Suicide Squad: Kill the Justice League",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co40fu.jpg",
-    "slug": "suicide-squad-kill-the-justice-league",
-    "gameId": "136627",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/suicide-squad-kill-the-justice-league/",
-    "year": 2024,
     "status": "backlog"
   },
   {

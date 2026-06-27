@@ -9933,6 +9933,127 @@
     "mediaType": "movie"
   },
   {
+    "name": "Fear",
+    "slug": "fear-2018-5",
+    "year": 2018,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/0/7/0/6/0/5/1070605-fear-0-230-0-345-crop.jpg?v=6d9e8b8210",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/fear-2018-5/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Over the Garden Wall",
+    "slug": "over-the-garden-wall-2014",
+    "year": 2014,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/4/3/9/1/1/343911-over-the-garden-wall-0-600-0-900-crop.jpg?v=85834d0555",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/over-the-garden-wall-2014/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Sapne vs Everyone",
+    "slug": "sapne-vs-everyone",
+    "year": 2023,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/4/9/1/6/5/3/1491653-sapne-vs-everyone-0-230-0-345-crop.jpg?v=430aff2db1",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/sapne-vs-everyone/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "The Furious",
+    "slug": "the-furious",
+    "year": 2025,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/1/6/4/1/5/4/1164154-the-furious-0-600-0-900-crop.jpg?v=f880a59523",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-furious/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "The Call",
+    "slug": "the-call-2020-3",
+    "year": 2020,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/5/0/3/9/7/9/503979-the-call-2020-3-0-600-0-900-crop.jpg?v=2aae3415c4",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-call-2020-3/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "American Psycho",
+    "slug": "american-psycho",
+    "year": 2000,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/tr/kl/dj/zi/american-psycho-1200-1200-675-675-crop-000000.jpg?v=59e7d630d5",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/american-psycho/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "The Other Guys",
+    "slug": "the-other-guys",
+    "year": 2010,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/4/3/9/4/34394-the-other-guys-0-600-0-900-crop.jpg?v=5cc54e3d99",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/the-other-guys/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Yavarum Nalam",
+    "slug": "yavarum-nalam",
+    "year": 2009,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/9/3/3/5/39335-yavarum-nalam-0-600-0-900-crop.jpg?v=ab1ea1e54e",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/yavarum-nalam/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Phone Booth",
+    "slug": "phone-booth",
+    "year": 2002,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/k4/pa/9x/pa/14Jb0vOZKxbkyx5h0cQ8uj0sD3V-1200-1200-675-675-crop-000000.jpg?v=9b3fc10b77",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/phone-booth/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Taskaree: The Smuggler&#039;s Web",
+    "slug": "taskaree-the-smugglers-web",
+    "year": 2026,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/4/9/1/6/2/4/1491624-taskaree-the-smugglers-web-0-230-0-345-crop.jpg?v=2b61930144",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/taskaree-the-smugglers-web/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Dridam",
+    "slug": "dridam",
+    "year": 2026,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/8/1/8/9/2/5/818925-dridam-0-600-0-900-crop.jpg?v=22b04233cc",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/dridam/",
+    "source": "watchlist",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
     "name": "Troy",
     "slug": "troy",
     "year": 2004,

@@ -1,5 +1,16 @@
 [
   {
+    "name": "Ambala",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 30.3843674,
+    "lng": 76.770421,
+    "source": "beeneverywhere",
+    "source_id": "N176044062",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ambala_Cantonment_Railway_Station.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Amritsar",
     "country": "India",
     "country_code": "IN",
@@ -18,6 +29,17 @@
     "lng": 76.7502525,
     "source": "beeneverywhere",
     "source_id": "N1427179128"
+  },
+  {
+    "name": "Ayodhya",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 26.7990707,
+    "lng": 82.2052321,
+    "source": "beeneverywhere",
+    "source_id": "N245753026",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg",
+    "image_credit": "Wikipedia"
   },
   {
     "name": "Bengaluru",
@@ -39,6 +61,17 @@
     "source": "beeneverywhere",
     "source_id": "N1688110013",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Coonoor",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 11.3459447,
+    "lng": 76.7965283,
+    "source": "beeneverywhere",
+    "source_id": "N282403100",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Coonoor_Railway_Station.jpg",
     "image_credit": "Wikipedia"
   },
   {
@@ -108,6 +141,15 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Gorakhpur",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 26.7600217,
+    "lng": 83.3668129,
+    "source": "beeneverywhere",
+    "source_id": "N575741452"
+  },
+  {
     "name": "Greater Noida",
     "country": "India",
     "country_code": "IN",
@@ -116,6 +158,17 @@
     "source": "beeneverywhere",
     "source_id": "N712869911",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Greaternoida_expressway_Q2.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Gulmarg",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 34.04897,
+    "lng": 74.39212,
+    "source": "beeneverywhere",
+    "source_id": "N513158380",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Ancient_Temple%2C_Gulmarg.jpg",
     "image_credit": "Wikipedia"
   },
   {
@@ -163,14 +216,36 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Kullu",
+    "name": "Kasauli",
     "country": "India",
     "country_code": "IN",
-    "lat": 31.9578974,
-    "lng": 77.1089232,
+    "lat": 30.8999479,
+    "lng": 76.9619744,
     "source": "beeneverywhere",
-    "source_id": "N287468687",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Beas_Valley_-_Palchan_-_Kullu_2014-05-10_2275.JPG/3840px-Beas_Valley_-_Palchan_-_Kullu_2014-05-10_2275.JPG",
+    "source_id": "N3209419734",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kasauli_hills.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Kasol",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 32.0104317,
+    "lng": 77.3166036,
+    "source": "beeneverywhere",
+    "source_id": "N756382658",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Kufri",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 31.1006627,
+    "lng": 77.2633837,
+    "source": "beeneverywhere",
+    "source_id": "N956636270",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kufri_hills.jpg/3840px-Kufri_hills.jpg",
     "image_credit": "Wikipedia"
   },
   {
@@ -240,6 +315,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Pimpri-Chinchwad",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 18.6279288,
+    "lng": 73.8009829,
+    "source": "beeneverywhere",
+    "source_id": "N1600720975",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Closeup_of_Pimpri-Chinchwad_Municipal_Corporation.jpg/3840px-Closeup_of_Pimpri-Chinchwad_Municipal_Corporation.jpg",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Prayagraj",
     "country": "India",
     "country_code": "IN",
@@ -262,14 +348,14 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Shimla",
+    "name": "Saharanpur",
     "country": "India",
     "country_code": "IN",
-    "lat": 31.1041526,
-    "lng": 77.1709729,
+    "lat": 29.9637438,
+    "lng": 77.5427464,
     "source": "beeneverywhere",
-    "source_id": "N316417040",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Landscape_of_Shimla_%2C_Himachal_Pradesh.jpg/3840px-Landscape_of_Shimla_%2C_Himachal_Pradesh.jpg",
+    "source_id": "N723867682",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baba_Bhura_Dev_temple%2C_Shakumbhri_Devi_-_panoramio.jpg",
     "image_credit": "Wikipedia"
   },
   {

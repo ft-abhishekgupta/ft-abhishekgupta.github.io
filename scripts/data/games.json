@@ -1,5 +1,15 @@
 [
   {
+    "name": "Call of Duty: Vanguard",
+    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kq8.jpg",
+    "slug": "call-of-duty-vanguard",
+    "gameId": "165067",
+    "userRating": 8,
+    "backloggdUrl": "https://backloggd.com/games/call-of-duty-vanguard/",
+    "year": 2021,
+    "status": "played"
+  },
+  {
     "name": "Call of Duty: Modern Warfare II",
     "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4sbw.jpg",
     "slug": "call-of-duty-modern-warfare-ii",
@@ -1997,16 +2007,6 @@
     "userRating": null,
     "backloggdUrl": "https://backloggd.com/games/call-of-duty-black-ops-7/",
     "year": 2025,
-    "status": "backlog"
-  },
-  {
-    "name": "Call of Duty: Vanguard",
-    "imageUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kq8.jpg",
-    "slug": "call-of-duty-vanguard",
-    "gameId": "165067",
-    "userRating": null,
-    "backloggdUrl": "https://backloggd.com/games/call-of-duty-vanguard/",
-    "year": 2021,
     "status": "backlog"
   },
   {

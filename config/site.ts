@@ -2,7 +2,8 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Abhishek Gupta",
-  description: "Portfolio for Abhishek Gupta",
+  description:
+    "Abhishek Gupta — Software Engineer II at Microsoft Xbox. Backend-heavy full-stack engineer building distributed systems, cloud infrastructure and AI platforms on Azure.",
   navItems: [
     {
       label: "Resume",

@@ -1,22 +1,18 @@
-import { Link } from "@nextui-org/link";
+import Contact from "@/components/home/Contact";
+import Experience from "@/components/home/Experience";
+import Hero from "@/components/home/Hero";
+import Highlights from "@/components/home/Highlights";
+import TechTicker from "@/components/home/TechTicker";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
   return (
-    <DefaultLayout>
-      <main className="flex flex-col items-center py-6 sm:py-10 px-2">
-        <Link href={"/games"} className="block w-full max-w-[500px]">
-          <img
-            src={"./profile.png"}
-            alt="Profile Image"
-            width={500}
-            height={500}
-            className="w-full h-auto rounded-lg"
-          />
-        </Link>
-        <br />
-        Hello World !!!
-      </main>
+    <DefaultLayout fullWidth>
+      <Hero />
+      <TechTicker />
+      <Experience />
+      <Highlights />
+      <Contact />
     </DefaultLayout>
   );
 }

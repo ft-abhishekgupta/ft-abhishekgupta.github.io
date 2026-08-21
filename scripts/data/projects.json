@@ -1,5 +1,45 @@
 [
   {
+    "name": "the-todo-app",
+    "displayName": "TheTodoApp – Productivity Suite",
+    "description": "Productivity suite unifying tasks, habits, Pomodoro sessions, calendar and projects, built on Next.js and Firebase.",
+    "url": "https://github.com/ft-abhishekgupta/the-todo-app",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2026-06-03T07:21:36Z",
+    "category": "Web",
+    "screenshots": [],
+    "features": [
+      "Full CRUD with status, priority, category, deadlines",
+      "Subtasks support",
+      "Scheduled dates & recurring tasks",
+      "Overdue highlighting",
+      "Move tasks to next day",
+      "Filter & search"
+    ]
+  },
+  {
+    "name": "music-player",
+    "displayName": "Cloud Music Player",
+    "description": "Browser-based music player that streams audio straight from a OneDrive shared folder, with full playback controls.",
+    "url": "https://github.com/ft-abhishekgupta/music-player",
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "updatedAt": "2026-04-30T05:05:03Z",
+    "category": "Web",
+    "screenshots": [],
+    "features": [
+      "🎵 Streams music directly from OneDrive (no local storage needed)",
+      "▶️ Full playback controls (play/pause, next/prev, shuffle, repeat)",
+      "📊 Progress bar with seek & volume control",
+      "⌨️ Keyboard shortcuts (Space, arrows, Ctrl+arrows)",
+      "📱 Responsive dark theme UI",
+      "🔊 OS-level media controls integration"
+    ]
+  },
+  {
     "name": "ft-abhishekgupta.github.io",
     "displayName": "Portfolio Website",
     "description": "Personal portfolio website built with Next.js, TypeScript, and Tailwind CSS.",

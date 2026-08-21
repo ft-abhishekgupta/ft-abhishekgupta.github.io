@@ -20,7 +20,9 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 OUTPUT_FILE = SCRIPT_DIR / "data" / "projects.json"
 
 # Path to local repo clones (used in CI or locally)
-LOCAL_REPOS_DIR = Path(os.environ.get("LOCAL_REPOS_DIR", r"C:\Personal\github"))
+LOCAL_REPOS_DIR = Path(
+    os.environ.get("LOCAL_REPOS_DIR", r"D:\OneDrive\LayoffBackup\Resume\personal-projects")
+)
 
 GH_FIELDS = "name,description,url,primaryLanguage,repositoryTopics,stargazerCount,updatedAt,defaultBranchRef"
 
@@ -41,9 +43,11 @@ DISPLAY_NAME_OVERRIDES = {
     "java-swing-games": "Java Swing Games",
     "material-kit-react": "Material Kit React",
     "mpich-visualisation": "MPICH Visualisation",
+    "music-player": "Cloud Music Player",
     "php-mysql-onlinequizportal": "Online Quiz Portal",
     "telebot-reminderservice": "Telegram Reminder Bot",
     "telebot-wordpress-bloggingviamessaging-xeon": "Xeon – WordPress Blogging Bot",
+    "the-todo-app": "TheTodoApp – Productivity Suite",
 }
 
 # ── Short descriptions for projects ──────────────────────────────────────────
@@ -66,9 +70,11 @@ SHORT_DESCRIPTIONS = {
     "java-swing-games": "Collection of 7 classic games built with Java Swing: Chess, Tetris, Sudoku, Snake & Ladders, and more.",
     "material-kit-react": "Free React UI Kit based on Material Design with reusable components.",
     "mpich-visualisation": "Visualization tool for MPI/HPC network topologies: Fat Tree, Torus, and Dragonfly.",
+    "music-player": "Browser-based music player that streams audio straight from a OneDrive shared folder, with full playback controls.",
     "php-mysql-onlinequizportal": "Online quiz portal with random question generation, user management, and score tracking.",
     "telebot-reminderservice": "Telegram bot that schedules and sends reminders using natural language input.",
     "telebot-wordpress-bloggingviamessaging-xeon": "Telegram bot for publishing WordPress blog posts directly via messaging.",
+    "the-todo-app": "Productivity suite unifying tasks, habits, Pomodoro sessions, calendar and projects, built on Next.js and Firebase.",
 }
 
 # ── Category rules (checked in order; first match wins) ──────────────────────

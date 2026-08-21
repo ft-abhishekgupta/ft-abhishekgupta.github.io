@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   /* Prevent horizontal scroll exposing the dark body background on mobile */
@@ -22,4 +26,87 @@ video,
 svg {
   max-width: 100%;
   height: auto;
+}
+
+/* ── Homepage ────────────────────────────────────────────────────────────── */
+
+/* Faint blueprint grid behind the hero, faded out towards the edges */
+.hero-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(125, 145, 180, 0.09) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(125, 145, 180, 0.09) 1px, transparent 1px);
+  background-size: 56px 56px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 55% at 50% 32%,
+    #000 35%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 55% at 50% 32%,
+    #000 35%,
+    transparent 100%
+  );
+}
+
+/* Rotating conic sweep used as the glowing ring around the hero portrait */
+.ring-spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 170%;
+  aspect-ratio: 1;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(56, 189, 248, 0.95) 55deg,
+    rgba(167, 139, 250, 0.9) 120deg,
+    transparent 210deg,
+    transparent 360deg
+  );
+  animation: ring-spin 8s linear infinite;
+}
+
+@keyframes ring-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Soft fade on both ends of the tech-stack marquee */
+.marquee-viewport {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 7%,
+    #000 93%,
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .ring-spin,
+  .animate-marquee,
+  .animate-marquee-reverse,
+  .animate-caret,
+  .animate-bounce,
+  .animate-ping {
+    animation: none !important;
+  }
 }

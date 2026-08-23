@@ -271,6 +271,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Madikeri",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 12.42149,
+    "lng": 75.7387543,
+    "source": "beeneverywhere",
+    "source_id": "N390887113",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Raja%27s_Seat_View_Point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Mumbai",
     "country": "India",
     "country_code": "IN",

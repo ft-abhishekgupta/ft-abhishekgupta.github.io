@@ -13,7 +13,7 @@ const ICON_PROPS = {
 };
 
 const GROUP_ICONS: Record<string, React.ReactNode> = {
-  Backend: (
+  "Backend & Architecture": (
     <svg {...ICON_PROPS}>
       <rect height="6" rx="2" width="17" x="3.5" y="4" />
       <rect height="6" rx="2" width="17" x="3.5" y="14" />
@@ -27,13 +27,23 @@ const GROUP_ICONS: Record<string, React.ReactNode> = {
       <path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3" />
     </svg>
   ),
-  "Security & Reliability": (
+  "Languages & Frameworks": (
+    <svg {...ICON_PROPS}>
+      <path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14" />
+    </svg>
+  ),
+  "Reliability & DevOps": (
+    <svg {...ICON_PROPS}>
+      <path d="M3 12h3.5l2-5.5 3.5 11 2.5-7 1.5 4h5" />
+    </svg>
+  ),
+  "Security & Identity": (
     <svg {...ICON_PROPS}>
       <path d="M12 3 4.5 6v6c0 4.4 3.2 7.9 7.5 9 4.3-1.1 7.5-4.6 7.5-9V6L12 3Z" />
       <path d="m9 12 2 2 4-4" />
     </svg>
   ),
-  "Frontend & AI": (
+  "AI Engineering": (
     <svg {...ICON_PROPS}>
       <path d="M12 3.5 13.6 8 18 9.6 13.6 11.2 12 15.7 10.4 11.2 6 9.6 10.4 8 12 3.5Z" />
       <path d="m18.6 15 .7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7.7-2Z" />
@@ -45,6 +55,8 @@ const ACCENTS = [
   "border-sky-500/25 bg-sky-500/10 text-sky-400",
   "border-cyan-500/25 bg-cyan-500/10 text-cyan-400",
   "border-emerald-500/25 bg-emerald-500/10 text-emerald-400",
+  "border-amber-500/25 bg-amber-500/10 text-amber-400",
+  "border-rose-500/25 bg-rose-500/10 text-rose-400",
   "border-violet-500/25 bg-violet-500/10 text-violet-400",
 ];
 
@@ -102,7 +114,7 @@ export default function TechTicker() {
         <div className="flex flex-col gap-6">
           <TickerRow items={techStack.slice(0, half)} />
           <TickerRow reverse items={techStack.slice(half)} />
-          <div className="mx-auto mt-6 grid w-full max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+          <div className="mx-auto mt-6 grid w-full max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
             {skillGroups.map((group, i) => (
               <Reveal key={group.title} className="h-full" delay={i * 0.07}>
                 <div className="group flex h-full flex-col rounded-2xl border border-default-200/70 bg-content1/60 p-5 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5">

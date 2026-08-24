@@ -1,6 +1,7 @@
 import rawData from "../scripts/data/projects.json";
 import { Chip, Input, Select, SelectItem } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
+import SmartImage from "@/components/SmartImage";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -236,13 +237,14 @@ export default function Projects() {
               >
                 {/* Screenshot preview */}
                 {project.screenshots.length > 0 && (
-                  <div className="mb-3 rounded-lg overflow-hidden bg-default-100 aspect-video flex items-center justify-center">
-                    <img
+                  <div className="mb-3 rounded-lg overflow-hidden bg-default-100 aspect-video">
+                    <SmartImage
                       src={project.screenshots[0]}
                       alt={project.displayName}
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-contain"
                       loading="lazy"
-                      onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                      hideOnError
+                      wrapperClassName="w-full h-full"
                     />
                   </div>
                 )}
@@ -345,14 +347,13 @@ export default function Projects() {
             {/* Screenshot carousel */}
             {activeProject.screenshots.length > 0 && (
               <div className="relative bg-black/50 rounded-t-2xl">
-                <div className="flex items-center justify-center min-h-[200px] md:min-h-[350px]">
-                  <img
-                    src={activeProject.screenshots[screenshotIndex]}
-                    alt={`${activeProject.displayName} screenshot ${screenshotIndex + 1}`}
-                    className="max-w-full max-h-[50vh] object-contain rounded-t-2xl"
-                    onError={(e) => { (e.target as HTMLImageElement).src = ''; }}
-                  />
-                </div>
+                <SmartImage
+                  key={activeProject.screenshots[screenshotIndex]}
+                  src={activeProject.screenshots[screenshotIndex]}
+                  alt={`${activeProject.displayName} screenshot ${screenshotIndex + 1}`}
+                  className="max-w-full max-h-[50vh] object-contain rounded-t-2xl"
+                  wrapperClassName="flex items-center justify-center min-h-[200px] md:min-h-[350px] rounded-t-2xl"
+                />
                 {activeProject.screenshots.length > 1 && (
                   <>
                     <button
@@ -469,12 +470,13 @@ export default function Projects() {
                         i === screenshotIndex ? "border-primary" : "border-transparent opacity-60 hover:opacity-100"
                       }`}
                     >
-                      <img
+                      <SmartImage
                         src={src}
                         alt={`Thumbnail ${i + 1}`}
                         className="w-full h-full object-cover"
                         loading="lazy"
-                        onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+                        hideOnError
+                        wrapperClassName="w-full h-full"
                       />
                     </button>
                   ))}

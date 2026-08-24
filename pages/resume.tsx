@@ -1,4 +1,5 @@
 import { DownloadIcon } from "@/components/home/primitives";
+import SmartImage from "@/components/SmartImage";
 import { profile } from "@/config/resume";
 import DefaultLayout from "@/layouts/default";
 
@@ -27,12 +28,14 @@ export default function Resume() {
           </a>
         </div>
 
-        <img
+        <SmartImage
           src={"./Resume-1.png"}
           alt="Resume"
           width={800}
           height={1131}
-          className="w-full max-w-3xl h-auto rounded-lg shadow-lg"
+          className="w-full h-auto rounded-lg shadow-lg"
+          wrapperClassName="w-full max-w-3xl rounded-lg shadow-lg"
+          placeholderClassName="aspect-[800/1131]"
         />
       </div>
     </DefaultLayout>

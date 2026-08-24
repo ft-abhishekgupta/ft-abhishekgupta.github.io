@@ -28,6 +28,30 @@ svg {
   height: auto;
 }
 
+/* ── Image loading placeholder ───────────────────────────────────────────── */
+
+/* Sweeping highlight shown while an image decodes. The base tint comes from the
+   `bg-default-100` utility so it tracks the active theme. */
+.img-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(148, 163, 184, 0.26),
+    transparent
+  );
+  animation: img-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes img-shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
 /* ── Homepage ────────────────────────────────────────────────────────────── */
 
 /* Faint blueprint grid behind the hero, faded out towards the edges */
@@ -102,6 +126,7 @@ svg {
   }
 
   .ring-spin,
+  .img-shimmer::after,
   .animate-marquee,
   .animate-marquee-reverse,
   .animate-caret,

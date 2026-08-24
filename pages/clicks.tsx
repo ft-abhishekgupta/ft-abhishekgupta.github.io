@@ -1,5 +1,6 @@
 import DefaultLayout from "@/layouts/default";
 import ClicksTile from "@/components/ClicksTile";
+import SmartImage from "@/components/SmartImage";
 import rawData from "../scripts/data/clicks.json";
 import { Chip } from "@nextui-org/react";
 import { useCallback, useEffect, useState } from "react";
@@ -98,10 +99,12 @@ export default function Clicks() {
             onClick={(e) => e.stopPropagation()}
             className="max-w-[90vw] max-h-[85vh] cursor-pointer"
           >
-            <img
+            <SmartImage
               src={activeItem.localPath}
               alt={activeItem.permalink}
               className="max-w-full max-h-[85vh] object-contain rounded-lg"
+              wrapperClassName="flex items-center justify-center rounded-lg"
+              placeholderClassName="h-[60vh] w-[80vw] max-w-[90vw]"
             />
           </a>
 

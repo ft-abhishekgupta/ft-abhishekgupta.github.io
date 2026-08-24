@@ -1,4 +1,5 @@
 import { GithubIcon } from "@/components/icons";
+import SmartImage from "@/components/SmartImage";
 import {
   ArrowIcon,
   ChevronDownIcon,
@@ -96,17 +97,15 @@ export default function Hero() {
               <span className="ring-spin" />
             </div>
             <div className="absolute inset-0 overflow-hidden rounded-[2rem] bg-content1 shadow-2xl shadow-black/40">
-              <picture>
-                <source srcSet={profile.photoWebp} type="image/webp" />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  alt={profile.name}
-                  className="h-full w-full object-cover"
-                  height={720}
-                  src={profile.photo}
-                  width={720}
-                />
-              </picture>
+              <SmartImage
+                alt={profile.name}
+                className="h-full w-full object-cover"
+                height={720}
+                src={profile.photo}
+                webpSrc={profile.photoWebp}
+                width={720}
+                wrapperClassName="h-full w-full rounded-[2rem]"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
             </div>
 

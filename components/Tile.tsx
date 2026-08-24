@@ -1,6 +1,7 @@
-import { Image } from "@nextui-org/image";
 import { Chip } from "@nextui-org/react";
 import React from "react";
+
+import SmartImage from "@/components/SmartImage";
 
 interface TileProps {
   name: string;
@@ -39,13 +40,14 @@ const Tile: React.FC<TileProps> = ({
   const content = (
     <div className="shadow-lg flex flex-col text-center rounded-lg overflow-hidden hover:scale-105 transition-transform duration-200 bg-content1 w-full">
       <div className="relative w-full aspect-[160/213] bg-default-100">
-        <Image
+        <SmartImage
           src={imageUrl}
           className="rounded-t w-full h-full object-cover"
           alt={name}
           width={160}
           height={213}
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          loading="lazy"
+          wrapperClassName="absolute inset-0 rounded-t"
         />
         {userRating && (
           <div className="absolute bottom-1 right-1 z-10">

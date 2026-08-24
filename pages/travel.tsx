@@ -1,4 +1,5 @@
 import DefaultLayout from "@/layouts/default";
+import SmartImage from "@/components/SmartImage";
 import { Chip } from "@nextui-org/react";
 import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
@@ -167,12 +168,12 @@ export default function Travel() {
             >
               {city.image ? (
                 <div className="relative h-44 w-full overflow-hidden bg-default-100">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <SmartImage
                     src={city.image}
                     alt={city.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     loading="lazy"
+                    wrapperClassName="absolute inset-0"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">

@@ -1,5 +1,6 @@
 import "leaflet/dist/leaflet.css";
 
+import SmartImage from "@/components/SmartImage";
 import L from "leaflet";
 import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
@@ -235,14 +236,17 @@ export default function CityMap({ cities, activeCity, onSelect }: Props) {
             <Popup>
               <div style={{ minWidth: 180, maxWidth: 220 }}>
                 {city.image && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
+                  <SmartImage
                     src={city.image}
                     alt={city.name}
                     style={{
                       width: "100%",
-                      height: 100,
+                      height: "100%",
                       objectFit: "cover",
+                    }}
+                    wrapperStyle={{
+                      width: "100%",
+                      height: 100,
                       borderRadius: 4,
                       marginBottom: 6,
                     }}

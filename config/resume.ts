@@ -147,11 +147,11 @@ export const timeline: TimelineEntry[] = [
     period: "Sep 2022 - Present",
     location: "Noida, India",
     points: [
-      "Owned and shipped a publisher news feed platform that replaced 20+ legacy systems, leading 4 engineers across 5 partner orgs to ingest 600+ publishers and serve 7M+ players on every Xbox storefront at 5K RPS and 99.99% availability, on 15 REST APIs and Redis-backed read paths.",
-      "Cut p99 read latency 4× (600 → 150 ms) and gateway load 87% on the live game-events service by moving legacy dependencies onto Cosmos DB with a redesigned partition-key and caching strategy, shipped as zero-downtime cutovers.",
-      "Collapsed ~1.7 hrs of manual review per title into seconds across 150+ titles daily with a four-stage, event-driven certification engine — idempotent Service Bus consumers, retry/back-off and dead-letter queues — plus an AI moderation layer that cut false positives 12%.",
-      "Created and led an internal developer productivity platform: 20+ debugging and ops tools behind RBAC and JIT access, taking daily debugging from 20-30 minutes to seconds for 130+ engineers across 10+ services.",
-      "Replaced shared-key auth with a Managed-Identity Terraform module adopted team-wide, and remediated 200+ component-governance and CVE findings across a 600+ microservice estate.",
+      "Lead the team behind a publisher news feed platform that consolidated a fleet of legacy systems into one high-availability service delivering content across Xbox storefronts.",
+      "Re-platformed core read paths onto Azure Cosmos DB with a redesigned partitioning and caching strategy, substantially cutting latency and downstream load through zero-downtime cutovers.",
+      "Designed an event-driven content certification pipeline — idempotent messaging with retries and dead-lettering — that replaced a slow manual review step, including the AI moderation layer for text, images and video and similarity detection built on Azure AI Search embeddings.",
+      "Created and led an internal developer productivity platform: a suite of debugging and operations tools behind RBAC and just-in-time access, adopted widely across engineering teams.",
+      "Hardened platform security by replacing shared-key authentication with a Managed Identity Terraform module, and drove component-governance and CVE remediation across the service estate.",
     ],
     tags: [
       "C# / .NET",
@@ -170,9 +170,9 @@ export const timeline: TimelineEntry[] = [
     period: "Jun 2020 - Sep 2022",
     location: "Noida, India",
     points: [
-      "Built and owned the React sales-authoring application and backing APIs for offer modeling, percent-off discounts and flexible sales campaigns, driving a $5M quarterly revenue increase.",
-      "Owned the publisher-portal metadata ingestion platform from React UI through .NET via a pluggable processor model, powering 150+ daily game publishes across every Xbox storefront.",
-      "Spearheaded its decoupled UI deployment on Azure with Partner Center CI/CD, adopted org-wide across 12 products.",
+      "Built and owned the React sales-authoring application and its backing APIs for offer modeling, discounts and pricing campaigns used to run commerce promotions.",
+      "Owned the publisher-portal metadata ingestion platform from React UI through .NET via a pluggable processor model, powering daily game publishes across Xbox storefronts.",
+      "Spearheaded a decoupled UI deployment architecture on Azure with independent CI/CD, adopted as a standard across sibling products.",
     ],
     tags: ["React", "TypeScript", "ASP.NET Core", "Azure", "Azure DevOps"],
   },
@@ -269,5 +269,5 @@ export const achievements = [
   "NexusHub : Xbox Hackathon Winner 2026",
   "GATE 2018 : AIR 323",
   "CodeVita 2017 : AIR 145",
-  "Cultural V-Team Champion, Xbox IDC (140+ members)",
+  "Cultural V-Team Champion, Xbox IDC",
 ];

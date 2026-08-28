@@ -56,8 +56,8 @@
     "name": "Calangute",
     "country": "India",
     "country_code": "IN",
-    "lat": 15.5460146,
-    "lng": 73.763253,
+    "lat": 15.545594,
+    "lng": 73.7646182,
     "source": "beeneverywhere",
     "source_id": "N1688110013",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
@@ -191,6 +191,17 @@
     "source": "beeneverywhere",
     "source_id": "N568412253",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Haridwar",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 29.9384473,
+    "lng": 78.1452985,
+    "source": "beeneverywhere",
+    "source_id": "N1211180500",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ganga_aarti_haridwar_01.jpg/3840px-Ganga_aarti_haridwar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -348,17 +359,6 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Rishikesh",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 30.1086537,
-    "lng": 78.2916193,
-    "source": "beeneverywhere",
-    "source_id": "R9984824",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Trayambakeshwar_Temple_VK.jpg/3840px-Trayambakeshwar_Temple_VK.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Saharanpur",
     "country": "India",
     "country_code": "IN",
@@ -450,8 +450,8 @@
     "name": "Ko Phi Phi Leh",
     "country": "Thailand",
     "country_code": "TH",
-    "lat": 7.68535115,
-    "lng": 98.765764138,
+    "lat": 7.6853512,
+    "lng": 98.7657641,
     "source": "beeneverywhere",
     "source_id": "R6099533",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg/3840px-Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
@@ -469,6 +469,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Da Nang",
+    "country": "Vietnam",
+    "country_code": "VN",
+    "lat": 16.068501,
+    "lng": 108.2240242,
+    "source": "beeneverywhere",
+    "source_id": "R1891418",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dragon_Bridge%2C_Da_Nang_during_day_-_20230819_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Hanoi",
     "country": "Vietnam",
     "country_code": "VN",
@@ -480,11 +491,11 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Hồ Chí Minh City",
+    "name": "Ho Chi Minh City",
     "country": "Vietnam",
     "country_code": "VN",
-    "lat": 10.7758439,
-    "lng": 106.7017555,
+    "lat": 10.7737261,
+    "lng": 106.7166008,
     "source": "beeneverywhere",
     "source_id": "R1973756",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
@@ -498,16 +509,5 @@
     "lng": 108.3367919921875,
     "source": "beeneverywhere",
     "source_id": "R7062047"
-  },
-  {
-    "name": "Đà Nẵng",
-    "country": "Vietnam",
-    "country_code": "VN",
-    "lat": 16.068,
-    "lng": 108.212,
-    "source": "beeneverywhere",
-    "source_id": "R1891418",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dragon_Bridge%2C_Da_Nang_during_day_-_20230819_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
   }
 ]

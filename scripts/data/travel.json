@@ -337,17 +337,6 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Pimpri-Chinchwad",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 18.6279288,
-    "lng": 73.8009829,
-    "source": "beeneverywhere",
-    "source_id": "N1600720975",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Closeup_of_Pimpri-Chinchwad_Municipal_Corporation.jpg/3840px-Closeup_of_Pimpri-Chinchwad_Municipal_Corporation.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Prayagraj",
     "country": "India",
     "country_code": "IN",
@@ -356,6 +345,17 @@
     "source": "beeneverywhere",
     "source_id": "N245733956",
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Allahabad_Montage_II_Dec_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "Pune International Airport",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 18.5803749,
+    "lng": 73.9182265,
+    "source": "beeneverywhere",
+    "source_id": "W481312177",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2025-01-23-00_00_2025-01-23-23_59_Sentinel-2_L2A_True_color.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "image_credit": "Wikipedia"
   },
   {

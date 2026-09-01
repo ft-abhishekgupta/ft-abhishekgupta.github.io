@@ -86,17 +86,6 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Delhi",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 28.6328027,
-    "lng": 77.2197713,
-    "source": "beeneverywhere",
-    "source_id": "R1942586",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Jama_Masjid_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Dharamshala",
     "country": "India",
     "country_code": "IN",
@@ -323,6 +312,17 @@
     "source": "beeneverywhere",
     "source_id": "N2068274800",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Mysuru_Montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "image_credit": "Wikipedia"
+  },
+  {
+    "name": "New Delhi",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 28.6138954,
+    "lng": 77.2090057,
+    "source": "beeneverywhere",
+    "source_id": "R2763541",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg/3840px-Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {

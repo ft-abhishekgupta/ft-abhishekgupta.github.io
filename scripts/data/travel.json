@@ -205,17 +205,6 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Kanpur",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 26.4609135,
-    "lng": 80.3217588,
-    "source": "beeneverywhere",
-    "source_id": "R10019384",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/J.K._Temple_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Kasauli",
     "country": "India",
     "country_code": "IN",

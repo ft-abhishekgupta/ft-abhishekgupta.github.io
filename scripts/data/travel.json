@@ -60,7 +60,7 @@
     "lng": 73.7646182,
     "source": "beeneverywhere",
     "source_id": "N1688110013",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -93,7 +93,7 @@
     "lng": 76.3196717,
     "source": "beeneverywhere",
     "source_id": "N245773086",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Dharamshala_03_%28Cropped%29.jpg/3840px-Dharamshala_03_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dharamshala_03_%28Cropped%29.jpg/3840px-Dharamshala_03_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -161,7 +161,7 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Gurugram",
+    "name": "Gurgaon",
     "country": "India",
     "country_code": "IN",
     "lat": 28.4646148,
@@ -179,7 +179,7 @@
     "lng": 78.1573628,
     "source": "beeneverywhere",
     "source_id": "N568412253",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -234,7 +234,7 @@
     "lng": 77.2633837,
     "source": "beeneverywhere",
     "source_id": "N956636270",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Kufri_hills.jpg/3840px-Kufri_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kufri_hills.jpg/3840px-Kufri_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -322,7 +322,7 @@
     "lng": 75.3226479,
     "source": "beeneverywhere",
     "source_id": "N165089167",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -454,7 +454,7 @@
     "lng": 98.3891503,
     "source": "beeneverywhere",
     "source_id": "R18271854",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Phuket_Aerial.jpg/3840px-Phuket_Aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Phuket_Aerial.jpg/3840px-Phuket_Aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {

@@ -3652,23 +3652,23 @@
     "mediaType": "movie"
   },
   {
-    "name": "Golmaal Again",
-    "slug": "golmaal-again",
-    "year": 2017,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/0/3/4/9/7/403497-golmaal-again-0-600-0-900-crop.jpg?v=8d3cd34bb4",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/golmaal-again/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Coco",
     "slug": "coco-2017",
     "year": 2017,
     "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/2f/xh/b2/n8/coco-1200-1200-675-675-crop-000000.jpg?v=43f3e8a142",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/coco-2017/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Golmaal Again",
+    "slug": "golmaal-again",
+    "year": 2017,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/4/0/3/4/9/7/403497-golmaal-again-0-600-0-900-crop.jpg?v=8d3cd34bb4",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/golmaal-again/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"

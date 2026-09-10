@@ -71,7 +71,7 @@
     "lng": 76.7965283,
     "source": "beeneverywhere",
     "source_id": "N282403100",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Coonoor.JPG/3840px-Coonoor.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Coonoor.JPG/3840px-Coonoor.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -119,17 +119,6 @@
     "image_credit": "Wikipedia"
   },
   {
-    "name": "Ghaziabad",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 28.6711527,
-    "lng": 77.4120356,
-    "source": "beeneverywhere",
-    "source_id": "R9999582",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Indirapuram.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
-  },
-  {
     "name": "Gorakhpur",
     "country": "India",
     "country_code": "IN",
@@ -168,7 +157,7 @@
     "lng": 77.0299194,
     "source": "beeneverywhere",
     "source_id": "R3577685",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/3840px-Cyber_City_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/3840px-Cyber_City_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {
@@ -315,6 +304,17 @@
     "image_credit": "Wikipedia"
   },
   {
+    "name": "Noida",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 28.5707841,
+    "lng": 77.3271074,
+    "source": "beeneverywhere",
+    "source_id": "N313255437",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sector_78_Noida_with_Moonlight.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "image_credit": "Wikipedia"
+  },
+  {
     "name": "Pahalgam",
     "country": "India",
     "country_code": "IN",
@@ -443,7 +443,7 @@
     "lng": 98.7657641,
     "source": "beeneverywhere",
     "source_id": "R6099533",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg/3840px-Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg/3840px-Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image_credit": "Wikipedia"
   },
   {

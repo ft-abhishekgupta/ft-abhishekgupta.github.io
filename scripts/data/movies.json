@@ -6930,17 +6930,6 @@
     "mediaType": "movie"
   },
   {
-    "name": "3 Idiots",
-    "slug": "3-idiots",
-    "year": 2009,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/8/9/9/9/38999-3-idiots-0-600-0-900-crop.jpg?v=890bae83d8",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/3-idiots/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Sherlock Holmes",
     "slug": "sherlock-holmes-2009",
     "year": 2009,
@@ -6991,6 +6980,17 @@
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/5/0/2/6/35026-rocket-singh-salesman-of-the-year-0-600-0-900-crop.jpg?v=135751e600",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/rocket-singh-salesman-of-the-year/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "3 Idiots",
+    "slug": "3-idiots",
+    "year": 2009,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/3/8/9/9/9/38999-3-idiots-0-600-0-900-crop.jpg?v=890bae83d8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/3-idiots/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"

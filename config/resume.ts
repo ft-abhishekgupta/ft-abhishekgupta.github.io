@@ -9,6 +9,8 @@ export const profile = {
   ],
   summary:
     "I build backend systems that stay up. 6+ years at Microsoft Xbox designing distributed services on Azure — event-driven pipelines and NoSQL data models in C#/.NET and Java/Spring Boot, owned end to end.",
+  tagline:
+    "Backend engineer building distributed systems that stay up, on Azure with .NET and Java.",
   location: "Noida, India",
   email: "ft.abhishekgupta@gmail.com",
   photo: "/profile-photo.jpg",

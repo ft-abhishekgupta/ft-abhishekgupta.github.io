@@ -11,14 +11,15 @@ const ClicksTile: React.FC<TileProps> = ({ link, localPath, onClick }) => {
   return (
     <div
       onClick={onClick}
-      className="shadow-lg flex p-1 text-center hover:opacity-80 transition-opacity rounded-lg overflow-hidden cursor-pointer w-full"
+      data-cursor="View"
+      className="tile-reveal group flex w-full cursor-pointer overflow-hidden rounded-xl bg-content1 p-1 text-center shadow-lg"
     >
       <SmartImage
         src={localPath}
         alt={link}
         loading="lazy"
-        className="rounded w-full h-auto object-cover"
-        wrapperClassName="w-full rounded"
+        className="rounded-lg w-full h-auto object-cover"
+        wrapperClassName="w-full rounded-lg transition-transform duration-1000 ease-signal group-hover:scale-[1.06]"
         placeholderClassName="aspect-square"
       />
     </div>

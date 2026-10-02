@@ -1,6 +1,9 @@
-import { Reveal, TechLogo } from "@/components/home/primitives";
+import React, { useRef } from "react";
+
+import { SectionHeading, TechLogo } from "@/components/home/primitives";
+import VelocityMarquee from "@/components/motion/VelocityMarquee";
 import { skillGroups, techStack, type Tech } from "@/config/resume";
-import React from "react";
+import { gsap, MOTION_OK, ScrollTrigger, useGSAP } from "@/lib/gsap";
 
 const ICON_PROPS = {
   fill: "none",
@@ -9,7 +12,7 @@ const ICON_PROPS = {
   strokeLinecap: "round" as const,
   strokeLinejoin: "round" as const,
   viewBox: "0 0 24 24",
-  className: "h-5 w-5",
+  className: "h-6 w-6",
 };
 
 const GROUP_ICONS: Record<string, React.ReactNode> = {
@@ -51,102 +54,111 @@ const GROUP_ICONS: Record<string, React.ReactNode> = {
   ),
 };
 
-const ACCENTS = [
-  "border-sky-500/25 bg-sky-500/10 text-sky-400",
-  "border-cyan-500/25 bg-cyan-500/10 text-cyan-400",
-  "border-emerald-500/25 bg-emerald-500/10 text-emerald-400",
-  "border-amber-500/25 bg-amber-500/10 text-amber-400",
-  "border-rose-500/25 bg-rose-500/10 text-rose-400",
-  "border-violet-500/25 bg-violet-500/10 text-violet-400",
-];
-
-function TickerRow({
-  items,
-  reverse = false,
-}: {
-  items: Tech[];
-  reverse?: boolean;
-}) {
-  // Four copies keep the strip wider than any viewport, so the -50% loop never
-  // exposes a gap on ultra-wide screens.
-  const loop = [...items, ...items, ...items, ...items];
-
+function LogoRow({ items }: { items: Tech[] }) {
   return (
-    <div className="marquee-viewport group flex overflow-hidden">
-      <div
-        className={`flex w-max shrink-0 items-center ${
-          reverse ? "animate-marquee-reverse" : "animate-marquee"
-        } group-hover:[animation-play-state:paused]`}
-      >
-        {loop.map((tech, i) => (
-          <span
-            key={`${tech.slug}-${i}`}
-            className="group/item flex select-none items-center gap-3 px-5 text-default-400 transition-colors duration-300 sm:px-7"
-            style={{ ["--brand" as string]: tech.color }}
-          >
-            <TechLogo
-              className="h-7 w-7 transition-colors duration-300 group-hover/item:text-[var(--brand)] sm:h-8 sm:w-8"
-              slug={tech.slug}
-            />
-            <span className="whitespace-nowrap text-sm font-medium transition-colors duration-300 group-hover/item:text-foreground sm:text-base">
-              {tech.name}
-            </span>
+    <>
+      {items.map((tech) => (
+        <span
+          key={tech.slug}
+          className="group/item flex select-none items-center gap-3 px-6 text-default-400 sm:px-9"
+          style={{ ["--brand" as string]: tech.color }}
+        >
+          <TechLogo
+            className="h-8 w-8 transition-[color,transform] duration-500 ease-signal group-hover/item:-rotate-6 group-hover/item:scale-110 group-hover/item:text-[var(--brand)] sm:h-10 sm:w-10"
+            slug={tech.slug}
+          />
+          <span className="whitespace-nowrap text-xl font-medium tracking-tight transition-colors duration-300 group-hover/item:text-foreground sm:text-3xl">
+            {tech.name}
           </span>
-        ))}
-      </div>
-    </div>
+        </span>
+      ))}
+    </>
   );
 }
 
 export default function TechTicker() {
+  const listRef = useRef<HTMLOListElement>(null);
   const half = Math.ceil(techStack.length / 2);
 
+  useGSAP(
+    () => {
+      const mm = gsap.matchMedia();
+
+      mm.add(MOTION_OK, () => {
+        const rows = gsap.utils.toArray<HTMLElement>("[data-skill-row]");
+
+        gsap.set(rows, { autoAlpha: 0, y: 50 });
+        gsap.set("[data-row-rule]", { scaleX: 0 });
+
+        ScrollTrigger.batch(rows, {
+          start: "top 90%",
+          once: true,
+          onEnter: (batch) => {
+            gsap.to(batch, { autoAlpha: 1, y: 0, stagger: 0.09, duration: 1 });
+            gsap.to(
+              batch.map((row) => row.querySelector("[data-row-rule]")),
+              { scaleX: 1, stagger: 0.09, duration: 1.4, ease: "signalInOut" },
+            );
+          },
+        });
+      });
+    },
+    { scope: listRef },
+  );
+
   return (
-    <section className="scroll-mt-12" id="toolkit">
-      {/* Logo marquee band */}
-      <div className="border-y border-default-100 bg-default-50/40 py-10">
-        <Reveal className="mb-7 text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-default-400">
-            Tools I reach for
-          </p>
-        </Reveal>
-
-        <div className="flex flex-col gap-6">
-          <TickerRow items={techStack.slice(0, half)} />
-          <TickerRow reverse items={techStack.slice(half)} />
-          <div className="mx-auto mt-6 grid w-full max-w-6xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
-            {skillGroups.map((group, i) => (
-              <Reveal key={group.title} className="h-full" delay={i * 0.07}>
-                <div className="group flex h-full flex-col rounded-2xl border border-default-200/70 bg-content1/60 p-5 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/5">
-                  <div className="mb-4 flex items-center gap-3">
-                    <span
-                      className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${
-                        ACCENTS[i % ACCENTS.length]
-                      }`}
-                    >
-                      {GROUP_ICONS[group.title]}
-                    </span>
-                    <h3 className="text-sm font-bold leading-tight">
-                      {group.title}
-                    </h3>
-                  </div>
-
-                  <ul className="flex flex-wrap gap-1.5">
-                    {group.items.map((item) => (
-                      <li
-                        key={item}
-                        className="rounded-md border border-default-200/60 bg-default-100/60 px-2 py-1 text-[11px] font-medium text-default-500 transition-colors group-hover:border-default-300/60"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
+    <section className="scroll-mt-12 py-24 sm:py-32" id="toolkit">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6">
+        <SectionHeading
+          description="The languages, platforms and practices I reach for when a service has to be fast, observable and hard to break."
+          title="Toolkit"
+        />
       </div>
+
+      <div className="flex flex-col gap-5 sm:gap-7">
+        <VelocityMarquee speed={38}>
+          <LogoRow items={techStack.slice(0, half)} />
+        </VelocityMarquee>
+        <VelocityMarquee reverse speed={38}>
+          <LogoRow items={techStack.slice(half)} />
+        </VelocityMarquee>
+      </div>
+
+      <ol ref={listRef} className="mx-auto mt-20 max-w-7xl px-4 sm:mt-28 sm:px-6">
+        {skillGroups.map((group) => (
+          <li key={group.title} className="group relative" data-skill-row>
+            <span
+              aria-hidden="true"
+              className="absolute inset-x-0 top-0 h-px origin-left bg-default-200"
+              data-row-rule
+            />
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 origin-left scale-x-0 bg-content2 transition-transform duration-700 ease-signal group-hover:scale-x-100"
+            />
+            <div className="relative grid gap-4 py-7 sm:py-9 lg:grid-cols-[minmax(0,26rem)_1fr] lg:items-baseline lg:gap-10">
+              <h3 className="flex items-center gap-4 text-2xl font-semibold tracking-tight transition-transform duration-700 ease-signal group-hover:translate-x-3 sm:text-4xl">
+                <span className="text-secondary transition-transform duration-700 ease-signal group-hover:rotate-[-12deg] group-hover:scale-110">
+                  {GROUP_ICONS[group.title]}
+                </span>
+                {group.title}
+              </h3>
+              <ul className="flex flex-wrap gap-x-5 gap-y-2 text-base text-default-500 sm:text-lg">
+                {group.items.map((item, i) => (
+                  <li
+                    key={item}
+                    className="transition-colors duration-300 group-hover:text-foreground"
+                    style={{ transitionDelay: `${i * 30}ms` }}
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))}
+        <li aria-hidden="true" className="h-px bg-default-200" />
+      </ol>
     </section>
   );
 }

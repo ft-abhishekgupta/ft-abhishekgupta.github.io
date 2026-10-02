@@ -2,33 +2,9 @@ import clsx from "clsx";
 import { motion, useReducedMotion } from "framer-motion";
 import React from "react";
 
-const EASE = [0.22, 1, 0.36, 1] as const;
+import SplitReveal from "@/components/motion/SplitReveal";
 
-export function Reveal({
-  children,
-  delay = 0,
-  y = 24,
-  className,
-}: {
-  children: React.ReactNode;
-  delay?: number;
-  y?: number;
-  className?: string;
-}) {
-  const reduce = useReducedMotion();
-
-  return (
-    <motion.div
-      className={className}
-      initial={reduce ? { opacity: 1 } : { opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, delay, ease: EASE }}
-    >
-      {children}
-    </motion.div>
-  );
-}
+const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
  * Renders a monochrome logo from /public/logos via CSS masking so the glyph can
@@ -61,31 +37,59 @@ export function TechLogo({
   );
 }
 
+/**
+ * Editorial section opener: an oversized title that rises out of its mask,
+ * a hairline that draws across underneath, and a short description set
+ * against the right edge on wide screens.
+ */
 export function SectionHeading({
-  eyebrow,
   title,
   description,
+  className,
 }: {
-  eyebrow: string;
   title: string;
   description?: string;
+  className?: string;
 }) {
   return (
-    <Reveal className="mb-9 text-center">
-      <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-        <span className="h-px w-6 bg-primary/50" />
-        {eyebrow}
-        <span className="h-px w-6 bg-primary/50" />
-      </span>
-      <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-        {title}
-      </h2>
-      {description && (
-        <p className="mx-auto mt-3 max-w-xl text-sm text-default-500 sm:text-base">
-          {description}
-        </p>
-      )}
-    </Reveal>
+    <div className={clsx("mb-12 sm:mb-16", className)}>
+      <div className="grid items-end gap-5 lg:grid-cols-[1fr_minmax(0,24rem)]">
+        <SplitReveal
+          as="h2"
+          className="text-5xl font-semibold leading-[0.92] tracking-[-0.035em] sm:text-7xl lg:text-8xl"
+          type="chars"
+          stagger={0.025}
+        >
+          {title}
+        </SplitReveal>
+        {description && (
+          <SplitReveal
+            as="p"
+            className="max-w-md text-base leading-relaxed text-default-500 sm:text-lg"
+            delay={0.15}
+          >
+            {description}
+          </SplitReveal>
+        )}
+      </div>
+      <DrawRule className="mt-8" />
+    </div>
+  );
+}
+
+/** Hairline that draws itself left-to-right as it enters the viewport. */
+export function DrawRule({ className }: { className?: string }) {
+  const reduce = useReducedMotion();
+
+  return (
+    <motion.div
+      aria-hidden="true"
+      className={clsx("h-px origin-left bg-default-200", className)}
+      initial={{ scaleX: 0 }}
+      transition={reduce ? { duration: 0 } : { duration: 1.4, ease: EASE }}
+      viewport={{ once: true, margin: "-60px" }}
+      whileInView={{ scaleX: 1 }}
+    />
   );
 }
 

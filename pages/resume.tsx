@@ -1,4 +1,6 @@
 import { DownloadIcon } from "@/components/home/primitives";
+import Magnetic from "@/components/motion/Magnetic";
+import PageHeader from "@/components/PageHeader";
 import SmartImage from "@/components/SmartImage";
 import { profile } from "@/config/resume";
 import DefaultLayout from "@/layouts/default";
@@ -6,35 +8,42 @@ import DefaultLayout from "@/layouts/default";
 export default function Resume() {
   return (
     <DefaultLayout>
-      <div className="flex flex-col items-center gap-4 sm:gap-6 px-2 sm:px-0 pb-8">
-        <h1 className="text-3xl font-bold text-center my-6 sm:my-8">Resume</h1>
-
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          <a
-            className="group inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/25 transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/40"
-            download
-            href={profile.resumeUrl}
-          >
-            <DownloadIcon className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-            Download PDF
-          </a>
-          <a
-            className="inline-flex items-center gap-2 rounded-full border border-default-200 px-6 py-3 text-sm font-semibold text-default-700 transition-all hover:-translate-y-0.5 hover:border-primary/60 hover:text-primary"
-            href={profile.resumeUrl}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Open in new tab
-          </a>
+      <PageHeader
+        description="The one-page version: experience, skills and education."
+        title="Resume"
+      >
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <Magnetic>
+            <a
+              className="group inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3.5 text-sm font-semibold text-background transition-colors duration-300 hover:bg-secondary hover:text-signal-ink"
+              download
+              href={profile.resumeUrl}
+            >
+              <DownloadIcon className="h-4 w-4 transition-transform duration-500 ease-signal group-hover:translate-y-0.5" />
+              Download PDF
+            </a>
+          </Magnetic>
+          <Magnetic>
+            <a
+              className="inline-flex items-center gap-2 rounded-full border border-default-300 px-6 py-3.5 text-sm font-semibold transition-colors duration-300 hover:border-foreground"
+              href={profile.resumeUrl}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Open in new tab
+            </a>
+          </Magnetic>
         </div>
+      </PageHeader>
 
+      <div className="flex justify-center pb-8">
         <SmartImage
           src={"./Resume-1.png"}
           alt="Resume"
           width={800}
           height={1131}
-          className="w-full h-auto rounded-lg shadow-lg"
-          wrapperClassName="w-full max-w-3xl rounded-lg shadow-lg"
+          className="w-full h-auto rounded-2xl shadow-2xl"
+          wrapperClassName="tile-reveal w-full max-w-3xl rounded-2xl shadow-2xl"
           placeholderClassName="aspect-[800/1131]"
         />
       </div>

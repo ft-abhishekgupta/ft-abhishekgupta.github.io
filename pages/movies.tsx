@@ -1,8 +1,12 @@
 import Tile from "@/components/Tile";
+import { decodeEntities, type LoaderData } from "@/lib/loader";
+import PageHeader from "@/components/PageHeader";
+import { ImageWall, VideoBackdrop } from "@/components/HeaderBackdrops";
 import rawData from "../scripts/data/movies.json";
-import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
+import { Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { useFlipGrid } from "@/lib/useFlipGrid";
 
 interface MovieItem {
   name: string;
@@ -18,16 +22,21 @@ interface MovieItem {
 
 const data: MovieItem[] = rawData as MovieItem[];
 
+const POSTERS = data
+  .filter((m) => m.source === "watched" && m.imageUrl)
+  .slice(0, 16)
+  .map((m) => m.imageUrl);
+
 type SortOption = "default" | "name-asc" | "name-desc" | "year-new" | "year-old" | "rated";
 type SourceFilter = "watched" | "watchlist";
 
 export default function Movies() {
-  const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<SortOption>("year-new");
-  const [ratedOnly, setRatedOnly] = useState(false);
-  const [decadeFilter, setDecadeFilter] = useState<string>("all");
-  const [sourceFilter, setSourceFilter] = useState<SourceFilter>("watched");
-  const [languageFilter, setLanguageFilter] = useState<string>("all");
+  const [search, setSearchState] = useState("");
+  const [sortBy, setSortByState] = useState<SortOption>("year-new");
+  const [ratedOnly, setRatedOnlyState] = useState(false);
+  const [decadeFilter, setDecadeFilterState] = useState<string>("all");
+  const [sourceFilter, setSourceFilterState] = useState<SourceFilter>("watched");
+  const [languageFilter, setLanguageFilterState] = useState<string>("all");
 
   const decades = useMemo(() => {
     const ds = new Set<number>();
@@ -110,18 +119,29 @@ export default function Movies() {
     watchlist: watchlistCount,
   };
 
+  const gridRef = useRef<HTMLDivElement>(null);
+  const withFlip = useFlipGrid(gridRef, filteredMovies);
+  const setSearch = withFlip(setSearchState);
+  const setSortBy = withFlip(setSortByState);
+  const setRatedOnly = withFlip(setRatedOnlyState);
+  const setDecadeFilter = withFlip(setDecadeFilterState);
+  const setSourceFilter = withFlip(setSourceFilterState);
+  const setLanguageFilter = withFlip(setLanguageFilterState);
+
   return (
     <DefaultLayout>
       <div className="mx-auto max-w-6xl px-4">
-        {/* Header */}
-        <div className="flex items-center justify-center flex-row gap-2 mb-4">
-          <Chip color="secondary" size="lg" variant="bordered">
-            {filteredMovies.length}
-          </Chip>
-          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
-            Movies {sourceLabels[sourceFilter]}
-          </h1>
-        </div>
+        <PageHeader
+          backdrop={
+            <>
+              <ImageWall images={POSTERS} />
+              <VideoBackdrop className="opacity-[0.12] mix-blend-screen" src="/video/film-grain.mp4" />
+            </>
+          }
+          description="Films I've watched and the ones still on the list, synced from Letterboxd."
+          stats={[{ value: filteredMovies.length, label: sourceFilter }]}
+          title="Movies"
+        />
 
         {/* Source filter tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -131,7 +151,7 @@ export default function Movies() {
               onClick={() => setSourceFilter(source)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 sourceFilter === source
-                  ? "bg-secondary text-white shadow-lg scale-105"
+                  ? "bg-secondary text-secondary-foreground shadow-lg scale-105"
                   : "bg-default-100 text-default-600 hover:bg-default-200"
               }`}
             >
@@ -223,11 +243,12 @@ export default function Movies() {
         )}
 
         {/* Movie grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-3">
+        <div ref={gridRef} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-3">
           {filteredMovies.map((item, index) => (
             <Tile
               key={item.slug || index}
-              name={item.name}
+              flipId={item.slug || item.name}
+              name={decodeEntities(item.name)}
               imageUrl={item.imageUrl}
               slug={item.slug}
               userRating={item.userRating}
@@ -257,4 +278,17 @@ export default function Movies() {
       </div>
     </DefaultLayout>
   );
+}
+
+export function getStaticProps(): { props: { loader: LoaderData } } {
+  const watched = data.filter((m) => m.source === "watched");
+
+  return {
+    props: {
+      loader: {
+        stats: [{ label: "watched", value: watched.length }],
+        items: watched.slice(0, 3).map((m) => decodeEntities(m.name)),
+      },
+    },
+  };
 }

@@ -1,8 +1,10 @@
 import DefaultLayout from "@/layouts/default";
+import type { LoaderData } from "@/lib/loader";
 import ClicksTile from "@/components/ClicksTile";
 import SmartImage from "@/components/SmartImage";
 import rawData from "../scripts/data/clicks.json";
-import { Chip } from "@nextui-org/react";
+import PageHeader from "@/components/PageHeader";
+import { ImageWall } from "@/components/HeaderBackdrops";
 import { useCallback, useEffect, useState } from "react";
 
 interface ClickItem {
@@ -47,14 +49,12 @@ export default function Clicks() {
   return (
     <DefaultLayout>
       <div className="mx-auto">
-        <div className="flex items-center justify-center flex-row">
-          <Chip color="primary" size="lg" variant="bordered">
-            {data.length}
-          </Chip>
-          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
-            Photos Clicked
-          </h1>
-        </div>
+        <PageHeader
+          backdrop={<ImageWall aspect="aspect-square" images={data.slice(0, 14).map((c) => c.localPath)} width="w-32 sm:w-44" />}
+          description="Photographs from walks, trips and everything in between. Tap any frame to view it full size."
+          stats={[{ value: data.length, label: "frames" }]}
+          title="Clicks"
+        />
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3">
           {data.map((item, index) => (
             <ClicksTile
@@ -71,6 +71,7 @@ export default function Clicks() {
       {activeItem && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90"
+          data-lenis-prevent
           onClick={closeLightbox}
         >
           {/* Close button */}
@@ -125,4 +126,19 @@ export default function Clicks() {
       )}
     </DefaultLayout>
   );
+}
+
+export function getStaticProps(): { props: { loader: LoaderData } } {
+  const newest = [...(rawData as { localPath: string; timestamp?: string }[])].sort(
+    (a, b) => (b.timestamp ?? "").localeCompare(a.timestamp ?? ""),
+  )[0];
+
+  return {
+    props: {
+      loader: {
+        stats: [{ label: "frames", value: data.length }],
+        image: newest?.localPath ?? null,
+      },
+    },
+  };
 }

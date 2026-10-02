@@ -1,6 +1,8 @@
 import rawData from "../scripts/data/projects.json";
+import type { LoaderData } from "@/lib/loader";
 import { Chip, Input, Select, SelectItem } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
+import PageHeader from "@/components/PageHeader";
 import SmartImage from "@/components/SmartImage";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -153,15 +155,11 @@ export default function Projects() {
   return (
     <DefaultLayout>
       <div className="mx-auto max-w-6xl px-4">
-        {/* Header */}
-        <div className="flex items-center justify-center flex-row gap-2 mb-4">
-          <Chip color="success" size="lg" variant="bordered">
-            {data.length}
-          </Chip>
-          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
-            Projects
-          </h1>
-        </div>
+        <PageHeader
+          description="Code I've written outside work, pulled straight from GitHub. Pick one to see screenshots and details."
+          stats={[{ value: filteredProjects.length, label: "repositories" }]}
+          title="Projects"
+        />
 
         {/* Category pills */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -233,7 +231,8 @@ export default function Projects() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.2 }}
                 onClick={() => openLightbox(index)}
-                className="group cursor-pointer rounded-xl border border-default-200 bg-content1 p-5 transition-all duration-200 hover:shadow-xl hover:border-primary/40 hover:-translate-y-1"
+                data-cursor="Details"
+                className="spotlight group cursor-pointer rounded-2xl border border-default-200 bg-content1 p-5 transition-[border-color,box-shadow] duration-300 hover:shadow-xl hover:border-primary/40"
               >
                 {/* Screenshot preview */}
                 {project.screenshots.length > 0 && (
@@ -319,6 +318,7 @@ export default function Projects() {
       {activeProject && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+          data-lenis-prevent
           onClick={closeLightbox}
         >
           {/* Close button */}
@@ -512,4 +512,17 @@ export default function Projects() {
       )}
     </DefaultLayout>
   );
+}
+
+export function getStaticProps(): { props: { loader: LoaderData } } {
+  const recent = [...data].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
+
+  return {
+    props: {
+      loader: {
+        stats: [{ label: "repositories", value: data.length }],
+        items: recent.slice(0, 3).map((p) => p.name),
+      },
+    },
+  };
 }

@@ -1,6 +1,7 @@
-import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+
+import Footer from "@/components/Footer";
+import { Navbar } from "@/components/navbar";
 import { Head } from "./head";
 
 export default function DefaultLayout({
@@ -11,28 +12,25 @@ export default function DefaultLayout({
   fullWidth?: boolean;
 }) {
   return (
-    <div className="relative flex flex-col min-h-screen">
+    <div className="relative flex min-h-screen flex-col">
       <Head />
+      <a
+        className="sr-only z-[80] rounded-full bg-secondary px-4 py-2 text-signal-ink focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+        href="#main"
+      >
+        Skip to content
+      </a>
       <Navbar />
       <main
         className={clsx(
-          "flex-grow w-full",
+          "w-full flex-grow",
           !fullWidth && "container mx-auto max-w-7xl px-4 sm:px-6",
         )}
+        id="main"
       >
         {children}
       </main>
-      <footer className="w-full flex items-center justify-center py-3">
-        <Link
-          isExternal
-          className="flex items-center gap-1 text-current"
-          href="."
-          title="Homepage"
-        >
-          <span className="text-default-600">Developed by</span>
-          <p className="text-primary">Abhishek</p>
-        </Link>
-      </footer>
+      <Footer />
     </div>
   );
 }

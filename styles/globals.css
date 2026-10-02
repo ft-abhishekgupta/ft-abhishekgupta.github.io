@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
+/* ── Base ────────────────────────────────────────────────────────────────── */
 
 html,
 body {
-  /* Prevent horizontal scroll exposing the dark body background on mobile */
+  /* Prevent horizontal scroll exposing the body background on mobile. `clip`
+     (unlike `hidden`) doesn't turn body into a scroll container, which keeps
+     Lenis + ScrollTrigger measuring the window. */
   overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -17,6 +18,14 @@ body {
 body {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+  font-optical-sizing: auto;
+  background: hsl(var(--nextui-background));
+  color: hsl(var(--nextui-foreground));
+}
+
+::selection {
+  background: #ffb020;
+  color: #070b16;
 }
 
 /* Make any media inherently responsive so fixed width/height attributes
@@ -26,6 +35,84 @@ video,
 svg {
   max-width: 100%;
   height: auto;
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--nextui-focus));
+  outline-offset: 3px;
+}
+
+/* ── Loading scenes ──────────────────────────────────────────────────────── */
+
+/* Animatable custom properties (GSAP tweens them; CSS paints with them). */
+@property --sweep {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --iris {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 150%;
+}
+
+/* Film-leader sweep: a wedge that fills clockwise as --sweep grows. */
+.leader-sweep {
+  background: conic-gradient(
+    rgba(232, 236, 245, 0.22) var(--sweep),
+    transparent var(--sweep)
+  );
+}
+
+/* Camera iris: an opaque field with a circular aperture of radius --iris. */
+.iris {
+  background: #000;
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    transparent var(--iris),
+    #000 calc(var(--iris) + 0.5%)
+  );
+  mask-image: radial-gradient(
+    circle at center,
+    transparent var(--iris),
+    #000 calc(var(--iris) + 0.5%)
+  );
+}
+
+/* Sprocket holes running down a film strip. */
+.sprockets {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0 10px,
+    rgba(232, 236, 245, 0.18) 10px 26px,
+    transparent 26px 36px
+  );
+  background-size: 100% 36px;
+  animation: film-roll 0.5s linear infinite;
+}
+
+@keyframes film-roll {
+  to {
+    background-position: 0 36px;
+  }
+}
+
+.projector-flicker {
+  animation: flicker 0.18s steps(2) infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.86;
+  }
+}
+
+.pixelated {
+  image-rendering: pixelated;
 }
 
 /* ── Image loading placeholder ───────────────────────────────────────────── */
@@ -52,57 +139,222 @@ svg {
   }
 }
 
-/* ── Homepage ────────────────────────────────────────────────────────────── */
+/* ── Global chrome ───────────────────────────────────────────────────────── */
+
+/* Static film grain; a fixed SVG noise tile is cheap and adds print-like depth. */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+}
+
+.light .grain {
+  opacity: 0.1;
+  mix-blend-mode: multiply;
+}
+
+/* Custom cursor: only switched on (via html.has-cursor) for fine pointers. */
+html.has-cursor,
+html.has-cursor * {
+  cursor: none !important;
+}
+
+html.has-cursor input,
+html.has-cursor textarea,
+html.has-cursor [contenteditable="true"] {
+  cursor: text !important;
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  pointer-events: none;
+  border-radius: 9999px;
+  opacity: 0;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background: #ffb020;
+}
+
+.cursor-ring {
+  width: 38px;
+  height: 38px;
+  margin: -19px 0 0 -19px;
+  border: 1px solid rgba(232, 236, 245, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    margin 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.light .cursor-ring {
+  border-color: rgba(7, 11, 22, 0.45);
+}
+
+.cursor-ring[data-state="link"] {
+  width: 58px;
+  height: 58px;
+  margin: -29px 0 0 -29px;
+  border-color: #ffb020;
+  background: rgba(255, 176, 32, 0.08);
+}
+
+.cursor-ring[data-state="label"] {
+  width: 88px;
+  height: 88px;
+  margin: -44px 0 0 -44px;
+  border-color: transparent;
+  background: #ffb020;
+}
+
+.cursor-ring[data-state="hidden"] {
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-color: transparent;
+}
+
+.cursor-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #070b16;
+  white-space: nowrap;
+  opacity: 0;
+  transform: scale(0.6);
+  transition:
+    opacity 0.2s ease,
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cursor-ring[data-state="label"] .cursor-label {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* The preloader is server-rendered so it covers the first paint; an inline
+   script in _document marks repeat visits / reduced motion so CSS hides it
+   before React hydrates. */
+html[data-intro="skip"] .preloader {
+  display: none;
+}
+
+/* Elements the hero intro animates start hidden only when JS motion is on;
+   a delayed CSS fallback guarantees they surface even if scripts fail. */
+html.js-motion [data-intro-hide] {
+  visibility: hidden;
+  animation: intro-fallback 0s 4s forwards;
+}
+
+@keyframes intro-fallback {
+  to {
+    visibility: visible;
+  }
+}
+
+/* Theme switch: circular wipe from the toggle via the View Transitions API. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+/* ── Type & decoration utilities ─────────────────────────────────────────── */
+
+/* Dim display type that brightens under the pointer (used in the ribbons). */
+.ghost-text {
+  color: hsl(var(--nextui-default-300));
+  transition: color 0.5s ease;
+}
+
+.ghost-text:hover {
+  color: hsl(var(--nextui-foreground));
+}
+
+/* Split-text masks (SplitText names them "<class>-mask"): pad them so
+   descenders and accents aren't clipped, with negative margins to keep the
+   original line box. */
+.split-char-mask,
+.split-word-mask,
+.split-line-mask {
+  padding: 0.08em 0.02em 0.16em;
+  margin: -0.08em -0.02em -0.16em;
+}
+
+/* Proximity-reactive hero letters: weight driven by a CSS variable that GSAP
+   tweens per character. */
+.kinetic-char {
+  display: inline-block;
+  font-variation-settings:
+    "wght" var(--wght, 640),
+    "wdth" var(--wdth, 100),
+    "opsz" 96;
+  will-change: transform;
+}
+
+/* Pointer-following spotlight used on cards (vars set from pointer events). */
+.spotlight {
+  position: relative;
+  isolation: isolate;
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    420px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(91, 132, 255, 0.16),
+    transparent 60%
+  );
+}
+
+.spotlight:hover::before {
+  opacity: 1;
+}
 
 /* Faint blueprint grid behind the hero, faded out towards the edges */
 .hero-grid {
-  background-image: linear-gradient(
-      to right,
-      rgba(125, 145, 180, 0.09) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(125, 145, 180, 0.09) 1px, transparent 1px);
-  background-size: 56px 56px;
+  background-image:
+    linear-gradient(to right, rgba(125, 145, 180, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125, 145, 180, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
   -webkit-mask-image: radial-gradient(
-    ellipse 70% 55% at 50% 32%,
-    #000 35%,
+    ellipse 75% 60% at 30% 40%,
+    #000 30%,
     transparent 100%
   );
   mask-image: radial-gradient(
-    ellipse 70% 55% at 50% 32%,
-    #000 35%,
+    ellipse 75% 60% at 30% 40%,
+    #000 30%,
     transparent 100%
   );
 }
 
-/* Rotating conic sweep used as the glowing ring around the hero portrait */
-.ring-spin {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 170%;
-  aspect-ratio: 1;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    rgba(56, 189, 248, 0.95) 55deg,
-    rgba(167, 139, 250, 0.9) 120deg,
-    transparent 210deg,
-    transparent 360deg
-  );
-  animation: ring-spin 8s linear infinite;
-}
-
-@keyframes ring-spin {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
-
-/* Soft fade on both ends of the tech-stack marquee */
+/* Soft fade on both ends of marquees */
 .marquee-viewport {
   -webkit-mask-image: linear-gradient(
     to right,
@@ -120,18 +372,102 @@ svg {
   );
 }
 
+/* Grid tiles on the collection pages rise in as they scroll into view, using
+   native scroll-driven animations where supported (no JS, no observers). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .tile-reveal {
+      animation: tile-in linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+  }
+}
+
+@keyframes tile-in {
+  from {
+    opacity: 0;
+    transform: translateY(32px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Pointer tilt + glare for poster tiles (vars written by the Cursor's
+   delegated pointer handler). */
+.tilt-card {
+  transform: perspective(800px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.tilt-card.is-tilting {
+  transition:
+    transform 0.12s linear,
+    box-shadow 0.3s ease;
+}
+
+.tilt-glare {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: radial-gradient(
+    circle at var(--gx, 50%) var(--gy, 50%),
+    rgba(255, 255, 255, 0.28),
+    transparent 55%
+  );
+  mix-blend-mode: soft-light;
+}
+
+.tilt-card.is-tilting .tilt-glare {
+  opacity: 1;
+}
+
+/* Link text roll: two stacked copies slide up on hover. */
+.roll {
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+  line-height: 1.25;
+}
+
+.roll > span {
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.roll > span + span {
+  position: absolute;
+  inset: 100% 0 auto 0;
+}
+
+.roll:hover > span,
+.group:hover .roll > span {
+  transform: translateY(-100%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .ring-spin,
   .img-shimmer::after,
-  .animate-marquee,
-  .animate-marquee-reverse,
+  .sprockets,
+  .projector-flicker,
   .animate-caret,
   .animate-bounce,
   .animate-ping {
     animation: none !important;
+  }
+
+  .roll > span {
+    transition: none;
   }
 }

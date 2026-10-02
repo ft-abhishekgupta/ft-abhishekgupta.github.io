@@ -1,8 +1,10 @@
 import DefaultLayout from "@/layouts/default";
+import type { LoaderData } from "@/lib/loader";
 import SmartImage from "@/components/SmartImage";
-import { Chip } from "@nextui-org/react";
+import PageHeader from "@/components/PageHeader";
 import dynamic from "next/dynamic";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { useFlipGrid } from "@/lib/useFlipGrid";
 import rawData from "../scripts/data/travel.json";
 
 interface City {
@@ -33,9 +35,9 @@ const CityMap = dynamic(() => import("@/components/CityMap"), {
 type SortOption = "default" | "name-asc";
 
 export default function Travel() {
-  const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<SortOption>("default");
-  const [countryFilter, setCountryFilter] = useState<string>("all");
+  const [search, setSearchState] = useState("");
+  const [sortBy, setSortByState] = useState<SortOption>("default");
+  const [countryFilter, setCountryFilterState] = useState<string>("all");
   const [activeCity, setActiveCity] = useState<string | null>(null);
 
   const countries = useMemo(() => {
@@ -63,40 +65,42 @@ export default function Travel() {
     return list;
   }, [search, sortBy, countryFilter]);
 
+  const gridRef = useRef<HTMLDivElement>(null);
+  const withFlip = useFlipGrid(gridRef, filtered);
+  const setSearch = withFlip(setSearchState);
+  const setSortBy = withFlip(setSortByState);
+  const setCountryFilter = withFlip(setCountryFilterState);
+
   return (
     <DefaultLayout>
       <div className="mx-auto max-w-5xl px-2 sm:px-4">
-        {/* Header */}
-        <div className="flex items-center justify-center flex-row gap-2 mb-2">
-          <Chip color="primary" size="lg" variant="bordered">
-            {cities.length} {cities.length === 1 ? "city" : "cities"}
-          </Chip>
-          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-6 p-2 sm:p-4">
-            🌏 Travel
-          </h1>
-          <Chip color="warning" size="lg" variant="bordered">
-            {countries.length}{" "}
-            {countries.length === 1 ? "country" : "countries"}
-          </Chip>
-        </div>
-
-        <p className="text-center text-sm text-default-500 mb-1">
-          Cities I&apos;ve been to.
-        </p>
-        <p className="text-center text-xs text-default-400 mb-6">
-          Synced from{" "}
-          <a
-            href="https://beeneverywhere.net/user/40272"
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary hover:underline"
-          >
-            beeneverywhere.net
-          </a>
-        </p>
+        <PageHeader
+          description={
+            <>
+              Cities I&apos;ve been to, synced from{" "}
+              <a
+                className="text-foreground underline decoration-secondary underline-offset-4 transition-colors hover:text-secondary"
+                href="https://beeneverywhere.net/user/40272"
+                rel="noreferrer"
+                target="_blank"
+              >
+                beeneverywhere.net
+              </a>
+              .
+            </>
+          }
+          stats={[
+            { value: cities.length, label: cities.length === 1 ? "city" : "cities" },
+            { value: countries.length, label: countries.length === 1 ? "country" : "countries" },
+          ]}
+          title="Travel"
+        />
 
         {/* Map */}
-        <div className="rounded-2xl border border-default-200 bg-content1 overflow-hidden mb-8">
+        <div
+          className="mb-8 overflow-hidden rounded-[1.75rem] border border-default-200 bg-content1"
+          data-lenis-prevent
+        >
           <CityMap
             cities={cities}
             activeCity={activeCity}
@@ -155,12 +159,12 @@ export default function Travel() {
         </div>
 
         {/* Card grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
+        <div ref={gridRef} className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5">
           {filtered.map((city) => (
+            <div key={city.source_id || city.name} data-flip-id={city.source_id || city.name}>
             <article
               id={`city-${city.name}`}
-              key={city.source_id || city.name}
-              className={`rounded-2xl border bg-content1 overflow-hidden transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 ${
+              className={`tile-reveal group h-full rounded-2xl border bg-content1 overflow-hidden transition-[border-color,box-shadow] duration-300 hover:shadow-xl ${
                 activeCity === city.name
                   ? "border-primary shadow-lg ring-2 ring-primary/20"
                   : "border-default-200 hover:border-primary/30"
@@ -171,9 +175,9 @@ export default function Travel() {
                   <SmartImage
                     src={city.image}
                     alt={city.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover"
                     loading="lazy"
-                    wrapperClassName="absolute inset-0"
+                    wrapperClassName="absolute inset-0 transition-transform duration-1000 ease-signal group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
@@ -194,6 +198,7 @@ export default function Travel() {
                 </div>
               )}
             </article>
+            </div>
           ))}
         </div>
 
@@ -209,4 +214,21 @@ export default function Travel() {
       </div>
     </DefaultLayout>
   );
+}
+
+export function getStaticProps(): { props: { loader: LoaderData } } {
+  // A fresh trio of destinations for the departures board on every build.
+  const picks = [...cities].sort(() => Math.random() - 0.5).slice(0, 3);
+
+  return {
+    props: {
+      loader: {
+        stats: [
+          { label: "cities", value: cities.length },
+          { label: "countries", value: new Set(cities.map((c) => c.country)).size },
+        ],
+        rows: picks.map((c) => ({ title: c.name, sub: c.country })),
+      },
+    },
+  };
 }

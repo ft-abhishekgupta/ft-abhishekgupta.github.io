@@ -1,8 +1,12 @@
 import Tile from "@/components/Tile";
+import type { LoaderData } from "@/lib/loader";
+import PageHeader from "@/components/PageHeader";
+import { VideoBackdrop } from "@/components/HeaderBackdrops";
 import rawData from "../scripts/data/games.json";
-import { Chip, Input, Select, SelectItem, Switch } from "@nextui-org/react";
+import { Input, Select, SelectItem, Switch } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
+import { useFlipGrid } from "@/lib/useFlipGrid";
 
 interface GameItem {
   name: string;
@@ -21,11 +25,11 @@ type SortOption = "default" | "name-asc" | "name-desc" | "rated" | "year-new" | 
 type StatusFilter = "played" | "playing" | "backlog";
 
 export default function Games() {
-  const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState<SortOption>("year-new");
-  const [ratedOnly, setRatedOnly] = useState(false);
-  const [decadeFilter, setDecadeFilter] = useState<string>("all");
-  const [statusFilter, setStatusFilter] = useState<StatusFilter>("played");
+  const [search, setSearchState] = useState("");
+  const [sortBy, setSortByState] = useState<SortOption>("year-new");
+  const [ratedOnly, setRatedOnlyState] = useState(false);
+  const [decadeFilter, setDecadeFilterState] = useState<string>("all");
+  const [statusFilter, setStatusFilterState] = useState<StatusFilter>("played");
 
   const statusCounts = useMemo(() => ({
     played: data.filter((g) => g.status === "played").length,
@@ -97,18 +101,28 @@ export default function Games() {
     backlog: "📋 Backlog",
   };
 
+  const gridRef = useRef<HTMLDivElement>(null);
+  const withFlip = useFlipGrid(gridRef, filteredGames);
+  const setSearch = withFlip(setSearchState);
+  const setSortBy = withFlip(setSortByState);
+  const setRatedOnly = withFlip(setRatedOnlyState);
+  const setDecadeFilter = withFlip(setDecadeFilterState);
+  const setStatusFilter = withFlip(setStatusFilterState);
+
   return (
     <DefaultLayout>
       <div className="mx-auto max-w-6xl px-4">
-        {/* Header */}
-        <div className="flex items-center justify-center flex-row gap-2 mb-4">
-          <Chip color="primary" size="lg" variant="bordered">
-            {filteredGames.length}
-          </Chip>
-          <h1 className="text-2xl sm:text-3xl font-bold text-center my-4 sm:my-8 p-2 sm:p-4">
-            Games {statusLabels[statusFilter]}
-          </h1>
-        </div>
+        <PageHeader
+          backdrop={
+            <VideoBackdrop
+              className="pixelated opacity-30 [filter:invert(1)_hue-rotate(180deg)] dark:opacity-60 dark:[filter:none]"
+              src="/video/games-life.mp4"
+            />
+          }
+          description="Everything I've played, am playing, or have queued up, synced from Backloggd."
+          stats={[{ value: filteredGames.length, label: statusFilter }]}
+          title="Games"
+        />
 
         {/* Status filter tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -191,10 +205,11 @@ export default function Games() {
         )}
 
         {/* Game grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-3">
+        <div ref={gridRef} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-2 sm:gap-3">
           {filteredGames.map((item, index) => (
             <Tile
               key={item.slug || index}
+              flipId={item.slug || item.name}
               name={item.name}
               imageUrl={item.imageUrl}
               slug={item.slug}
@@ -225,4 +240,21 @@ export default function Games() {
       </div>
     </DefaultLayout>
   );
+}
+
+export function getStaticProps(): { props: { loader: LoaderData } } {
+  const count = (status: string) => data.filter((g) => g.status === status).length;
+
+  return {
+    props: {
+      loader: {
+        stats: [
+          { label: "played", value: count("played") },
+          { label: "playing", value: count("playing") },
+          { label: "backlog", value: count("backlog") },
+        ],
+        items: data.filter((g) => g.status === "playing").map((g) => g.name),
+      },
+    },
+  };
 }

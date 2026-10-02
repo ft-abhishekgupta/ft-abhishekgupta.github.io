@@ -1,6 +1,8 @@
 import clsx from "clsx";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
+import { observe } from "@/lib/observe";
+
 type Status = "loading" | "loaded" | "error";
 
 export interface SmartImageProps
@@ -52,7 +54,19 @@ export default function SmartImage({
   ...imgProps
 }: SmartImageProps) {
   const [status, setStatus] = useState<Status>("loading");
+  // The shimmer is an infinite animation; running it for hundreds of
+  // off-screen lazy images made every frame expensive, so only show it nearby.
+  const [near, setNear] = useState(false);
   const ref = useRef<HTMLImageElement>(null);
+  const wrapRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = wrapRef.current;
+
+    if (!el || status !== "loading") return;
+
+    return observe(el, setNear);
+  }, [status]);
 
   // Cached or pre-hydration images can finish loading before React attaches its
   // handlers, so reconcile against the element's own state on mount.
@@ -88,6 +102,7 @@ export default function SmartImage({
 
   return (
     <div
+      ref={wrapRef}
       className={clsx(
         "relative overflow-hidden",
         wrapperClassName,
@@ -98,7 +113,10 @@ export default function SmartImage({
       {status === "loading" && (
         <span
           aria-hidden="true"
-          className="img-shimmer pointer-events-none absolute inset-0 z-[1] bg-default-100"
+          className={clsx(
+            "pointer-events-none absolute inset-0 z-[1] bg-default-100",
+            near && "img-shimmer",
+          )}
         />
       )}
 

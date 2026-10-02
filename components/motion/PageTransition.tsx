@@ -2,10 +2,16 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-import LoaderScene, { SCENE_HOLD } from "@/components/loaders/LoaderScene";
+import LoaderScene from "@/components/loaders/LoaderScene";
 import { ScrollTrigger } from "@/lib/gsap";
 import type { LoaderData } from "@/lib/loader";
-import { hasNavigated, markNavigated, resetScroll } from "@/lib/motion";
+import {
+  hasNavigated,
+  LOADER_EXIT,
+  markNavigated,
+  resetScroll,
+  SCENE_HOLD,
+} from "@/lib/motion";
 
 const EASE = [0.76, 0, 0.24, 1] as const;
 
@@ -21,16 +27,30 @@ function RouteLoader({ pathname, data }: { pathname: string; data?: LoaderData }
 
   if (done) return null;
 
+  const lift = reduce
+    ? { duration: 0 }
+    : { duration: LOADER_EXIT, ease: EASE, delay: SCENE_HOLD };
+
+  // Wipe via opposing translations (outer up, inner down) rather than an
+  // animated clip-path: identical look, but it stays on the compositor instead
+  // of repainting a full-screen scene every frame while the page header animates.
   return (
     <motion.div
-      animate={{ clipPath: "inset(0% 0% 100% 0%)" }}
+      animate={{ y: "-100%" }}
       aria-hidden="true"
-      className="fixed inset-0 z-[91]"
-      initial={{ clipPath: "inset(0% 0% 0% 0%)" }}
-      transition={reduce ? { duration: 0 } : { duration: 0.85, ease: EASE, delay: SCENE_HOLD }}
+      className="fixed inset-0 z-[91] overflow-hidden will-change-transform"
+      initial={{ y: "0%" }}
+      transition={lift}
       onAnimationComplete={() => setDone(true)}
     >
-      {!reduce && <LoaderScene data={data} pathname={pathname} />}
+      <motion.div
+        animate={{ y: "100%" }}
+        className="h-full w-full will-change-transform"
+        initial={{ y: "0%" }}
+        transition={lift}
+      >
+        {!reduce && <LoaderScene data={data} pathname={pathname} />}
+      </motion.div>
     </motion.div>
   );
 }

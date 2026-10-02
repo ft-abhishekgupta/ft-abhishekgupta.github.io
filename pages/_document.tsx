@@ -10,6 +10,13 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
+        {/* Ink canvas behind the intro from the very first paint (before any
+            stylesheet or loader markup arrives), so it never starts white. */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `html[data-intro="play"],html[data-intro="play"] body{background:#070B16}`,
+          }}
+        />
       </Head>
       <body>
         <Main />

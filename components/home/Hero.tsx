@@ -10,11 +10,10 @@ import {
   MailIcon,
 } from "@/components/home/primitives";
 import Magnetic from "@/components/motion/Magnetic";
-import { SCENE_HOLD } from "@/components/loaders/shared";
 import { credentials, profile } from "@/config/resume";
 import { siteConfig } from "@/config/site";
 import { gsap, MOTION_OK, SplitText, useGSAP } from "@/lib/gsap";
-import { hasNavigated, intro } from "@/lib/motion";
+import { playEntrance } from "@/lib/motion";
 
 const socials = [
   { href: siteConfig.links.github, label: "GitHub", Icon: GithubIcon },
@@ -41,10 +40,27 @@ export default function Hero() {
 
       if (!root) return;
 
+      const host: HTMLElement = root;
       const q = gsap.utils.selector(root);
       const mm = gsap.matchMedia();
 
-      mm.add(MOTION_OK, () => {
+      mm.add(MOTION_OK, (context) => {
+        let cleanup: (() => void) | undefined;
+        let cancelled = false;
+
+        // Build against the final webfont so split lines and letter metrics
+        // don't change under the running animation.
+        (document.fonts?.ready ?? Promise.resolve()).then(() => {
+          if (!cancelled) context.add(() => (cleanup = setup()));
+        });
+
+        return () => {
+          cancelled = true;
+          cleanup?.();
+        };
+      });
+
+      function setup() {
         const chars = q<HTMLElement>(".kinetic-char");
         const roleEl = q<HTMLElement>("[data-role]")[0];
         const lead = SplitText.create(q("[data-lead]"), {
@@ -59,10 +75,11 @@ export default function Hero() {
         const tl = gsap.timeline({ paused: true });
 
         tl.from(chars, {
-          yPercent: 115,
-          rotate: 7,
-          duration: 1.25,
-          stagger: 0.035,
+          yPercent: 108,
+          opacity: 0,
+          duration: 1.35,
+          ease: "power4.out",
+          stagger: 0.03,
         })
           .from(
             q("[data-portrait]"),
@@ -71,7 +88,7 @@ export default function Hero() {
           )
           .from(q("[data-portrait] img"), { scale: 1.35, duration: 1.8 }, 0.05)
           .from(q("[data-status]"), { y: 20, autoAlpha: 0, duration: 0.8 }, 0.3)
-          .from(lead.lines, { yPercent: 115, stagger: 0.08, duration: 1 }, 0.45)
+          .from(lead.lines, { yPercent: 110, opacity: 0, stagger: 0.08, duration: 1.15, ease: "power4.out" }, 0.45)
           .from(roleEl, { autoAlpha: 0, x: -16, duration: 0.8 }, 0.5)
           .from(
             q("[data-cta]"),
@@ -112,17 +129,17 @@ export default function Hero() {
 
         tl.eventCallback("onComplete", () => {
           entered = true;
+          measure();
           roles.play();
         });
 
-        const start = () => tl.delay(hasNavigated() ? SCENE_HOLD + 0.3 : 0.05).play();
-        const unsubscribe = intro.onDone(start);
+        const cancelEntrance = playEntrance(tl);
 
         // ── Scroll-out: the name drifts apart and the portrait sinks back.
         gsap
           .timeline({
             scrollTrigger: {
-              trigger: root,
+              trigger: host,
               start: "top top",
               end: "bottom top",
               scrub: 0.6,
@@ -143,16 +160,38 @@ export default function Hero() {
           wght: gsap.quickTo(c, "--wght", { duration: 0.6, ease: "power3" }),
           wdth: gsap.quickTo(c, "--wdth", { duration: 0.6, ease: "power3" }),
         }));
-        const onMove = contextSafe!((e: PointerEvent) => {
-          chars.forEach((c, i) => {
+        // Letter centres are cached (page coordinates) instead of measured on
+        // every pointer move, which would force a layout per letter per event.
+        let centres: { x: number; y: number }[] = [];
+        const measure = () => {
+          centres = chars.map((c) => {
             const r = c.getBoundingClientRect();
-            const d = Math.hypot(e.clientX - (r.left + r.width / 2), e.clientY - (r.top + r.height / 2));
-            const t = gsap.utils.clamp(0, 1, 1 - d / 320);
+
+            return { x: r.left + r.width / 2 + window.scrollX, y: r.top + r.height / 2 + window.scrollY };
+          });
+        };
+        let pending: PointerEvent | null = null;
+        const apply = () => {
+          const e = pending;
+
+          pending = null;
+          if (!e) return;
+          const px = e.clientX + window.scrollX;
+          const py = e.clientY + window.scrollY;
+
+          centres.forEach((p, i) => {
+            const t = gsap.utils.clamp(0, 1, 1 - Math.hypot(px - p.x, py - p.y) / 320);
 
             setters[i].wght(560 + t * 240);
             setters[i].wdth(84 + t * 16);
           });
+        };
+        const onMove = contextSafe!((e: PointerEvent) => {
+          if (!entered) return;
+          if (!pending) requestAnimationFrame(apply);
+          pending = e;
         });
+        window.addEventListener("resize", measure);
         const onLeave = contextSafe!(() => {
           setters.forEach((s) => {
             s.wght(640);
@@ -176,21 +215,22 @@ export default function Hero() {
         });
 
         if (fine) {
-          root.addEventListener("pointermove", onMove);
-          root.addEventListener("pointerleave", onLeave);
+          host.addEventListener("pointermove", onMove);
+          host.addEventListener("pointerleave", onLeave);
           card.addEventListener("pointermove", onTilt);
           card.addEventListener("pointerleave", onTiltLeave);
         }
 
         return () => {
-          unsubscribe();
+          cancelEntrance();
+          window.removeEventListener("resize", measure);
           lead.revert();
-          root.removeEventListener("pointermove", onMove);
-          root.removeEventListener("pointerleave", onLeave);
+          host.removeEventListener("pointermove", onMove);
+          host.removeEventListener("pointerleave", onLeave);
           card.removeEventListener("pointermove", onTilt);
           card.removeEventListener("pointerleave", onTiltLeave);
         };
-      });
+      }
     },
     { scope: rootRef },
   );

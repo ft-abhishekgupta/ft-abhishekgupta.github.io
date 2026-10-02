@@ -1,10 +1,9 @@
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 
-import LoaderScene, { SCENE_HOLD } from "@/components/loaders/LoaderScene";
-import { gsap } from "@/lib/gsap";
+import LoaderScene from "@/components/loaders/LoaderScene";
 import type { LoaderData } from "@/lib/loader";
-import { intro } from "@/lib/motion";
+import { intro, LOADER_EXIT, SCENE_HOLD } from "@/lib/motion";
 
 const SEEN_KEY = "ag-intro-seen";
 
@@ -43,13 +42,28 @@ export default function Preloader({ loader }: { loader?: LoaderData }) {
       setMounted(false);
     };
 
-    const tl = gsap
-      .timeline({ delay: SCENE_HOLD + 0.2, onComplete: finish })
-      .add(() => intro.finish())
-      .to(root, { clipPath: "inset(0% 0% 100% 0%)", duration: 0.9, ease: "signalInOut" }, 0.1);
+    // The scene's CSS animations started at first paint, not at hydration,
+    // so hold only for whatever is left of the scene. The lift itself is a CSS
+    // transition so it stays smooth even if the main thread is still busy.
+    const paint =
+      performance.getEntriesByName("first-contentful-paint")[0]?.startTime ??
+      performance.getEntriesByName("first-paint")[0]?.startTime ??
+      0;
+    const elapsed = (performance.now() - paint) / 1000;
+    const hold = Math.max(0.1, SCENE_HOLD + 0.2 - elapsed);
+    const timers: ReturnType<typeof setTimeout>[] = [];
+
+    timers.push(
+      setTimeout(() => {
+        root.classList.add("is-lifting");
+        // Release the page entrance midway so the header animates as it is uncovered.
+        timers.push(setTimeout(() => intro.finish(), LOADER_EXIT * 450));
+        timers.push(setTimeout(finish, LOADER_EXIT * 1000 + 80));
+      }, hold * 1000),
+    );
 
     return () => {
-      tl.kill();
+      timers.forEach(clearTimeout);
       html.style.overflow = "";
     };
   }, []);
@@ -60,10 +74,11 @@ export default function Preloader({ loader }: { loader?: LoaderData }) {
     <div
       ref={rootRef}
       aria-hidden="true"
-      className="preloader fixed inset-0 z-[100]"
-      style={{ clipPath: "inset(0% 0% 0% 0%)" }}
+      className="preloader fixed inset-0 z-[100] overflow-hidden"
     >
-      <LoaderScene data={loader} pathname={pathname} />
+      <div className="h-full w-full">
+        <LoaderScene data={loader} pathname={pathname} />
+      </div>
     </div>
   );
 }

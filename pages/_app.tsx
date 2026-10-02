@@ -9,6 +9,7 @@ import PageTransition from "@/components/motion/PageTransition";
 import Preloader from "@/components/motion/Preloader";
 import ScrollProgress from "@/components/motion/ScrollProgress";
 import SmoothScroll from "@/components/motion/SmoothScroll";
+import TileReveal from "@/components/motion/TileReveal";
 import { fontMono, fontPixel, fontSans } from "@/config/fonts";
 import "lenis/dist/lenis.css";
 import "@/styles/globals.css";
@@ -30,7 +31,10 @@ export default function App({ Component, pageProps }: AppProps) {
             __html: `:root{--font-sans:${fontSans.style.fontFamily};--font-mono:${fontMono.style.fontFamily};--font-pixel:${fontPixel.style.fontFamily};}`,
           }}
         />
+        {/* First in the document so it paints before the page streams in. */}
+        <Preloader loader={pageProps.loader} />
         <SmoothScroll />
+        <TileReveal />
         <div
           className={clsx(
             "min-h-screen bg-background font-sans antialiased",
@@ -45,7 +49,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <ScrollProgress />
         <Cursor />
         <div aria-hidden="true" className="grain" />
-        <Preloader loader={pageProps.loader} />
       </NextThemesProvider>
     </NextUIProvider>
   );

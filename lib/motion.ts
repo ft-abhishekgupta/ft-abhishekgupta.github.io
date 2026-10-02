@@ -32,8 +32,63 @@ export const intro = {
 /** Seconds a route's loading scene plays before its overlay lifts away. */
 export const SCENE_HOLD = 1.3;
 
-/** Extra delay for on-mount entrances so they play as the loader lifts. */
-export const entranceDelay = () => (navigated ? SCENE_HOLD + 0.25 : 0.1);
+/** Duration of the loader's lift-off once the scene finishes. */
+export const LOADER_EXIT = 0.8;
+
+/**
+ * Delay (from mount) before on-mount entrances start. After a route change
+ * this lands when the lifting loader uncovers the top of the page, so the
+ * header's motion is seen from its first frame instead of under the overlay.
+ */
+export const entranceDelay = () => (navigated ? SCENE_HOLD + LOADER_EXIT * 0.5 : 0);
+
+let fontsReady: Promise<unknown> | null = null;
+
+/** Resolves once webfonts are in and the main thread has a quiet moment. */
+function settled() {
+  fontsReady ??= document.fonts?.ready ?? Promise.resolve();
+
+  return fontsReady.then(
+    () =>
+      new Promise<void>((resolve) => {
+        const idle = (window as Window & {
+          requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+        }).requestIdleCallback;
+
+        if (idle) idle(() => requestAnimationFrame(() => resolve()), { timeout: 300 });
+        else setTimeout(() => requestAnimationFrame(() => resolve()), 50);
+      }),
+  );
+}
+
+/**
+ * Plays a paused entrance animation at the right moment: after the loading
+ * screen is out of the way, fonts have swapped in (so split text never
+ * re-flows mid-animation) and hydration has stopped hogging the main thread
+ * (so the first frames aren't dropped). Returns a cancel function.
+ */
+export function playEntrance(anim: { play: () => unknown }, extraDelay = 0) {
+  const mountedAt = performance.now();
+  let cancelled = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+
+  const unsubscribe = intro.onDone(() => {
+    const target = entranceDelay() * 1000 + extraDelay * 1000;
+
+    settled().then(() => {
+      if (cancelled) return;
+      const wait = Math.max(0, target - (performance.now() - mountedAt));
+
+      timer = setTimeout(() => !cancelled && anim.play(), wait);
+    });
+  });
+
+  return () => {
+    cancelled = true;
+    unsubscribe();
+    clearTimeout(timer);
+  };
+}
 
 let lenisInstance: Lenis | null = null;
 

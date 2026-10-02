@@ -36,7 +36,9 @@ export default function SmoothScroll() {
     const tick = (time: number) => lenis.raf(time * 1000);
 
     gsap.ticker.add(tick);
-    gsap.ticker.lagSmoothing(0);
+    // Keep GSAP's default lag smoothing: after a long task (hydration, image
+    // decode) tweens resume where they were instead of jumping ahead, which
+    // is what made entrance animations skip most of their motion.
 
     // Late-arriving webfonts change line breaks and therefore trigger offsets.
     document.fonts?.ready.then(() => ScrollTrigger.refresh());

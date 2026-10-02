@@ -44,6 +44,65 @@ svg {
 
 /* ── Loading scenes ──────────────────────────────────────────────────────── */
 
+/* Home / first-visit scene: transform-only CSS animations so they start on the
+   first paint and run on the compositor while scripts hydrate. Base styles are
+   the end state; `both` fill holds the start state until each animation runs. */
+.loader-trace-cover {
+  transform: translateX(101%);
+  animation: loader-trace 1.25s cubic-bezier(0.45, 0, 0.55, 1) 0.05s both;
+}
+
+@keyframes loader-trace {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(101%);
+  }
+}
+
+.loader-rise {
+  animation: loader-rise 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes loader-rise {
+  from {
+    transform: translateY(110%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.loader-odometer {
+  transform: translateY(calc(var(--n) * -1em));
+  animation: loader-odometer 1.25s 0.05s both;
+}
+
+@keyframes loader-odometer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(var(--n) * -1em));
+  }
+}
+
+/* Preloader lift: two opposing translations (outer up, inner down) read as a
+   wipe but stay composited, unlike an animated clip-path. */
+.preloader,
+.preloader > div {
+  transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.preloader.is-lifting {
+  transform: translateY(-100%);
+}
+
+.preloader.is-lifting > div {
+  transform: translateY(100%);
+}
+
 /* Animatable custom properties (GSAP tweens them; CSS paints with them). */
 @property --sweep {
   syntax: "<angle>";
@@ -308,7 +367,6 @@ html.js-motion [data-intro-hide] {
     "wght" var(--wght, 640),
     "wdth" var(--wdth, 100),
     "opsz" 96;
-  will-change: transform;
 }
 
 /* Pointer-following spotlight used on cards (vars set from pointer events). */
@@ -372,27 +430,20 @@ html.js-motion [data-intro-hide] {
   );
 }
 
-/* Grid tiles on the collection pages rise in as they scroll into view, using
-   native scroll-driven animations where supported (no JS, no observers). */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .tile-reveal {
-      animation: tile-in linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 70%;
-    }
-  }
+/* Grid tiles rise in the first time they scroll into view. TileReveal adds
+   `tile-reveal-on` once its observer is running (so tiles are never hidden if
+   scripts fail or motion is reduced) and flags each tile with `data-in`. */
+html.tile-reveal-on .tile-reveal {
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-@keyframes tile-in {
-  from {
-    opacity: 0;
-    transform: translateY(32px) scale(0.96);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+html.tile-reveal-on .tile-reveal:not([data-in]) {
+  opacity: 0;
+  transform: translateY(32px) scale(0.96);
 }
 
 /* Pointer tilt + glare for poster tiles (vars written by the Cursor's
@@ -402,10 +453,11 @@ html.js-motion [data-intro-hide] {
   transition:
     transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.3s ease;
-  will-change: transform;
 }
 
+/* Promote only the tile under the pointer, not every tile on the page. */
 .tilt-card.is-tilting {
+  will-change: transform;
   transition:
     transform 0.12s linear,
     box-shadow 0.3s ease;
@@ -459,6 +511,9 @@ html.js-motion [data-intro-hide] {
   }
 
   .img-shimmer::after,
+  .loader-trace-cover,
+  .loader-rise,
+  .loader-odometer,
   .sprockets,
   .projector-flicker,
   .animate-caret,

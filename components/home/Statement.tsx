@@ -4,46 +4,65 @@ import { profile } from "@/config/resume";
 import { gsap, MOTION_OK, SplitText, useGSAP } from "@/lib/gsap";
 
 /**
- * The summary, read at the reader's pace: the section pins and each word
- * lights up as the scroll passes over it.
+ * The summary, revealed once as it enters the viewport: lines rise out of
+ * their masks while the words light up in a quick left-to-right wave. Plays on
+ * time rather than being scrubbed, so it never holds the reader's scroll.
  */
 export default function Statement() {
   const rootRef = useRef<HTMLElement>(null);
 
   useGSAP(
-    () => {
+    (context) => {
       const mm = gsap.matchMedia();
 
       mm.add(MOTION_OK, () => {
-        const split = SplitText.create("[data-statement]", { type: "words" });
+        const el = rootRef.current?.querySelector<HTMLElement>("[data-statement]");
 
-        gsap.set(split.words, { opacity: 0.14 });
+        if (!el) return;
 
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: rootRef.current,
-            start: "top top",
-            end: "+=130%",
-            pin: true,
-            scrub: 0.5,
-          },
+        let split: SplitText | null = null;
+        let cancelled = false;
+
+        const build = () => {
+          split = SplitText.create(el, {
+            type: "words,lines",
+            mask: "lines",
+            autoSplit: true,
+            onSplit(self) {
+              const tl = gsap.timeline({
+                scrollTrigger: { trigger: el, start: "top 75%", once: true },
+              });
+
+              tl.from(self.lines, { yPercent: 100, duration: 1, ease: "power4.out", stagger: 0.07 })
+                .fromTo(
+                  self.words,
+                  { opacity: 0.14 },
+                  { opacity: 1, duration: 0.5, ease: "power1.out", stagger: 0.035 },
+                  0.15,
+                )
+                .from("[data-pulse-rule]", { scaleX: 0, duration: 1.2, ease: "signal" }, 0.4);
+
+              return tl;
+            },
+          });
+        };
+
+        // Split against the final webfont so line breaks never shift mid-tween.
+        (document.fonts?.ready ?? Promise.resolve()).then(() => {
+          if (!cancelled) context.add(build);
         });
 
-        tl.to(split.words, { opacity: 1, stagger: 0.1, ease: "none", duration: 0.4 })
-          .from("[data-pulse-rule]", { scaleX: 0, ease: "none", duration: 2 }, 0);
-
-        return () => split.revert();
+        return () => {
+          cancelled = true;
+          split?.revert();
+        };
       });
     },
     { scope: rootRef },
   );
 
   return (
-    <section
-      ref={rootRef}
-      aria-label="About"
-      className="relative flex min-h-[100svh] items-center overflow-hidden"
-    >
+    <section ref={rootRef} aria-label="About" className="relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
         <p
           className="max-w-6xl text-[clamp(2rem,5.2vw,4.75rem)] font-medium leading-[1.06] tracking-[-0.03em]"

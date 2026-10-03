@@ -3,6 +3,7 @@ import type { LoaderData } from "@/lib/loader";
 import { Chip, Input, Select, SelectItem } from "@nextui-org/react";
 import DefaultLayout from "@/layouts/default";
 import PageHeader from "@/components/PageHeader";
+import { ScreenshotPlane } from "@/components/HeaderBackdrops";
 import SmartImage from "@/components/SmartImage";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -22,6 +23,11 @@ interface ProjectItem {
 }
 
 const data: ProjectItem[] = rawData as ProjectItem[];
+
+const SHOTS = data
+  .map((p) => p.screenshots.find((s) => !/logo/i.test(s)) ?? p.screenshots[0])
+  .filter((s): s is string => Boolean(s))
+  .slice(0, 16);
 
 const CATEGORY_COLORS: Record<string, string> = {
   Android: "bg-green-500/10 text-green-500 border-green-500/20",
@@ -156,6 +162,7 @@ export default function Projects() {
     <DefaultLayout>
       <div className="mx-auto max-w-6xl px-4">
         <PageHeader
+          backdrop={<ScreenshotPlane images={SHOTS} />}
           description="Code I've written outside work, pulled straight from GitHub. Pick one to see screenshots and details."
           stats={[{ value: filteredProjects.length, label: "repositories" }]}
           title="Projects"

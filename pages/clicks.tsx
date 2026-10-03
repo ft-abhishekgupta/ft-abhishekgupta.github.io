@@ -4,7 +4,7 @@ import ClicksTile from "@/components/ClicksTile";
 import SmartImage from "@/components/SmartImage";
 import rawData from "../scripts/data/clicks.json";
 import PageHeader from "@/components/PageHeader";
-import { ImageWall } from "@/components/HeaderBackdrops";
+import { PhotoColumns } from "@/components/HeaderBackdrops";
 import { useCallback, useEffect, useState } from "react";
 
 interface ClickItem {
@@ -50,7 +50,7 @@ export default function Clicks() {
     <DefaultLayout>
       <div className="mx-auto">
         <PageHeader
-          backdrop={<ImageWall aspect="aspect-square" images={data.slice(0, 14).map((c) => c.localPath)} width="w-32 sm:w-44" />}
+          backdrop={<PhotoColumns images={data.slice(0, 28).map((c) => c.localPath)} />}
           description="Photographs from walks, trips and everything in between. Tap any frame to view it full size."
           stats={[{ value: data.length, label: "frames" }]}
           title="Clicks"

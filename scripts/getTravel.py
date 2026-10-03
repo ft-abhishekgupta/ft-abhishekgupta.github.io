@@ -16,20 +16,35 @@ Strategy:
          beeneverywhere map itself makes when it pans, so we get the
          canonical city name without hitting OSM Nominatim externally.
   3. Enrich each city with a Wikipedia thumbnail.
+  4. Download each image, resize it and store it under public/travel/ so the
+     site serves small local files instead of full-size Wikimedia originals.
+     `image` points at the local copy; `image_source` keeps the remote URL.
 
 Run manually:
     python scripts/getTravel.py
+    python scripts/getTravel.py --images-only   # just (re)localise images
 """
+import io
 import json
 import os
+import re
+import sys
 import time
+import unicodedata
 import urllib.parse
 import urllib.request
+
+from PIL import Image, ImageOps
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, "data")
 DATA_PATH = os.path.join(DATA_DIR, "travel.json")
+IMAGE_DIR = os.path.join(SCRIPT_DIR, "..", "public", "travel")
+IMAGE_URL_PREFIX = "/travel/"
+IMAGE_MAX_WIDTH = 1024
+IMAGE_QUALITY = 76
 os.makedirs(DATA_DIR, exist_ok=True)
+os.makedirs(IMAGE_DIR, exist_ok=True)
 
 USER_ID = "40272"
 BASE = "https://beeneverywhere.net"
@@ -194,8 +209,147 @@ def enrich_with_wiki(city: dict):
         return
     thumb = (data.get("originalimage") or data.get("thumbnail") or {}).get("source")
     if thumb:
-        city["image"] = thumb
+        city["image_source"] = thumb
         city["image_credit"] = "Wikipedia"
+
+
+def slugify(text: str) -> str:
+    ascii_text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-") or "city"
+
+
+def wikimedia_thumb(url: str, width: int):
+    """Turn an upload.wikimedia.org original URL into a resized-thumbnail URL.
+
+    Returns None when the URL is not a Wikimedia original (or already a thumb).
+    """
+    parts = urllib.parse.urlsplit(url)
+    if parts.netloc != "upload.wikimedia.org":
+        return None
+    m = re.match(r"^/wikipedia/([^/]+)/([0-9a-f])/([0-9a-f]{2})/([^/]+)$", parts.path)
+    if not m:
+        return None
+    project, a, ab, filename = m.groups()
+    suffix = ""
+    lower = filename.lower()
+    if lower.endswith(".svg"):
+        suffix = ".png"
+    elif lower.endswith((".tif", ".tiff")):
+        suffix = ".jpg"
+    return (f"https://upload.wikimedia.org/wikipedia/{project}/thumb/{a}/{ab}/"
+            f"{filename}/{width}px-{filename}{suffix}")
+
+
+def http_get_bytes(url: str) -> bytes:
+    req = urllib.request.Request(url, headers={**HEADERS, "Accept": "image/*"})
+    with urllib.request.urlopen(req, timeout=40) as resp:
+        return resp.read()
+
+
+def download_resized(remote: str, dest: str):
+    """Fetch `remote` (preferring a pre-scaled Wikimedia thumb) and save a
+    width-capped progressive JPEG to `dest`."""
+    clean = urllib.parse.urlsplit(remote)._replace(query="", fragment="").geturl()
+    candidates = [u for u in (wikimedia_thumb(clean, 1280), clean) if u]
+    last_err = None
+    for url in candidates:
+        try:
+            raw = http_get_bytes(url)
+            break
+        except Exception as e:  # thumb wider than the original 4xx's; fall back
+            last_err = e
+    else:
+        raise last_err  # type: ignore[misc]
+
+    img = Image.open(io.BytesIO(raw))
+    img = ImageOps.exif_transpose(img)
+    if img.mode in ("RGBA", "LA", "P"):
+        img = img.convert("RGBA")
+        bg = Image.new("RGB", img.size, (17, 17, 17))
+        bg.paste(img, mask=img.split()[-1])
+        img = bg
+    elif img.mode != "RGB":
+        img = img.convert("RGB")
+    if img.width > IMAGE_MAX_WIDTH:
+        img = img.resize(
+            (IMAGE_MAX_WIDTH, round(img.height * IMAGE_MAX_WIDTH / img.width)),
+            Image.LANCZOS,
+        )
+    img.save(dest, "JPEG", quality=IMAGE_QUALITY, optimize=True, progressive=True)
+
+
+def localize_images(cities: list, previous: list):
+    """Point every city's `image` at a local, resized copy in public/travel/.
+
+    Files are only re-downloaded when the remote source changes. If Wikipedia
+    is unreachable this run, the previous source/local copy is reused.
+    """
+    prev_by_key = {(c.get("source_id") or c["name"]): c for c in previous}
+    used = set()
+    for city in cities:
+        key = city.get("source_id") or city["name"]
+        prev = prev_by_key.get(key, {})
+        remote = city.get("image_source")
+        legacy = city.get("image") or ""
+        if not remote and legacy.startswith("http"):
+            remote = legacy
+        if not remote:
+            remote = prev.get("image_source")
+        if not remote:
+            city.pop("image", None)
+            continue
+
+        city["image_source"] = remote
+        city.setdefault("image_credit", "Wikipedia")
+
+        slug = slugify(f"{city['name']}-{city['country']}")
+        name, n = slug, 2
+        while name in used:
+            name, n = f"{slug}-{n}", n + 1
+        used.add(name)
+        filename = f"{name}.jpg"
+        dest = os.path.join(IMAGE_DIR, filename)
+
+        fresh = os.path.exists(dest) and os.path.getsize(dest) > 1000
+        if fresh and prev.get("image_source") == remote:
+            city["image"] = IMAGE_URL_PREFIX + filename
+            continue
+
+        try:
+            download_resized(remote, dest)
+            city["image"] = IMAGE_URL_PREFIX + filename
+            print(f"  img: {city['name']} -> {filename} "
+                  f"({os.path.getsize(dest) // 1024} KB)")
+        except Exception as e:
+            print(f"  ! image failed for {city['name']}: {e}")
+            city["image"] = IMAGE_URL_PREFIX + filename if fresh else remote
+        time.sleep(0.3)
+
+    keep = {f"{n}.jpg" for n in used}
+    for f in os.listdir(IMAGE_DIR):
+        if f.endswith(".jpg") and f not in keep:
+            os.remove(os.path.join(IMAGE_DIR, f))
+            print(f"  removed stale {f}")
+
+
+def load_previous():
+    if not os.path.exists(DATA_PATH):
+        return []
+    with open(DATA_PATH, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def write_cities(cities: list):
+    with open(DATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(cities, f, indent=2, ensure_ascii=False)
+    print(f"\nWrote {len(cities)} cities -> {DATA_PATH}")
+
+
+def images_only():
+    cities = load_previous()
+    print(f"Localising images for {len(cities)} cities…")
+    localize_images(cities, cities)
+    write_cities(cities)
 
 
 def main():
@@ -263,16 +417,20 @@ def main():
         })
 
     cities.sort(key=lambda x: (x["country"], x["name"]))
+    previous = load_previous()
 
     print("\nEnriching with Wikipedia…")
     for city in cities:
         enrich_with_wiki(city)
         time.sleep(0.4)
 
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
-        json.dump(cities, f, indent=2, ensure_ascii=False)
-    print(f"\nWrote {len(cities)} cities -> {DATA_PATH}")
+    print("\nDownloading images…")
+    localize_images(cities, previous)
+    write_cities(cities)
 
 
 if __name__ == "__main__":
-    main()
+    if "--images-only" in sys.argv:
+        images_only()
+    else:
+        main()

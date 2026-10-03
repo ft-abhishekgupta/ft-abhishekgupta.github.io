@@ -51,6 +51,6 @@ jobs:
         run: |
           git config --global user.name "Abhishek Gupta"
           git config --global user.email "ft.abhishekgupta@gmail.com"
-          git add scripts/data/ public/clicks/
+          git add scripts/data/ public/clicks/ public/travel/
           git diff --staged --quiet || git commit -m "Update games, movies, clicks and travel data"
           git push

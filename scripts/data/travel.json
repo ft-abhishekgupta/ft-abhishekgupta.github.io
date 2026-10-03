@@ -7,8 +7,9 @@
     "lng": 76.770421,
     "source": "beeneverywhere",
     "source_id": "N176044062",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ambala_Cantonment_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/ambala-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Ambala_Cantonment_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Amritsar",
@@ -18,8 +19,9 @@
     "lng": 74.8787496,
     "source": "beeneverywhere",
     "source_id": "N245772397",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Golden_Temple_Amritsar_Gurudwara_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/amritsar-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Golden_Temple_Amritsar_Gurudwara_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Atawa",
@@ -38,8 +40,9 @@
     "lng": 82.2052321,
     "source": "beeneverywhere",
     "source_id": "N245753026",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/ayodhya-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/de/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Bengaluru",
@@ -49,8 +52,9 @@
     "lng": 77.590082,
     "source": "beeneverywhere",
     "source_id": "R7902476",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg/3840px-View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/bengaluru-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg/3840px-View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Calangute",
@@ -60,8 +64,9 @@
     "lng": 73.7646182,
     "source": "beeneverywhere",
     "source_id": "N1688110013",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/calangute-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Sunset_at_Calangute.jpg/3840px-Sunset_at_Calangute.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Coonoor",
@@ -71,8 +76,9 @@
     "lng": 76.7965283,
     "source": "beeneverywhere",
     "source_id": "N282403100",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Coonoor.JPG/3840px-Coonoor.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/coonoor-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Coonoor.JPG/3840px-Coonoor.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Dehradun",
@@ -82,8 +88,9 @@
     "lng": 78.0436813,
     "source": "beeneverywhere",
     "source_id": "N299531301",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dehradun_view_from_maggi_point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/dehradun-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Dehradun_view_from_maggi_point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Dharamshala",
@@ -93,8 +100,9 @@
     "lng": 76.3196717,
     "source": "beeneverywhere",
     "source_id": "N245773086",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dharamshala_03_%28Cropped%29.jpg/3840px-Dharamshala_03_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/dharamshala-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Dharamshala_03_%28Cropped%29.jpg/3840px-Dharamshala_03_%28Cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Faridabad",
@@ -104,8 +112,9 @@
     "lng": 77.3105561,
     "source": "beeneverywhere",
     "source_id": "N3582568815",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Vatika_Business_Towers_Faridabad.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/faridabad-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/12/Vatika_Business_Towers_Faridabad.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Fatehpur Sikri",
@@ -115,8 +124,9 @@
     "lng": 77.6623984,
     "source": "beeneverywhere",
     "source_id": "N568383174",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/fatehpur-sikri-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Fatehput_Sikiri_Buland_Darwaza_gate_2010.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Gorakhpur",
@@ -135,8 +145,9 @@
     "lng": 77.5137649,
     "source": "beeneverywhere",
     "source_id": "N712869911",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Greaternoida_expressway_Q2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/greater-noida-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/23/Greaternoida_expressway_Q2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Gulmarg",
@@ -146,8 +157,9 @@
     "lng": 74.39212,
     "source": "beeneverywhere",
     "source_id": "N513158380",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Ancient_Temple%2C_Gulmarg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/gulmarg-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Ancient_Temple%2C_Gulmarg.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Gurgaon",
@@ -157,8 +169,9 @@
     "lng": 77.0299194,
     "source": "beeneverywhere",
     "source_id": "R3577685",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/3840px-Cyber_City_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/gurgaon-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/3840px-Cyber_City_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Gwalior",
@@ -168,8 +181,9 @@
     "lng": 78.1573628,
     "source": "beeneverywhere",
     "source_id": "N568412253",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/gwalior-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Gwalior_Fort_front.jpg/3840px-Gwalior_Fort_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Haridwar",
@@ -179,8 +193,9 @@
     "lng": 78.1452985,
     "source": "beeneverywhere",
     "source_id": "N1211180500",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ganga_aarti_haridwar_01.jpg/3840px-Ganga_aarti_haridwar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/haridwar-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ganga_aarti_haridwar_01.jpg/3840px-Ganga_aarti_haridwar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Jaisalmer",
@@ -190,8 +205,9 @@
     "lng": 70.91249084472656,
     "source": "beeneverywhere",
     "source_id": "N364108742",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jaisalmer_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/jaisalmer-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/46/Jaisalmer_Fort.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Kasauli",
@@ -201,8 +217,9 @@
     "lng": 76.9619744,
     "source": "beeneverywhere",
     "source_id": "N3209419734",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kasauli_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/kasauli-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Kasauli_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Kasol",
@@ -212,8 +229,9 @@
     "lng": 77.3166036,
     "source": "beeneverywhere",
     "source_id": "N756382658",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/kasol-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Kasol_mountain_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Kufri",
@@ -223,8 +241,9 @@
     "lng": 77.2633837,
     "source": "beeneverywhere",
     "source_id": "N956636270",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kufri_hills.jpg/3840px-Kufri_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/kufri-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Kufri_hills.jpg/3840px-Kufri_hills.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Lonavala",
@@ -234,8 +253,9 @@
     "lng": 73.4016729,
     "source": "beeneverywhere",
     "source_id": "N517151014",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Tiger_Valley_Bridge_view_3.jpg/3840px-Tiger_Valley_Bridge_view_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/lonavala-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Tiger_Valley_Bridge_view_3.jpg/3840px-Tiger_Valley_Bridge_view_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Lucknow",
@@ -245,8 +265,9 @@
     "lng": 80.9346001,
     "source": "beeneverywhere",
     "source_id": "N245753718",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Harzratganj_Market%2C_Lucknow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/lucknow-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/5/51/Harzratganj_Market%2C_Lucknow.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Madikeri",
@@ -256,8 +277,9 @@
     "lng": 75.7387543,
     "source": "beeneverywhere",
     "source_id": "N390887113",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Raja%27s_Seat_View_Point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/madikeri-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/02/Raja%27s_Seat_View_Point.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Mumbai",
@@ -267,8 +289,9 @@
     "lng": 72.8692035,
     "source": "beeneverywhere",
     "source_id": "N16173235",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/mumbai-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Mussoorie",
@@ -278,8 +301,9 @@
     "lng": 78.0782906,
     "source": "beeneverywhere",
     "source_id": "N245770206",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mussoorie_Snow_Over_Dehradun_%2814831297545%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/mussoorie-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Mussoorie_Snow_Over_Dehradun_%2814831297545%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Mysuru",
@@ -289,8 +313,9 @@
     "lng": 76.6553609,
     "source": "beeneverywhere",
     "source_id": "N2068274800",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/56/Mysuru_Montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/mysuru-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/5/56/Mysuru_Montage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "New Delhi",
@@ -300,8 +325,9 @@
     "lng": 77.2090057,
     "source": "beeneverywhere",
     "source_id": "R2763541",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg/3840px-Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/new-delhi-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg/3840px-Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Noida",
@@ -311,8 +337,9 @@
     "lng": 77.3272147,
     "source": "beeneverywhere",
     "source_id": "N313255437",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/HCL_Tech_Noida_SEZ_Campus.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/noida-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/6/67/HCL_Tech_Noida_SEZ_Campus.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Pahalgam",
@@ -322,8 +349,9 @@
     "lng": 75.3226479,
     "source": "beeneverywhere",
     "source_id": "N165089167",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/pahalgam-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/LiddarRiverJhelum.jpeg/3840px-LiddarRiverJhelum.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Prayagraj",
@@ -333,8 +361,9 @@
     "lng": 81.8338005,
     "source": "beeneverywhere",
     "source_id": "N245733956",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Allahabad_Montage_II_Dec_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/prayagraj-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Allahabad_Montage_II_Dec_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Pune International Airport",
@@ -344,8 +373,9 @@
     "lng": 73.9182265,
     "source": "beeneverywhere",
     "source_id": "W481312177",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2025-01-23-00_00_2025-01-23-23_59_Sentinel-2_L2A_True_color.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/pune-international-airport-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2025-01-23-00_00_2025-01-23-23_59_Sentinel-2_L2A_True_color.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Saharanpur",
@@ -355,8 +385,9 @@
     "lng": 77.5427464,
     "source": "beeneverywhere",
     "source_id": "N723867682",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baba_Bhura_Dev_temple%2C_Shakumbhri_Devi_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/saharanpur-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baba_Bhura_Dev_temple%2C_Shakumbhri_Devi_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Sonamarg",
@@ -366,8 +397,9 @@
     "lng": 75.29655456542969,
     "source": "beeneverywhere",
     "source_id": "N342119097",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sonmarg_rishav7336.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/sonamarg-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Sonmarg_rishav7336.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Srinagar",
@@ -377,8 +409,9 @@
     "lng": 74.8204443,
     "source": "beeneverywhere",
     "source_id": "N273658993",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Red_and_Yellow_Tulips.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/srinagar-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Red_and_Yellow_Tulips.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Udhagamandalam",
@@ -388,8 +421,9 @@
     "lng": 76.7030504,
     "source": "beeneverywhere",
     "source_id": "N245592179",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/db/Ooty_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/udhagamandalam-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/d/db/Ooty_lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Varanasi",
@@ -399,8 +433,9 @@
     "lng": 83.0076292,
     "source": "beeneverywhere",
     "source_id": "N287687798",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/varanasi-india.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Kuala Lumpur",
@@ -410,8 +445,9 @@
     "lng": 101.6942367553711,
     "source": "beeneverywhere",
     "source_id": "R2939672",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/3840px-Bukit_Bintang_junction_in_2024_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/kuala-lumpur-malaysia.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/3840px-Bukit_Bintang_junction_in_2024_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Bangkok",
@@ -421,8 +457,9 @@
     "lng": 100.4935089,
     "source": "beeneverywhere",
     "source_id": "R92277",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/4Y1A1150_Bangkok_%2833536339665%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/bangkok-thailand.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/4/49/4Y1A1150_Bangkok_%2833536339665%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Ko Phi Phi Don",
@@ -432,8 +469,9 @@
     "lng": 98.7766434,
     "source": "beeneverywhere",
     "source_id": "R6099581",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Isla_Ko_Phi_Phi_Don%2C_Tailandia%2C_2013-08-19%2C_DD_02.JPG/3840px-Isla_Ko_Phi_Phi_Don%2C_Tailandia%2C_2013-08-19%2C_DD_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/ko-phi-phi-don-thailand.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Isla_Ko_Phi_Phi_Don%2C_Tailandia%2C_2013-08-19%2C_DD_02.JPG/3840px-Isla_Ko_Phi_Phi_Don%2C_Tailandia%2C_2013-08-19%2C_DD_02.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Ko Phi Phi Leh",
@@ -443,8 +481,9 @@
     "lng": 98.7657641,
     "source": "beeneverywhere",
     "source_id": "R6099533",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg/3840px-Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/ko-phi-phi-leh-thailand.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg/3840px-Maya_Bay%2C_Thailand_by_Mike_Clegg_Photography.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Phuket",
@@ -454,8 +493,9 @@
     "lng": 98.3891503,
     "source": "beeneverywhere",
     "source_id": "R18271854",
-    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Phuket_Aerial.jpg/3840px-Phuket_Aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia"
+    "image": "/travel/phuket-thailand.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Phuket_Aerial.jpg/3840px-Phuket_Aerial.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "name": "Da Nang",
@@ -465,8 +505,9 @@
     "lng": 108.2240242,
     "source": "beeneverywhere",
     "source_id": "R1891418",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dragon_Bridge%2C_Da_Nang_during_day_-_20230819_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/da-nang-vietnam.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Dragon_Bridge%2C_Da_Nang_during_day_-_20230819_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Hanoi",
@@ -476,8 +517,9 @@
     "lng": 105.854041,
     "source": "beeneverywhere",
     "source_id": "R1903516",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Hanoi_skyline_with_Ba_Vi_Mountain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/hanoi-vietnam.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Hanoi_skyline_with_Ba_Vi_Mountain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Ho Chi Minh City",
@@ -487,8 +529,9 @@
     "lng": 106.7166008,
     "source": "beeneverywhere",
     "source_id": "R1973756",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "image_credit": "Wikipedia"
+    "image": "/travel/ho-chi-minh-city-vietnam.jpg",
+    "image_credit": "Wikipedia",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/8/86/Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
   },
   {
     "name": "Hội An",

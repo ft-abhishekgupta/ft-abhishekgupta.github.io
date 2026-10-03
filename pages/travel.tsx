@@ -2,6 +2,7 @@ import DefaultLayout from "@/layouts/default";
 import type { LoaderData } from "@/lib/loader";
 import SmartImage from "@/components/SmartImage";
 import PageHeader from "@/components/PageHeader";
+import { PostcardSlideshow } from "@/components/HeaderBackdrops";
 import dynamic from "next/dynamic";
 import { useMemo, useRef, useState } from "react";
 import { useFlipGrid } from "@/lib/useFlipGrid";
@@ -16,12 +17,20 @@ interface City {
   source?: string;
   source_id?: string;
   image?: string;
+  image_source?: string;
   image_credit?: string;
   wiki_extract?: string;
   wiki_url?: string;
 }
 
 const cities: City[] = rawData as City[];
+
+// Eight photos spread evenly across the (country-sorted) list so the slideshow
+// isn't all from one place.
+const withPhotos = cities.filter((c) => c.image);
+const POSTCARDS = Array.from({ length: Math.min(8, withPhotos.length) }, (_, i) =>
+  withPhotos[Math.floor((i * withPhotos.length) / Math.min(8, withPhotos.length))].image as string,
+);
 
 const CityMap = dynamic(() => import("@/components/CityMap"), {
   ssr: false,
@@ -75,6 +84,7 @@ export default function Travel() {
     <DefaultLayout>
       <div className="mx-auto max-w-5xl px-2 sm:px-4">
         <PageHeader
+          backdrop={<PostcardSlideshow images={POSTCARDS} />}
           description={
             <>
               Cities I&apos;ve been to, synced from{" "}

@@ -186,18 +186,6 @@
     "image": "/travel/gwalior-india.jpg"
   },
   {
-    "name": "Haridwar",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 29.9384473,
-    "lng": 78.1452985,
-    "source": "beeneverywhere",
-    "source_id": "N1211180500",
-    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ganga_aarti_haridwar_01.jpg/3840px-Ganga_aarti_haridwar_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "image_credit": "Wikipedia",
-    "image": "/travel/haridwar-india.jpg"
-  },
-  {
     "name": "Jaisalmer",
     "country": "India",
     "country_code": "IN",
@@ -376,6 +364,18 @@
     "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/bf/2025-01-23-00_00_2025-01-23-23_59_Sentinel-2_L2A_True_color.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "image_credit": "Wikipedia",
     "image": "/travel/pune-international-airport-india.jpg"
+  },
+  {
+    "name": "Rishikesh",
+    "country": "India",
+    "country_code": "IN",
+    "lat": 30.1086537,
+    "lng": 78.2916193,
+    "source": "beeneverywhere",
+    "source_id": "N3735821429",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Trayambakeshwar_Temple_VK.jpg/3840px-Trayambakeshwar_Temple_VK.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image_credit": "Wikipedia",
+    "image": "/travel/rishikesh-india.jpg"
   },
   {
     "name": "Saharanpur",

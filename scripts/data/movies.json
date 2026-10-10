@@ -3718,23 +3718,23 @@
     "mediaType": "movie"
   },
   {
-    "name": "Happy Death Day",
-    "slug": "happy-death-day",
-    "year": 2017,
-    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/mj/op/nc/7r/g8RPRNaXqF456tEo2PA6ejrD8Bh-1200-1200-675-675-crop-000000.jpg?v=1cf23900b2",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/happy-death-day/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Thor: Ragnarok",
     "slug": "thor-ragnarok",
     "year": 2017,
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/2/0/9/3/8/2/209382-thor-ragnarok-0-600-0-900-crop.jpg?v=0369e00db5",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/thor-ragnarok/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "Happy Death Day",
+    "slug": "happy-death-day",
+    "year": 2017,
+    "imageUrl": "https://a.ltrbxd.com/resized/sm/upload/mj/op/nc/7r/g8RPRNaXqF456tEo2PA6ejrD8Bh-1200-1200-675-675-crop-000000.jpg?v=1cf23900b2",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/happy-death-day/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"

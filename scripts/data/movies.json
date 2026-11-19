@@ -396,23 +396,23 @@
     "mediaType": "movie"
   },
   {
-    "name": "How to Train Your Dragon",
-    "slug": "how-to-train-your-dragon-2025",
-    "year": 2025,
-    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/8/0/1/1/6/980116-how-to-train-your-dragon-2025-0-600-0-900-crop.jpg?v=0d82dfeab8",
-    "userRating": null,
-    "letterboxdUrl": "https://letterboxd.com/film/how-to-train-your-dragon-2025/",
-    "source": "watched",
-    "language": null,
-    "mediaType": "movie"
-  },
-  {
     "name": "Housefull 5",
     "slug": "housefull-5",
     "year": 2025,
     "imageUrl": "https://a.ltrbxd.com/resized/film-poster/1/0/3/2/9/7/4/1032974-housefull-5-0-600-0-900-crop.jpg?v=f07bc0a9f6",
     "userRating": null,
     "letterboxdUrl": "https://letterboxd.com/film/housefull-5/",
+    "source": "watched",
+    "language": null,
+    "mediaType": "movie"
+  },
+  {
+    "name": "How to Train Your Dragon",
+    "slug": "how-to-train-your-dragon-2025",
+    "year": 2025,
+    "imageUrl": "https://a.ltrbxd.com/resized/film-poster/9/8/0/1/1/6/980116-how-to-train-your-dragon-2025-0-600-0-900-crop.jpg?v=0d82dfeab8",
+    "userRating": null,
+    "letterboxdUrl": "https://letterboxd.com/film/how-to-train-your-dragon-2025/",
     "source": "watched",
     "language": null,
     "mediaType": "movie"

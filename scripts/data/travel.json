@@ -52,7 +52,7 @@
     "lng": 77.590082,
     "source": "beeneverywhere",
     "source_id": "R7902476",
-    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg/3840px-View_from_Visvesvaraya_Industrial_and_Technological_Museum_%282025%29_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/20/UB_City%2C_Bangalore.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "image_credit": "Wikipedia",
     "image": "/travel/bengaluru-india.jpg"
   },
@@ -378,16 +378,16 @@
     "image": "/travel/rishikesh-india.jpg"
   },
   {
-    "name": "Saharanpur",
+    "name": "Roorkee",
     "country": "India",
     "country_code": "IN",
-    "lat": 29.9637438,
-    "lng": 77.5427464,
+    "lat": 29.8693496,
+    "lng": 77.8902124,
     "source": "beeneverywhere",
-    "source_id": "N723867682",
-    "image_source": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Baba_Bhura_Dev_temple%2C_Shakumbhri_Devi_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "source_id": "N4373395280",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/0/08/ThomasonCollegeOfEngineeringRoorkeeEst1847.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "image_credit": "Wikipedia",
-    "image": "/travel/saharanpur-india.jpg"
+    "image": "/travel/roorkee-india.jpg"
   },
   {
     "name": "Sonamarg",
